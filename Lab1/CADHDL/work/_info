@@ -18,14 +18,14 @@ Z2 OL;O;10.2c;57
 Z3 dC:/modeltech64_10.2c/examples
 !s110 1509369794
 T_opt2
-V<26dBiL7[JmER8P4>mTVU0
-04 7 5 work mux_slv behav 1
-=1-14dae96e2267-59f71f21-ae-af8
+VRR4jVWXdj=<L8<zX0i>f@3
+04 19 6 work counter_bcd_2digits struct 1
+=1-14dae96e2267-59f72f3d-c4-700
 R1
 n@_opt2
 R2
 R3
-!s110 1509367585
+!s110 1509371709
 Eand2
 Z4 w1509368074
 Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
@@ -221,9 +221,52 @@ R16
 !s100 oG]Dbjz;YEdeeXejAkE`F3
 !i10b 1
 !i111 0
+Ecounter_bcd_2digits
+Z23 w1509371513
+R5
+R6
+R7
+Z24 8counter_bcd_2digits.vhd
+Z25 Fcounter_bcd_2digits.vhd
+l0
+L4
+V[DNDOWLFg@jg:8;0>f^5^2
+!s100 FB86YiWO_O>RGzWBUg4F>3
+R10
+32
+Z26 !s110 1509371763
+!i10b 1
+Z27 !s108 1509371763.137000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|counter_bcd_2digits.vhd|
+Z29 !s107 counter_bcd_2digits.vhd|
+!i111 0
+R15
+R16
+Astruct
+Z30 DEx4 work 9 seven_seg 0 22 6`ddkGXTilSDOV=>QS6S`3
+Z31 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z32 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z33 DEx4 work 9 licznik_u 0 22 2zROl4=]`<<VLF<5PlGUh1
+R5
+R6
+Z34 DEx4 work 19 counter_bcd_2digits 0 22 [DNDOWLFg@jg:8;0>f^5^2
+l14
+L11
+Z35 VLi[J^Zajgig99F2K^A3Ri1
+Z36 !s100 3R[1U5hQMlR0_O7G>PH`>2
+R10
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i111 0
+R15
+R16
 Pdevices_pkg
-Z23 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
-Z24 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+R31
+R32
 R5
 R6
 R4
@@ -246,8 +289,8 @@ R16
 !i111 0
 Bbody
 DPx4 work 11 devices_pkg 0 22 =aVbGn47WaLz98S93EoE:2
-R23
-R24
+R31
+R32
 R5
 R6
 l0
@@ -289,7 +332,7 @@ R16
 Alatch
 R5
 R6
-Z25 DEx4 work 3 dff 0 22 c;U<nQ^]c_[n7oVMV^[GL2
+Z37 DEx4 work 3 dff 0 22 c;U<nQ^]c_[n7oVMV^[GL2
 l93
 L91
 VPNPHKVT9ia1FnX@8?U[_;2
@@ -307,7 +350,7 @@ R16
 Aflip_flop
 R5
 R6
-R25
+R37
 l80
 L78
 VaQJ6L>T?43L?ZhJD`8]XU0
@@ -386,7 +429,7 @@ R16
 Adataflow
 R5
 R6
-Z26 DEx4 work 8 inverter 0 22 b09SWVSn:cUSiVNV<66jl2
+Z38 DEx4 work 8 inverter 0 22 b09SWVSn:cUSiVNV<66jl2
 l224
 L223
 VIIGmFHZga1`Zb2kobNeo33
@@ -403,8 +446,8 @@ R16
 !i111 0
 Elicznik_u
 R4
-R23
-R24
+R31
+R32
 R5
 R6
 R7
@@ -425,11 +468,11 @@ R16
 !i10b 1
 !i111 0
 Abehav
-R23
-R24
+R31
+R32
 R5
 R6
-DEx4 work 9 licznik_u 0 22 2zROl4=]`<<VLF<5PlGUh1
+R33
 l206
 L203
 VUT`iCFUDZnY^_6H=1i3U]0
@@ -484,19 +527,19 @@ R16
 !i10b 1
 !i111 0
 Emux_bit
-Z27 w1509366848
+Z39 w1509366848
 R7
-Z28 8C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
-Z29 FC:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+Z40 8C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+Z41 FC:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
 l0
 L1
 V@]kNXW59ETM<c@]V3G9191
 R10
 32
 R11
-Z30 !s108 1509369747.617000
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd|
-Z32 !s107 C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd|
+Z42 !s108 1509369747.617000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd|
+Z44 !s107 C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd|
 R15
 R16
 !s100 LdmN>`IWza4oh5g]=9;LJ2
@@ -510,30 +553,30 @@ VN4^6VFH3KFh^Y<aJ>;LQn3
 R10
 32
 R11
-R30
-R31
-R32
+R42
+R43
+R44
 R15
 R16
 !s100 :C@4zRN@6b=QXJ_aKi8Ma0
 !i10b 1
 !i111 0
 Emux_slv
-Z33 w1509368643
+Z45 w1509368643
 R5
 R6
 R7
-Z34 8mux_slv.vhd
-Z35 Fmux_slv.vhd
+Z46 8mux_slv.vhd
+Z47 Fmux_slv.vhd
 l0
 L4
 V_46Fh21;T]05nAI6JUj0[0
 R10
 32
-Z36 !s110 1509369996
-Z37 !s108 1509369996.476000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|mux_slv.vhd|
-Z39 !s107 mux_slv.vhd|
+Z48 !s110 1509369996
+Z49 !s108 1509369996.476000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|mux_slv.vhd|
+Z51 !s107 mux_slv.vhd|
 R15
 R16
 !s100 OAX7JYMn4GR3AKWZZKGi^3
@@ -546,59 +589,59 @@ DEx4 work 7 mux_slv 0 22 _46Fh21;T]05nAI6JUj0[0
 l12
 L10
 VdfjK^EMF7RZX:[aG8KdT41
-!s100 ]OJDK1gj]78@U:b8ieQYJ0
 R10
 32
-R36
-R37
-R38
-R39
+R48
+R49
+R50
+R51
 R15
 R16
+!s100 ]OJDK1gj]78@U:b8ieQYJ0
 !i10b 1
 !i111 0
 Emux_stanek_kulesza
-Z40 w1509369765
+Z52 w1509369765
 R5
 R6
 R7
-Z41 8mux_stanek_kulesza.vhd
-Z42 Fmux_stanek_kulesza.vhd
+Z53 8mux_stanek_kulesza.vhd
+Z54 Fmux_stanek_kulesza.vhd
 l0
 L4
 VWilTllnTfL;QSUfege`i[2
-!s100 B`C4n92<;jPhjDAj4_ko_2
 R10
 32
-Z43 !s110 1509370193
-!i10b 1
-Z44 !s108 1509370193.332000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|mux_stanek_kulesza.vhd|
-Z46 !s107 mux_stanek_kulesza.vhd|
-!i111 0
+Z55 !s110 1509370193
+Z56 !s108 1509370193.332000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|mux_stanek_kulesza.vhd|
+Z58 !s107 mux_stanek_kulesza.vhd|
 R15
 R16
+!s100 B`C4n92<;jPhjDAj4_ko_2
+!i10b 1
+!i111 0
 Astruct
-Z47 DEx4 work 3 or4 0 22 WDW>7T]23_Mn@G_BEm<[G3
+Z59 DEx4 work 3 or4 0 22 WDW>7T]23_Mn@G_BEm<[G3
 R17
-R26
+R38
 R5
 R6
-Z48 DEx4 work 18 mux_stanek_kulesza 0 22 WilTllnTfL;QSUfege`i[2
+DEx4 work 18 mux_stanek_kulesza 0 22 WilTllnTfL;QSUfege`i[2
 l13
 L10
-Z49 Vh<YLSh?F]e6]1NMAS4SdW1
-Z50 !s100 P?oISkF52?fEU3S?:eoWe2
+Vh<YLSh?F]e6]1NMAS4SdW1
 R10
 32
-R43
-!i10b 1
-R44
-R45
-R46
-!i111 0
+R55
+R56
+R57
+R58
 R15
 R16
+!s100 P?oISkF52?fEU3S?:eoWe2
+!i10b 1
+!i111 0
 Enand2
 R4
 R5
@@ -902,7 +945,7 @@ L319
 VVDbfAj?7QN?:<W]lCA`;@3
 R10
 32
-Z51 !s110 1509369748
+Z60 !s110 1509369748
 R12
 R13
 R14
@@ -923,7 +966,7 @@ L326
 V^Cf^lah8h<n1TPDM5l_fc2
 R10
 32
-R51
+R60
 R12
 R13
 R14
@@ -941,7 +984,7 @@ L331
 V4>Bke01b;b9:TTg4EbDiW3
 R10
 32
-R51
+R60
 R12
 R13
 R14
@@ -1052,7 +1095,7 @@ R16
 Adataflow
 R5
 R6
-R47
+R59
 l200
 L199
 V=8ljV@L?lm?M94P_Z`Ygh0
@@ -1130,7 +1173,7 @@ R16
 Asynteza
 R5
 R6
-Z52 DEx4 work 9 seven_seg 0 22 6`ddkGXTilSDOV=>QS6S`3
+R30
 l170
 L168
 V^EO4e78[eSE>aDheK27jE0
@@ -1148,7 +1191,7 @@ R16
 Asymulacja
 R5
 R6
-R52
+R30
 l141
 L137
 VlgVJCEG_I887FOmV8QihO0
@@ -1175,7 +1218,7 @@ L350
 VQ4b`2f[dmjU[Xz7ZXZY472
 R10
 32
-R51
+R60
 R12
 R13
 R14
@@ -1193,7 +1236,7 @@ L355
 VJY1B7FQVk^C?DUQ:ZZ0P:2
 R10
 32
-R51
+R60
 R12
 R13
 R14
@@ -1214,7 +1257,7 @@ L338
 V8Wdi98_nB5^H^k5E4hgN83
 R10
 32
-R51
+R60
 R12
 R13
 R14
@@ -1232,7 +1275,7 @@ L343
 VU7N5KicmNW4]LU<77J@2V3
 R10
 32
-R51
+R60
 R12
 R13
 R14
