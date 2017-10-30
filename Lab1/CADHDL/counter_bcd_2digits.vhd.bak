@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity counter_bcd_2digits is
+  port(wejscie: in std_logic_vector(3 downto 0);
+      adres: in std_logic_vector(1 downto 0);
+      wyjscie: out std_logic);
+end entity counter_bcd_2digits;
+
+architecture behav of counter_bcd_2digits is
+
+begin
+  
+wyjscie <= wejscie(0) when adres="00" else
+           wejscie(1) when adres="01" else
+           wejscie(2) when adres="10" else
+           wejscie(3);
+     
+end architecture behav;    
