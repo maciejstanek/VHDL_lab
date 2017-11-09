@@ -1,13 +1,13 @@
-C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity mux_slv
 -- Compiling architecture behav of mux_slv
 
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/devices.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/devices.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -31,8 +31,8 @@ Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling entity mux4x1
 -- Compiling architecture with_delay of mux4x1
 
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/gates.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/gates.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -80,31 +80,14 @@ Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
 
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Compiling entity mux_bit
 -- Compiling architecture behav of mux_bit
 
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/sim_counter.do {0 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/sim_counter.do
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
--- Loading package STANDARD
-** Error: C:/StanekKulesza/Lab1/CADHDL/sim_counter.do(1): near "#": syntax error
-
-} {4.0 5.0} {}} C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity counter_bcd_2digits
--- Compiling architecture struct of counter_bcd_2digits
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading entity licznik_u
--- Loading entity seven_seg
-
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
