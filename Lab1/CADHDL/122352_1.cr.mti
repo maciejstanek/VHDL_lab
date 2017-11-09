@@ -31,6 +31,12 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity mux4x1
 -- Compiling architecture with_delay of mux4x1
 
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity mux_bit
+-- Compiling architecture behav of mux_bit
+
 } {} {}} C:/StanekKulesza/Lab1/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/gates.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -80,11 +86,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
 
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
--- Compiling entity mux_bit
--- Compiling architecture behav of mux_bit
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_stanek_kulesza
+-- Compiling architecture struct of mux_stanek_kulesza
+-- Loading entity inverter
+-- Loading entity and3
+-- Loading entity or4
 
 } {} {}} C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -99,16 +110,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading entity seven_seg
 -- Loading entity inverter
 -- Loading entity nand4
-
-} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity mux_stanek_kulesza
--- Compiling architecture struct of mux_stanek_kulesza
--- Loading entity inverter
--- Loading entity and3
--- Loading entity or4
 
 } {} {}}
