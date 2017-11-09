@@ -37,7 +37,11 @@ view wave -title $jednostka
 add wave clk
 add wave rst
 add wave en
+
+add wave -radix hexadecimal digit_10
 add wave -radix hexadecimal digit_1
+
+add wave -radix unsigned num_10_out
 add wave -radix unsigned num_1_out
 #
 set T "20 ns"
@@ -49,7 +53,7 @@ forsuj clk 2 $T
 
 force rst 0 0
 force en 1 0
-forsuj clk 30 $T
+forsuj clk [expr 2*10*10] $T
 #
 update
 WaveRestoreZoom {0 ns} $Now

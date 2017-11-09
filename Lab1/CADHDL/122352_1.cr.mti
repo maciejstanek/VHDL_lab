@@ -86,6 +86,20 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity mux_bit
 -- Compiling architecture behav of mux_bit
 
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/counter_bcd_2digits.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_bcd_2digits
+-- Compiling architecture struct of counter_bcd_2digits
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity licznik_u
+-- Loading entity seven_seg
+-- Loading entity inverter
+-- Loading entity nand4
+
 } {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD

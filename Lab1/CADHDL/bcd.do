@@ -53,7 +53,7 @@ forsuj clk 2 $T
 
 force rst 0 0
 force en 1 0
-forsuj clk 30 $T
+forsuj clk [expr 2*(10*10+1)] $T
 #
 update
 WaveRestoreZoom {0 ns} $Now
