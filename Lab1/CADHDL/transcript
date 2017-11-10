@@ -1,10 +1,8 @@
-# Reading D:/Mentor/tcl/vsim/pref.tcl
-# OpenFile C:/StanekKulesza/Lab1/CADHDL/symuluj.do
 # Loading project 122352_1
 # counter_bcd_2digits.vhd
 # counter_bcd_2digits
-# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:24:55 on Nov 09,2017
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:58 on Nov 10,2017
 # vcom -reportprogress 300 -work work -2002 -explicit counter_bcd_2digits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -17,28 +15,10 @@
 # -- Loading entity seven_seg
 # -- Loading entity inverter
 # -- Loading entity nand4
-# End time: 20:24:55 on Nov 09,2017, Elapsed time: 0:00:00
+# End time: 22:26:58 on Nov 10,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
-# //
-# //  Copyright 1991-2015 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
-# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
-# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
-# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
-# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
-# //
-# // NOT FOR CORPORATE OR PRODUCTION USE.
-# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
-# // FOR HIGHER EDUCATION PURPOSES ONLY
-# //
-# vsim -gui C:\StanekKulesza\Lab1\CADHDL\symuluj.do 
-# Start time: 20:24:55 on Nov 09,2017
+# vsim work.counter_bcd_2digits 
+# Start time: 22:26:58 on Nov 10,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -51,31 +31,5 @@
 # Loading work.nand4(dataflow)
 # .main_pane.wave.interior.cs.body.pw.wf
 # 20 ns
-do symuluj.do mux_stanek_kulesza.vhd mux_stanek_kulesza
-# mux_stanek_kulesza.vhd
-# mux_stanek_kulesza
-# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 20:26:01 on Nov 09,2017
-# vcom -reportprogress 300 -work work -2002 -explicit mux_stanek_kulesza.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_stanek_kulesza
-# -- Compiling architecture struct of mux_stanek_kulesza
-# -- Loading entity inverter
-# -- Loading entity and3
-# -- Loading entity or4
-# End time: 20:26:01 on Nov 09,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 20:26:02 on Nov 09,2017
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mux_stanek_kulesza(struct)
-# Loading work.inverter(dataflow)
-# Loading work.and3(dataflow)
-# Loading work.or4(dataflow)
-# .main_pane.wave.interior.cs.body.pw.wf
-# End time: 20:26:33 on Nov 09,2017, Elapsed time: 0:00:31
+# End time: 22:27:28 on Nov 10,2017, Elapsed time: 0:00:30
 # Errors: 0, Warnings: 0
