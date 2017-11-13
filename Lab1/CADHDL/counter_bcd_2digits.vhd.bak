@@ -31,7 +31,7 @@ begin
     port map(num_1(2), neg2);
   inv1: entity work.inverter
     port map(num_1(1), neg1);
-  and41: entity work.and4
+  and41: entity work.nand4
     port map(num_1(3), neg2, neg1, num_1(0), clk2);
 
   counter_10: entity work.licznik_u(behav)

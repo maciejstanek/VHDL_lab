@@ -33,7 +33,17 @@ begin
     port map(num_1(1), neg1);
   and41: entity work.nand4
     port map(num_1(3), neg2, neg1, num_1(0), clk2);
+{counter_1: entity work.licznik_u(behav)
+    port map(q => num_1, rst => rst, ce => en, clk => clk);
+  sseg_1: entity work.seven_seg(synteza)
+    port map(num_1, digit_1);
 
+  inv2: entity work.inverter
+    port map(num_1(2), neg2);
+  inv1: entity work.inverter
+    port map(num_1(1), neg1);
+  and41: entity work.nand4
+    port map(num_1(3), neg2, neg1, num_1(0), clk2);}
   counter_10: entity work.licznik_u(behav)
     port map(q => num_10, rst => rst, ce => en, clk => clk2);
   sseg_10: entity work.seven_seg(synteza)

@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/StanekKulesza/Lab1/CADHDL
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1510580080
+VQZ@bNRf87Y1iam?m[PzjZ3
+04 12 5 work shift_reg_tb behav 1
+=1-14dae96e2267-5a099f70-2cb-5f8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.2c;57
+Eshift_reg
+Z0 w1510579630
+Z1 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z3 dC:/StanekKulesza/Lab2/CADHDL
+Z4 8C:\StanekKulesza\Lab2\CADHDL\shift_reg.vhd
+Z5 FC:\StanekKulesza\Lab2\CADHDL\shift_reg.vhd
+l0
+L4
+V<Ma7<aTdEV^71M4ng^jPb2
+Z6 OL;C;10.2c;57
+32
+Z7 !s110 1510579991
+Z8 !s108 1510579991.779000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\StanekKulesza\Lab2\CADHDL\shift_reg.vhd|
+Z10 !s107 C:\StanekKulesza\Lab2\CADHDL\shift_reg.vhd|
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+!s100 n6V6bR2lC2SE8iMRNezN[2
+!i10b 1
+!i111 0
+Adouble_reg_fixed
+R1
+R2
+Z13 DEx4 work 9 shift_reg 0 22 <Ma7<aTdEV^71M4ng^jPb2
+l28
+L24
+VzoHnn11H;=U?9]bkC<<Sj2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+R12
+!s100 =1FOh^S5fbL93Rg;S_8;Z2
+!i10b 1
+!i111 0
+Adouble_reg
+R1
+R2
+R13
+l14
+L10
+V<HI6C?[?m:VQ?h:]>8i`_3
+R6
+32
+R7
+R8
+R9
+R10
+R11
+R12
+!s100 PG_c:QazmF9<OaTA=Y<A10
+!i10b 1
+!i111 0
+Eshift_reg_tb
+Z14 w1510580068
+R1
+R2
+R3
+Z15 8C:\StanekKulesza\Lab2\CADHDL\shift_reg_tb.vhd
+Z16 FC:\StanekKulesza\Lab2\CADHDL\shift_reg_tb.vhd
+l0
+L4
+VaR0i:e[2Im?Li>N_bcBlc2
+R6
+32
+Z17 !s110 1510580071
+Z18 !s108 1510580071.790000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\StanekKulesza\Lab2\CADHDL\shift_reg_tb.vhd|
+Z20 !s107 C:\StanekKulesza\Lab2\CADHDL\shift_reg_tb.vhd|
+R11
+R12
+!s100 PVI<m:Fz]n4g=iLKUj3a[2
+!i10b 1
+!i111 0
+Abehav
+R13
+R1
+R2
+DEx4 work 12 shift_reg_tb 0 22 aR0i:e[2Im?Li>N_bcBlc2
+l11
+L7
+VTTCY?_gGEJ=@eI<Y_0Imb0
+R6
+32
+R17
+R18
+R19
+R20
+R11
+R12
+!s100 k:dog[<;hk8@MT4nOZ<XX3
+!i10b 1
+!i111 0

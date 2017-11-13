@@ -1,12 +1,78 @@
-/home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_slv.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_slv.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+C:/StanekKulesza/Lab1/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/gates.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity mux_slv
--- Compiling architecture behav of mux_slv
+-- Compiling package gates_pkg
+-- Compiling package body gates_pkg
+-- Loading package gates_pkg
+-- Compiling entity and2
+-- Compiling architecture dataflow of and2
+-- Compiling entity and3
+-- Compiling architecture dataflow of and3
+-- Compiling entity and4
+-- Compiling architecture dataflow of and4
+-- Compiling entity and5
+-- Compiling architecture dataflow of and5
+-- Compiling entity or2
+-- Compiling architecture dataflow of or2
+-- Compiling entity or3
+-- Compiling architecture dataflow of or3
+-- Compiling entity or4
+-- Compiling architecture dataflow of or4
+-- Compiling entity or5
+-- Compiling architecture dataflow of or5
+-- Compiling entity inverter
+-- Compiling architecture dataflow of inverter
+-- Compiling entity nand2
+-- Compiling architecture dataflow of nand2
+-- Compiling entity nand3
+-- Compiling architecture dataflow of nand3
+-- Compiling entity nand4
+-- Compiling architecture dataflow of nand4
+-- Compiling entity nand5
+-- Compiling architecture dataflow of nand5
+-- Compiling entity nor2
+-- Compiling architecture dataflow of nor2
+-- Compiling entity nor3
+-- Compiling architecture dataflow of nor3
+-- Compiling entity nor4
+-- Compiling architecture dataflow of nor4
+-- Compiling entity nor5
+-- Compiling architecture dataflow of nor5
+-- Compiling entity not1
+-- Compiling architecture dataflow of not1
+-- Compiling entity xor2
+-- Compiling architecture dataflow of xor2
+-- Compiling entity xnor2
+-- Compiling architecture dataflow of xnor2
 
-} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/devices.vhd
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_stanek_kulesza.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_stanek_kulesza
+-- Compiling architecture struct of mux_stanek_kulesza
+-- Loading entity inverter
+-- Loading entity and3
+-- Loading entity or4
+
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/tb.vhd {0 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/tb.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shift_reg_tb
+-- Compiling architecture behav of shift_reg_tb
+** Error: (vcom-11) Could not find work.shift_reg.
+
+** Error: C:/StanekKulesza/Lab1/CADHDL/tb.vhd(13): (vcom-1195) Cannot find expanded name "work.shift_reg".
+
+** Error: C:/StanekKulesza/Lab1/CADHDL/tb.vhd(13): Unknown expanded name.
+** Error: C:/StanekKulesza/Lab1/CADHDL/tb.vhd(38): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 14.0} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/devices.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -30,6 +96,67 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling architecture behav of licznik_u
 -- Compiling entity mux4x1
 -- Compiling architecture with_delay of mux4x1
+
+} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/counter_bcd_2digits.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/counter_bcd_2digits.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_bcd_2digits
+-- Compiling architecture struct of counter_bcd_2digits
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity licznik_u
+-- Loading entity seven_seg
+-- Loading entity inverter
+-- Loading entity nand4
+
+} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_slv.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_slv.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_slv
+-- Compiling architecture behav of mux_slv
+
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/devices.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package devices_pkg
+-- Compiling package body devices_pkg
+-- Loading package devices_pkg
+-- Compiling entity dff
+-- Compiling architecture flip_flop of dff
+-- Compiling architecture latch of dff
+-- Loading entity dff
+-- Compiling entity bin2onehot
+-- Compiling architecture Behavioral of bin2onehot
+-- Compiling entity seven_seg
+-- Compiling architecture symulacja of seven_seg
+-- Compiling architecture synteza of seven_seg
+-- Loading entity seven_seg
+-- Compiling entity licznik_u
+-- Compiling architecture behav of licznik_u
+-- Compiling entity mux4x1
+-- Compiling architecture with_delay of mux4x1
+
+} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity mux_bit
+-- Compiling architecture behav of mux_bit
+
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_slv.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_slv
+-- Compiling architecture behav of mux_slv
 
 } {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/gates.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -80,25 +207,11 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
 
-} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_bit.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+} {} {}} C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab1/CADHDL/mux_bit.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Compiling entity mux_bit
 -- Compiling architecture behav of mux_bit
-
-} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/counter_bcd_2digits.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/counter_bcd_2digits.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity counter_bcd_2digits
--- Compiling architecture struct of counter_bcd_2digits
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading entity licznik_u
--- Loading entity seven_seg
--- Loading entity inverter
--- Loading entity nand4
 
 } {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_stanek_kulesza.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab1/CADHDL/mux_stanek_kulesza.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
