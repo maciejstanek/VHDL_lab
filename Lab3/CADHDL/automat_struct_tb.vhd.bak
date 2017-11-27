@@ -9,14 +9,22 @@ constant CLK_PERIOD : time := 20 ns;
 constant SIM_TIME: time := 40 * CLK_PERIOD; 
 signal clk_i, rst_i : std_logic := '0';
 signal display_o : std_logic_vector(3 downto 0);
+signal display_o1 : std_logic_vector(3 downto 0);
+signal display_o2 : std_logic_vector(3 downto 0);
+signal display_o3 : std_logic_vector(3 downto 0);
 
 begin
   -- instantiation of unit under test 
-  UUT: entity work.automat(arch2p)
+  UUT: entity work.automat(struct)
        port map (
        clk => clk_i,
        rst => rst_i,
        display => display_o);
+  UUT1: entity work.automat(arch1p)
+       port map (
+       clk => clk_i,
+       rst => rst_i,
+       display => display_o1);
        
   -- stimuli for clk
   clk_process: process

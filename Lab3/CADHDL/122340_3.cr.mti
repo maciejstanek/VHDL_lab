@@ -1,13 +1,4 @@
-C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity automat_struct_tb
--- Compiling architecture behav of automat_struct_tb
--- Loading entity automat
-
-} {} {}} C:/StanekKulesza/Lab3/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/gates.vhd
+C:/StanekKulesza/Lab3/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/gates.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -55,6 +46,26 @@ Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling architecture dataflow of xor2
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
+
+} {} {}} C:/StanekKulesza/Lab3/CADHDL/automat_struct.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/automat_struct.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity rom_6x4
+-- Compiling architecture syn of rom_6x4
+-- Compiling entity automat
+-- Compiling architecture struct of automat
+-- Loading entity licznik_u
+-- Loading entity rom_6x4
+-- Compiling architecture arch1p of automat
+-- Loading entity automat
+-- Compiling architecture arch2p of automat
+-- Loading entity automat
+-- Compiling architecture arch3p of automat
+-- Loading entity automat
 
 } {} {}} C:/StanekKulesza/Lab3/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/devices.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
