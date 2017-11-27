@@ -20,8 +20,8 @@ L122
 VFOe1kdIk9^9CRH71YjnfP1
 Z6 OL;C;10.2c;57
 32
-Z7 !s110 1511790207
-Z8 !s108 1511790207.618000
+Z7 !s110 1511790673
+Z8 !s108 1511790673.553000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/StanekKulesza/Lab3/CADHDL/gates.vhd|
 Z10 !s107 C:/StanekKulesza/Lab3/CADHDL/gates.vhd|
 Z11 o-work work -2002 -explicit
@@ -165,7 +165,7 @@ R12
 !i10b 1
 !i111 0
 Eautomat
-Z14 w1511789739
+Z14 w1511790590
 R1
 R2
 R3
@@ -176,8 +176,8 @@ L49
 VgmUoE1GEIN4@UzELhoWVZ2
 R6
 32
-Z17 !s110 1511790218
-Z18 !s108 1511790218.520000
+Z17 !s110 1511790688
+Z18 !s108 1511790688.339000
 Z19 !s90 -reportprogress|300|-novopt|automat_struct.vhd|
 Z20 !s107 automat_struct.vhd|
 R12
@@ -278,7 +278,7 @@ VAb75bXHVz1Hl409UlGnji2
 R6
 32
 R17
-Z29 !s108 1511790218.614000
+Z29 !s108 1511790688.464000
 Z30 !s90 -reportprogress|300|-novopt|automat_struct_tb.vhd|
 Z31 !s107 automat_struct_tb.vhd|
 R12
@@ -316,7 +316,7 @@ VcH0HS71nSlHg7i0TUA3eo3
 R6
 32
 R17
-Z34 !s108 1511790218.380000
+Z34 !s108 1511790688.245000
 Z35 !s90 -reportprogress|300|devices.vhd|
 Z36 !s107 devices.vhd|
 R12
