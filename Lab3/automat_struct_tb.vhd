@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+----------------------------------------------------------------------
+entity automat_struct_tb is
+end entity automat_struct_tb;
+----------------------------------------------------------------------
+architecture behav of automat_struct_tb is
+constant CLK_PERIOD : time := 20 ns;
+constant SIM_TIME: time := 40 * CLK_PERIOD; 
+signal clk_i, rst_i : std_logic := '0';
+signal display_o : std_logic_vector(3 downto 0);
+
+begin
+  -- instantiation of unit under test 
+  UUT: entity work.automat
+       port map (
+       clk => clk_i,
+       rst => rst_i,
+       display => display_o);
+       
+  -- stimuli for clk
+  clk_process: process
+  begin
+    wait for CLK_PERIOD/2;    
+    clk_i <= not clk_i;
+  end process clk_process;
+  
+  -- stimuli for rst
+  rst_i <= '0', '1' after 6 ns, '0' after 53 ns,
+           '1' after 356 ns, '0' after 433 ns;
+   
+  -- end of simulation 
+  sim_end_process: process
+  begin
+    wait for SIM_TIME;
+    assert false
+      report "End of simulation at time " & time'image(now)
+      severity Failure;
+  end process sim_end_process;
+  
+end architecture behav;
+----------------------------------------------------------------------
