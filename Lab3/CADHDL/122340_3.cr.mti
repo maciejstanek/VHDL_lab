@@ -1,4 +1,13 @@
-C:/StanekKulesza/Lab3/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/gates.vhd
+C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity automat_struct_tb
+-- Compiling architecture behav of automat_struct_tb
+-- Loading entity automat
+
+} {} {}} C:/StanekKulesza/Lab3/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/gates.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
