@@ -1,0 +1,26 @@
+uk³ad + testbench + makro
+
+uk³ad: braæ z pliku wejœcia, zapisywac do ramu, z tego ramu odczytaæ i zapisaæ do pliku w postaci integer/binary
+
+makro: nazwa_makra.do <plik_wejscia> <plik_wyjscia>
+
+----------------------
+
+Dwie drogi:
+
+1. Robiæ procesy ale to trudne
+2. Zrobiæ automat:
+   - stan odczytu,
+   - stan zapisu,
+   - ...
+
+Uwa¿aæ bo pamiê ram ma port RW.
+
+Zapis synchroniczny, odczyt asynchroniczny.
+
+Zapisaæ ca³¹ pamiêæ a potem odczytaæ cal¹ pamiêæ na raz, nie robiæ  tego ma³ymi kroczkami.
+
+Zapisujemy do pamiêci 64 wartoœci.
+
+--------------------
+

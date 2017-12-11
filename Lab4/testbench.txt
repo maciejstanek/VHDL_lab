@@ -1,0 +1,8 @@
+impure function to_bitstream_file(file_name: string; val: std_logic) return boolean is
+    file filehandle: text open append_mode is file_name;
+    variable outline: line;
+    begin
+        write(outline,val,left,1);
+        writeline(filehandle,outline);
+        return true;
+    end to_bitstream_file;

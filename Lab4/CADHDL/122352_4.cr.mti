@@ -1,13 +1,29 @@
-C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/automat_struct_tb.vhd
+C:/StanekKulesza/Lab4/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab4/CADHDL/devices.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity automat_struct_tb
--- Compiling architecture behav of automat_struct_tb
--- Loading entity automat
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package devices_pkg
+-- Compiling package body devices_pkg
+-- Loading package devices_pkg
+-- Compiling entity dff
+-- Compiling architecture flip_flop of dff
+-- Compiling architecture latch of dff
+-- Loading entity dff
+-- Compiling entity bin2onehot
+-- Compiling architecture Behavioral of bin2onehot
+-- Compiling entity seven_seg
+-- Compiling architecture symulacja of seven_seg
+-- Compiling architecture synteza of seven_seg
+-- Loading entity seven_seg
+-- Compiling entity licznik_u
+-- Compiling architecture behav of licznik_u
+-- Compiling entity mux4x1
+-- Compiling architecture with_delay of mux4x1
 
-} {} {}} C:/StanekKulesza/Lab3/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/gates.vhd
+} {} {}} C:/StanekKulesza/Lab4/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab4/CADHDL/gates.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -56,49 +72,24 @@ Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
 
-} {} {}} C:/StanekKulesza/Lab3/CADHDL/automat_struct.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/automat_struct.vhd
+} {} {}} C:/StanekKulesza/Lab4/CADHDL/bin2onehot.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab4/CADHDL/bin2onehot.vhd
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity rom_6x4
--- Compiling architecture syn of rom_6x4
--- Compiling entity automat
--- Compiling architecture struct of automat
--- Loading entity licznik_u
--- Loading entity rom_6x4
--- Compiling architecture arch1p of automat
--- Loading entity automat
--- Compiling architecture arch2p of automat
--- Loading entity automat
--- Compiling architecture arch3p of automat
--- Loading entity automat
-
-} {} {}} C:/StanekKulesza/Lab3/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab3/CADHDL/devices.vhd
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling package devices_pkg
--- Compiling package body devices_pkg
--- Loading package devices_pkg
--- Compiling entity dff
--- Compiling architecture flip_flop of dff
--- Compiling architecture latch of dff
--- Loading entity dff
 -- Compiling entity bin2onehot
 -- Compiling architecture Behavioral of bin2onehot
--- Compiling entity seven_seg
--- Compiling architecture symulacja of seven_seg
--- Compiling architecture synteza of seven_seg
--- Loading entity seven_seg
--- Compiling entity licznik_u
--- Compiling architecture behav of licznik_u
--- Compiling entity mux4x1
--- Compiling architecture with_delay of mux4x1
+
+} {} {}} C:/StanekKulesza/Lab4/CADHDL/bin2onehot_tb.vhd {1 {vcom -work work -2002 -explicit -vopt C:/StanekKulesza/Lab4/CADHDL/bin2onehot_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Compiling entity bin2onehot_tb
+-- Compiling architecture testbench_arch of bin2onehot_tb
 
 } {} {}}

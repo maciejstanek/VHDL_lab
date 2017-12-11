@@ -1,0 +1,30 @@
+if {$argc < 2} {
+  puts "Podaj dwie nazwy plikow: pierwsza to plik wejsciowy a druga to wyjsciowy."
+}
+puts "Input file : \"$1\""
+puts "Out file   : \"$2\""
+
+vcom devices.vhd
+vcom gates.vhd
+vcom bin2onehot.vhd
+vcom bin2onehot_tb.vhd
+
+vsim work.bin2onehot_tb -Gdin=$1 -Gdout=$2
+add wave -position insertpoint \
+  sim:/bin2onehot_tb/bin_internal \
+  sim:/bin2onehot_tb/onehot_internal
+run -all
+
+
+#vsim bin2onehot_tb.vhd
+#view wave -title bin2onehot_tb
+#add wave -hex *
+#run -all
+#run 2000ns
+
+#vcom -novopt $n.vhd
+#vcom -novopt $n\_tb.vhd
+#vsim -novopt -wlf $1.wlf -Gd1=$x1 -Gd2=$x2 -Gd3=$x3 -Gd4=$x4 -Gd5=$x5 $n\_tb
+#view wave -title $n
+#add wave -hex *
+#run -all
