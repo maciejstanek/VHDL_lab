@@ -775,7 +775,7 @@ IterationLimit = 5000
 ; given severity or higher will cause a running simulation to stop.
 ; This value is ignored during elaboration.
 ; 0 = Note  1 = Warning  2 = Error  3 = Failure  4 = Fatal
-BreakOnAssertion = 3
+BreakOnAssertion = 2
 
 ; The class debug feature enables more visibility and tracking of class instances
 ; during simulation.  By default this feature is 0 (disabled).  To enable this 
@@ -838,7 +838,6 @@ ShowFunctions = 1
 ; Radix may be one of: symbolic, ascii, binary, octal, decimal, hex, unsigned
 ; Flags may be one of: enumnumeric, showbase
 DefaultRadix = hexadecimal
-DefaultRadixFlags = showbase
 ; Set to 1 for make the signal_force VHDL and Verilog functions use the 
 ; default radix when processing the force value. Prior to 10.2 signal_force
 ; used the default radix, now it always uses symbolic unless value explicitly indicates base
@@ -1858,25 +1857,29 @@ suppress = 8780 ;an explanation can be had by running: verror 8780
 Project_Version = 6
 Project_DefaultLib = work
 Project_SortMethod = unused
-Project_Files_Count = 9
-Project_File_0 = C:/StanekKulesza/Lab4/CADHDL/ram20d_tb.vhd
-Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1513000237 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 1 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 5 dont_compile 0 cover_nosub 0 vhdl_use93 2002
-Project_File_1 = C:/StanekKulesza/Lab4/CADHDL/devices.vhd
-Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1509368074 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 2 cover_nosub 0 dont_compile 0 vhdl_use93 2002
-Project_File_2 = C:/StanekKulesza/Lab4/CADHDL/ram20d_tb.do
-Project_File_P_2 = folder {Top Level} last_compile 0 compile_order -1 file_type tcl group_id 0 dont_compile 1 ood 1
-Project_File_3 = C:/StanekKulesza/Lab4/CADHDL/bin2onehot.vhd
-Project_File_P_3 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1512995584 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 0 cover_nosub 0 dont_compile 0 vhdl_use93 2002
-Project_File_4 = C:/StanekKulesza/Lab4/CADHDL/gates.vhd
-Project_File_P_4 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1509368074 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 3 cover_nosub 0 dont_compile 0 vhdl_use93 2002
-Project_File_5 = C:/StanekKulesza/Lab4/CADHDL/bin2onehot_tb.vhd
-Project_File_P_5 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1512998796 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 1 dont_compile 0 cover_nosub 0 vhdl_use93 2002
-Project_File_6 = C:/StanekKulesza/Lab4/CADHDL/ram20d.vhd
-Project_File_P_6 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1512999980 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 4 dont_compile 0 cover_nosub 0 vhdl_use93 2002
-Project_File_7 = C:/StanekKulesza/Lab4/CADHDL/bin2onehot_tb.do
-Project_File_P_7 = folder {Top Level} last_compile 0 compile_order -1 file_type tcl group_id 0 dont_compile 1 ood 1
-Project_File_8 = C:/StanekKulesza/Lab4/CADHDL/test.txt
+Project_Files_Count = 11
+Project_File_0 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.vhd
+Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514647728 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 5 dont_compile 0 cover_nosub 0 vhdl_use93 2002
+Project_File_1 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/devices.vhd
+Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514642897 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 2 dont_compile 0 cover_nosub 0 vhdl_use93 2002
+Project_File_2 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram_in.txt
+Project_File_P_2 = compile_order -1 last_compile 0 folder {Top Level} dont_compile 1 group_id 0 file_type txt ood 1
+Project_File_3 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.do
+Project_File_P_3 = folder {Top Level} last_compile 0 compile_order -1 file_type tcl group_id 0 dont_compile 1 ood 1
+Project_File_4 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/gates.vhd
+Project_File_P_4 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514642897 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 3 dont_compile 0 cover_nosub 0 vhdl_use93 2002
+Project_File_5 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot.vhd
+Project_File_P_5 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514642897 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 0 dont_compile 0 cover_nosub 0 vhdl_use93 2002
+Project_File_6 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram_out.txt
+Project_File_P_6 = compile_order -1 last_compile 0 folder {Top Level} dont_compile 1 group_id 0 file_type txt ood 1
+Project_File_7 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot_tb.vhd
+Project_File_P_7 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514642897 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 1 dont_compile 0 cover_nosub 0 vhdl_use93 2002
+Project_File_8 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/test.txt
 Project_File_P_8 = folder {Top Level} last_compile 0 compile_order -1 file_type txt group_id 0 dont_compile 1 ood 1
+Project_File_9 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot_tb.do
+Project_File_P_9 = folder {Top Level} last_compile 0 compile_order -1 file_type tcl group_id 0 dont_compile 1 ood 1
+Project_File_10 = /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d.vhd
+Project_File_P_10 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1514642897 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 4 dont_compile 0 cover_nosub 0 vhdl_use93 2002
 Project_Sim_Count = 0
 Project_Folder_Count = 0
 Echo_Compile_Output = 0
@@ -1925,4 +1928,4 @@ DEBUGDATABASE_CustomDoubleClick =
 DEBUGARCHIVE_DoubleClick = Edit
 DEBUGARCHIVE_CustomDoubleClick = 
 Project_Major_Version = 10
-Project_Minor_Version = 2
+Project_Minor_Version = 5

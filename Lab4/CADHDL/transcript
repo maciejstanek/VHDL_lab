@@ -1,0 +1,1615 @@
+# Loading project 122352_4
+do ram20d.vhd ram_in.txt ram_out.txt
+# ** Error: bad option "IEEE": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+# Error in macro ./ram20d.vhd line 5
+# bad option "IEEE": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+#     while executing
+# "library IEEE"
+do ram20d_tb.do ram_in.txt ram_out.txt
+# ram20d
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:55:54 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 10:55:54 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:55:54 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 10:55:54 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:55:54 on Dec 31,2017
+# vcom -reportprogress 300 ram20d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram20d
+# -- Compiling architecture behav of ram20d
+# End time: 10:55:54 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:55:54 on Dec 31,2017
+# vcom -reportprogress 300 ram20d_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity ram20d_tb
+# -- Compiling architecture testbench_arch of ram20d_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ram20d
+# End time: 10:55:54 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.ram20d_tb -Gdout=ram_out.txt -Gdin=ram_in.txt 
+# Start time: 10:55:54 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram20d_tb(testbench_arch)
+# Loading work.ram20d(behav)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /ram20d_tb/uut
+# ** Error: Assertion violation.
+#    Time: 12900 ns  Iteration: 0  Process: /ram20d_tb/line__34 File: ram20d_tb.vhd
+# Break in Process line__34 at ram20d_tb.vhd line 65
+# ==== WEJSCIE ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 22222
+# 33333
+# 44444
+# 55555
+# 66666
+# 77777
+# 88888
+# 99999
+# 3
+# ==== WYNIKI ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 22222
+# 33333
+# 44444
+# 55555
+# 1130
+# 12241
+# 23352
+# 34463
+# 3
+# ==== DIFF ====
+# ** Error: 1								1
+# 2								2
+# 3								3
+# 4								4
+# 5								5
+# 6								6
+# 7								7
+# 8								8
+# 9								9
+# 10								10
+# 100								100
+# 1000								1000
+# 10000								10000
+# 1234								1234
+# 5678								5678
+# 1357								1357
+# 2468								2468
+# 11								11
+# 12								12
+# 13								13
+# 14								14
+# 15								15
+# 16								16
+# 17								17
+# 18								18
+# 19								19
+# 99								99
+# 98								98
+# 97								97
+# 96								96
+# 95								95
+# 94								94
+# 93								93
+# 92								92
+# 91								91
+# 90								90
+# 111								111
+# 222								222
+# 333								333
+# 444								444
+# 555								555
+# 666								666
+# 777								777
+# 888								888
+# 999								999
+# 1212								1212
+# 1313								1313
+# 1414								1414
+# 1515								1515
+# 1616								1616
+# 1717								1717
+# 1818								1818
+# 1919								1919
+# 2020								2020
+# 11111								11111
+# 22222								22222
+# 33333								33333
+# 44444								44444
+# 55555								55555
+# 66666							      |	1130
+# 77777							      |	12241
+# 88888							      |	23352
+# 99999							      |	34463
+# 3								3
+# child process exited abnormally
+# Error in macro ./ram20d_tb.do line 24
+# 1								1
+# 2								2
+# 3								3
+# 4								4
+# 5								5
+# 6								6
+# 7								7
+# 8								8
+# 9								9
+# 10								10
+# 100								100
+# 1000								1000
+# 10000								10000
+# 1234								1234
+# 5678								5678
+# 1357								1357
+# 2468								2468
+# 11								11
+# 12								12
+# 13								13
+# 14								14
+# 15								15
+# 16								16
+# 17								17
+# 18								18
+# 19								19
+# 99								99
+# 98								98
+# 97								97
+# 96								96
+# 95								95
+# 94								94
+# 93								93
+# 92								92
+# 91								91
+# 90								90
+# 111								111
+# 222								222
+# 333								333
+# 444								444
+# 555								555
+# 666								666
+# 777								777
+# 888								888
+# 999								999
+# 1212								1212
+# 1313								1313
+# 1414								1414
+# 1515								1515
+# 1616								1616
+# 1717								1717
+# 1818								1818
+# 1919								1919
+# 2020								2020
+# 11111								11111
+# 22222								22222
+# 33333								33333
+# 44444								44444
+# 55555								55555
+# 66666							      |	1130
+# 77777							      |	12241
+# 88888							      |	23352
+# 99999							      |	34463
+# 3								3
+# child process exited abnormally
+#     while executing
+# "exec sdiff $1 $2"
+do ram20d_tb.do ram_in.txt ram_out.txt
+# ram20d
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:59:01 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 10:59:01 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:59:01 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 10:59:01 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:59:01 on Dec 31,2017
+# vcom -reportprogress 300 ram20d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram20d
+# -- Compiling architecture behav of ram20d
+# End time: 10:59:01 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:59:01 on Dec 31,2017
+# vcom -reportprogress 300 ram20d_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity ram20d_tb
+# -- Compiling architecture testbench_arch of ram20d_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ram20d
+# End time: 10:59:01 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:59:07 on Dec 31,2017, Elapsed time: 0:03:13
+# Errors: 4, Warnings: 1
+# vsim work.ram20d_tb -Gdout=ram_out.txt -Gdin=ram_in.txt 
+# Start time: 10:59:07 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram20d_tb(testbench_arch)
+# Loading work.ram20d(behav)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /ram20d_tb/uut
+# ** Error: Assertion violation.
+#    Time: 12500 ns  Iteration: 0  Process: /ram20d_tb/line__34 File: ram20d_tb.vhd
+# Break in Process line__34 at ram20d_tb.vhd line 65
+# ==== WEJSCIE ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# ==== WYNIKI ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# ==== DIFF ====
+# 1								1
+# 2								2
+# 3								3
+# 4								4
+# 5								5
+# 6								6
+# 7								7
+# 8								8
+# 9								9
+# 10								10
+# 100								100
+# 1000								1000
+# 10000								10000
+# 1234								1234
+# 5678								5678
+# 1357								1357
+# 2468								2468
+# 11								11
+# 12								12
+# 13								13
+# 14								14
+# 15								15
+# 16								16
+# 17								17
+# 18								18
+# 19								19
+# 99								99
+# 98								98
+# 97								97
+# 96								96
+# 95								95
+# 94								94
+# 93								93
+# 92								92
+# 91								91
+# 90								90
+# 111								111
+# 222								222
+# 333								333
+# 444								444
+# 555								555
+# 666								666
+# 777								777
+# 888								888
+# 999								999
+# 1212								1212
+# 1313								1313
+# 1414								1414
+# 1515								1515
+# 1616								1616
+# 1717								1717
+# 1818								1818
+# 1919								1919
+# 2020								2020
+# 11111								11111
+# 11112								11112
+# 11113								11113
+# 11114								11114
+# 11115								11115
+# 11116								11116
+# 11117								11117
+# 11118								11118
+# ==== END ====
+do ram20d_tb.do ram_in.txt
+# ** Error: can't read "2": no such variable
+# Error in macro ./ram20d_tb.do line 5
+# can't read "2": no such variable
+#     while executing
+# "puts "Out file   : \"$2\"""
+do ram20d_tb.do ram_in.txt
+# ** Error: can't read "2": no such variable
+# Error in macro ./ram20d_tb.do line 5
+# can't read "2": no such variable
+#     while executing
+# "puts "Out file   : \"$2\"""
+do ram20d_tb.do ram_in.txt
+# ** Error: can't read "2": no such variable
+# Error in macro ./ram20d_tb.do line 6
+# can't read "2": no such variable
+#     while executing
+# "puts "Out file   : \"$2\"""
+do ram20d_tb.do ram_in.txt
+# ** Error: can't read "2": no such variable
+# Error in macro ./ram20d_tb.do line 6
+# can't read "2": no such variable
+#     while executing
+# "puts "Out file   : \"$2\"""
+./ram20d_tb.do
+# invalid command name "./ram20d_tb.do"
+ll
+# wrong # args: should be "llength list"
+pwd
+# /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL
+do ram20d_tb.do ram_in.txt
+# ** Error: can't read "2": no such variable
+# Error in macro ./ram20d_tb.do line 6
+# can't read "2": no such variable
+#     while executing
+# "puts "Out file   : \"$2\"""
+do ram20d_tb.do ram_in.txt ram_out.txt
+# ram20d
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:42 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 11:02:42 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:42 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 11:02:42 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:42 on Dec 31,2017
+# vcom -reportprogress 300 ram20d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram20d
+# -- Compiling architecture behav of ram20d
+# End time: 11:02:42 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:42 on Dec 31,2017
+# vcom -reportprogress 300 ram20d_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity ram20d_tb
+# -- Compiling architecture testbench_arch of ram20d_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ram20d
+# End time: 11:02:42 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:02:42 on Dec 31,2017, Elapsed time: 0:03:35
+# Errors: 18, Warnings: 1
+# vsim work.ram20d_tb -Gdout=ram_out.txt -Gdin=ram_in.txt 
+# Start time: 11:02:42 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram20d_tb(testbench_arch)
+# Loading work.ram20d(behav)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /ram20d_tb/uut
+# ** Error: Assertion violation.
+#    Time: 12500 ns  Iteration: 0  Process: /ram20d_tb/line__34 File: ram20d_tb.vhd
+# Break in Process line__34 at ram20d_tb.vhd line 65
+# ==== WEJSCIE ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# ==== WYNIKI ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# ==== DIFF ====
+# 1								1
+# 2								2
+# 3								3
+# 4								4
+# 5								5
+# 6								6
+# 7								7
+# 8								8
+# 9								9
+# 10								10
+# 100								100
+# 1000								1000
+# 10000								10000
+# 1234								1234
+# 5678								5678
+# 1357								1357
+# 2468								2468
+# 11								11
+# 12								12
+# 13								13
+# 14								14
+# 15								15
+# 16								16
+# 17								17
+# 18								18
+# 19								19
+# 99								99
+# 98								98
+# 97								97
+# 96								96
+# 95								95
+# 94								94
+# 93								93
+# 92								92
+# 91								91
+# 90								90
+# 111								111
+# 222								222
+# 333								333
+# 444								444
+# 555								555
+# 666								666
+# 777								777
+# 888								888
+# 999								999
+# 1212								1212
+# 1313								1313
+# 1414								1414
+# 1515								1515
+# 1616								1616
+# 1717								1717
+# 1818								1818
+# 1919								1919
+# 2020								2020
+# 11111								11111
+# 11112								11112
+# 11113								11113
+# 11114								11114
+# 11115								11115
+# 11116								11116
+# 11117								11117
+# 11118								11118
+# ==== END ====
+do ram20d_tb.do ram_in.txt ram_out.txt
+# ram20d
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:04:38 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 11:04:38 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:04:38 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 11:04:38 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:04:38 on Dec 31,2017
+# vcom -reportprogress 300 ram20d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram20d
+# -- Compiling architecture behav of ram20d
+# End time: 11:04:38 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:04:38 on Dec 31,2017
+# vcom -reportprogress 300 ram20d_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity ram20d_tb
+# -- Compiling architecture testbench_arch of ram20d_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ram20d
+# End time: 11:04:38 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:04:38 on Dec 31,2017, Elapsed time: 0:01:56
+# Errors: 1, Warnings: 1
+# vsim work.ram20d_tb -Gdout=ram_out.txt -Gdin=ram_in.txt 
+# Start time: 11:04:38 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram20d_tb(testbench_arch)
+# Loading work.ram20d(behav)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /ram20d_tb/uut
+# ** Error: Assertion violation.
+#    Time: 12900 ns  Iteration: 0  Process: /ram20d_tb/line__34 File: ram20d_tb.vhd
+# Break in Process line__34 at ram20d_tb.vhd line 65
+# ==== WEJSCIE ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# 11119
+# 28
+# ==== WYNIKI ====
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 100
+# 1000
+# 10000
+# 1234
+# 5678
+# 1357
+# 2468
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 99
+# 98
+# 97
+# 96
+# 95
+# 94
+# 93
+# 92
+# 91
+# 90
+# 111
+# 222
+# 333
+# 444
+# 555
+# 666
+# 777
+# 888
+# 999
+# 1212
+# 1313
+# 1414
+# 1515
+# 1616
+# 1717
+# 1818
+# 1919
+# 2020
+# 11111
+# 11112
+# 11113
+# 11114
+# 11115
+# 11116
+# 11117
+# 11118
+# 11119
+# 28
+# ==== DIFF ====
+# 1								1
+# 2								2
+# 3								3
+# 4								4
+# 5								5
+# 6								6
+# 7								7
+# 8								8
+# 9								9
+# 10								10
+# 100								100
+# 1000								1000
+# 10000								10000
+# 1234								1234
+# 5678								5678
+# 1357								1357
+# 2468								2468
+# 11								11
+# 12								12
+# 13								13
+# 14								14
+# 15								15
+# 16								16
+# 17								17
+# 18								18
+# 19								19
+# 99								99
+# 98								98
+# 97								97
+# 96								96
+# 95								95
+# 94								94
+# 93								93
+# 92								92
+# 91								91
+# 90								90
+# 111								111
+# 222								222
+# 333								333
+# 444								444
+# 555								555
+# 666								666
+# 777								777
+# 888								888
+# 999								999
+# 1212								1212
+# 1313								1313
+# 1414								1414
+# 1515								1515
+# 1616								1616
+# 1717								1717
+# 1818								1818
+# 1919								1919
+# 2020								2020
+# 11111								11111
+# 11112								11112
+# 11113								11113
+# 11114								11114
+# 11115								11115
+# 11116								11116
+# 11117								11117
+# 11118								11118
+# 11119								11119
+# 28								28
+# ==== END ====
+do bin2onehot_tb.do
+# ** Error: can't read "1": no such variable
+# Error in macro ./bin2onehot_tb.do line 4
+# can't read "1": no such variable
+#     while executing
+# "puts "Input file : \"$1\"""
+do bin2onehot_tb.do test.txt wyniki.txt
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:19 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 11:22:20 on Dec 31,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:20 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 11:22:20 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:20 on Dec 31,2017
+# vcom -reportprogress 300 bin2onehot.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# End time: 11:22:20 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:20 on Dec 31,2017
+# vcom -reportprogress 300 bin2onehot_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity bin2onehot_tb
+# -- Compiling architecture testbench_arch of bin2onehot_tb
+# End time: 11:22:20 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:22:20 on Dec 31,2017, Elapsed time: 0:17:42
+# Errors: 4, Warnings: 1
+# vsim work.bin2onehot_tb -Gdout=wyniki.txt -Gdin=test.txt 
+# Start time: 11:22:20 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.bin2onehot_tb(testbench_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bin2onehot(behavioral)
+do ram20d_tb.do ram_in.txt ram_out.txt
+# ram20d
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:25:12 on Dec 31,2017
+# vcom -reportprogress 300 devices.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package devices_pkg
+# -- Compiling package body devices_pkg
+# -- Loading package devices_pkg
+# -- Compiling entity dff
+# -- Compiling architecture flip_flop of dff
+# -- Compiling architecture latch of dff
+# -- Loading entity dff
+# -- Compiling entity bin2onehot
+# -- Compiling architecture Behavioral of bin2onehot
+# -- Compiling entity seven_seg
+# -- Compiling architecture symulacja of seven_seg
+# -- Compiling architecture synteza of seven_seg
+# -- Loading entity seven_seg
+# -- Compiling entity licznik_u
+# -- Compiling architecture behav of licznik_u
+# -- Compiling entity mux4x1
+# -- Compiling architecture with_delay of mux4x1
+# End time: 11:25:12 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:25:12 on Dec 31,2017
+# vcom -reportprogress 300 gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package gates_pkg
+# -- Compiling package body gates_pkg
+# -- Loading package gates_pkg
+# -- Compiling entity and2
+# -- Compiling architecture dataflow of and2
+# -- Compiling entity and3
+# -- Compiling architecture dataflow of and3
+# -- Compiling entity and4
+# -- Compiling architecture dataflow of and4
+# -- Compiling entity and5
+# -- Compiling architecture dataflow of and5
+# -- Compiling entity or2
+# -- Compiling architecture dataflow of or2
+# -- Compiling entity or3
+# -- Compiling architecture dataflow of or3
+# -- Compiling entity or4
+# -- Compiling architecture dataflow of or4
+# -- Compiling entity or5
+# -- Compiling architecture dataflow of or5
+# -- Compiling entity inverter
+# -- Compiling architecture dataflow of inverter
+# -- Compiling entity nand2
+# -- Compiling architecture dataflow of nand2
+# -- Compiling entity nand3
+# -- Compiling architecture dataflow of nand3
+# -- Compiling entity nand4
+# -- Compiling architecture dataflow of nand4
+# -- Compiling entity nand5
+# -- Compiling architecture dataflow of nand5
+# -- Compiling entity nor2
+# -- Compiling architecture dataflow of nor2
+# -- Compiling entity nor3
+# -- Compiling architecture dataflow of nor3
+# -- Compiling entity nor4
+# -- Compiling architecture dataflow of nor4
+# -- Compiling entity nor5
+# -- Compiling architecture dataflow of nor5
+# -- Compiling entity not1
+# -- Compiling architecture dataflow of not1
+# -- Compiling entity xor2
+# -- Compiling architecture dataflow of xor2
+# -- Compiling entity xnor2
+# -- Compiling architecture dataflow of xnor2
+# End time: 11:25:12 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:25:12 on Dec 31,2017
+# vcom -reportprogress 300 ram20d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram20d
+# -- Compiling architecture behav of ram20d
+# End time: 11:25:12 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:25:12 on Dec 31,2017
+# vcom -reportprogress 300 ram20d_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity ram20d_tb
+# -- Compiling architecture testbench_arch of ram20d_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ram20d
+# End time: 11:25:12 on Dec 31,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:25:13 on Dec 31,2017, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 0
+# vsim work.ram20d_tb -Gdout=ram_out.txt -Gdin=ram_in.txt 
+# Start time: 11:25:13 on Dec 31,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram20d_tb(testbench_arch)
+# Loading work.ram20d(behav)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /ram20d_tb/uut
+# ** Error: Assertion violation.
+#    Time: 12900 ns  Iteration: 0  Process: /ram20d_tb/line__34 File: ram20d_tb.vhd
+# Break in Process line__34 at ram20d_tb.vhd line 65
+exit
+# End time: 11:25:47 on Dec 31,2017, Elapsed time: 0:00:34
+# Errors: 1, Warnings: 1

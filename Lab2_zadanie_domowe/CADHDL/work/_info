@@ -165,7 +165,7 @@ R10
 R11
 R12
 Ebin2onehot
-Z13 w1511168048
+Z13 w1511171343
 R1
 R2
 R3
@@ -177,9 +177,9 @@ VVSWhf3X]Y3;@@;alDbFFD1
 !s100 E5=HbOYYTEeR9HjOU0?9>2
 R6
 32
-Z16 !s110 1511168146
+Z16 !s110 1514642946
 !i10b 1
-Z17 !s108 1511168146.000000
+Z17 !s108 1514642946.000000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/devices.vhd|
 Z19 !s107 /home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/devices.vhd|
 !i113 1
@@ -188,11 +188,11 @@ R12
 Abehavioral
 R1
 R2
-DEx4 work 10 bin2onehot 0 22 VSWhf3X]Y3;@@;alDbFFD1
+Z20 DEx4 work 10 bin2onehot 0 22 VSWhf3X]Y3;@@;alDbFFD1
 l114
 L112
-V`RFf_29LFOeD::?RHO7B`2
-!s100 Do8LzG4N9dZIdXYD8GD8f1
+Z21 V`RFf_29LFOeD::?RHO7B`2
+Z22 !s100 Do8LzG4N9dZIdXYD8GD8f1
 R6
 32
 R16
@@ -204,93 +204,93 @@ R19
 R11
 R12
 Ecounter_bcd_2digits
-Z20 w1511168041
+Z23 w1511168041
 R1
 R2
 R3
-Z21 8/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd
-Z22 F/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd
+Z24 8/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd
+Z25 F/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd
 l0
 L4
 VDL[Po=?6lc>f:E]c[KAI?0
 !s100 7W^U4h3BH]cQXe_NnfKQh0
 R6
 32
-Z23 !s110 1511168152
+Z26 !s110 1511168152
 !i10b 1
-Z24 !s108 1511168152.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd|
-Z26 !s107 /home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd|
+Z27 !s108 1511168152.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd|
+Z29 !s107 /home/mstanek/Studia/NCAD/NCAD/Lab2_zadanie_domowe/CADHDL/counter_bcd_2digits.vhd|
 !i113 1
 R11
 R12
 Astruct
-Z27 DEx4 work 5 nand4 0 22 g4=C=0T`CX<0`<bL2ebOl2
-Z28 DEx4 work 8 inverter 0 22 `gHeU`cUzW4GV5P1AXf]42
-Z29 DEx4 work 9 seven_seg 0 22 UKOLTmZQebf9m:@azn4l80
-Z30 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z32 DEx4 work 9 licznik_u 0 22 zAU0Wb[9XXhQRd=A010cI1
+Z30 DEx4 work 5 nand4 0 22 g4=C=0T`CX<0`<bL2ebOl2
+Z31 DEx4 work 8 inverter 0 22 `gHeU`cUzW4GV5P1AXf]42
+Z32 DEx4 work 9 seven_seg 0 22 UKOLTmZQebf9m:@azn4l80
+Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z34 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z35 DEx4 work 9 licznik_u 0 22 zAU0Wb[9XXhQRd=A010cI1
 R1
 R2
-Z33 DEx4 work 19 counter_bcd_2digits 0 22 DL[Po=?6lc>f:E]c[KAI?0
+Z36 DEx4 work 19 counter_bcd_2digits 0 22 DL[Po=?6lc>f:E]c[KAI?0
 l21
 L15
 VUWMLQj@jW2o8L:H]Y^1GU1
 !s100 [_cM<^3GZA^9W4oO@3EgK2
 R6
 32
-R23
-!i10b 1
-R24
-R25
 R26
+!i10b 1
+R27
+R28
+R29
 !i113 1
 R11
 R12
 Ecounter_bcd_2digits_tb
-Z34 w1511171080
+Z37 w1511171080
 R1
 R2
 R3
-Z35 8counter_bcd_2digits_tb.vhd
-Z36 Fcounter_bcd_2digits_tb.vhd
+Z38 8counter_bcd_2digits_tb.vhd
+Z39 Fcounter_bcd_2digits_tb.vhd
 l0
 L4
 VfYmUZ<1l=8TXWXlAiB13O2
 !s100 YfXeG=GnoOFj;9nS8nMTJ0
 R6
 32
-Z37 !s110 1511171090
+Z40 !s110 1511171090
 !i10b 1
-Z38 !s108 1511171090.000000
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|counter_bcd_2digits_tb.vhd|
-Z40 !s107 counter_bcd_2digits_tb.vhd|
+Z41 !s108 1511171090.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|counter_bcd_2digits_tb.vhd|
+Z43 !s107 counter_bcd_2digits_tb.vhd|
 !i113 1
 R11
 R12
 Abehav
-R33
+R36
 R1
 R2
-Z41 DEx4 work 22 counter_bcd_2digits_tb 0 22 fYmUZ<1l=8TXWXlAiB13O2
+DEx4 work 22 counter_bcd_2digits_tb 0 22 fYmUZ<1l=8TXWXlAiB13O2
 l13
 L7
-Z42 VjoJh7U^C=3H=zYTAFI:j[3
-Z43 !s100 4mi5RFWAZ;o^ID@EI;^5I2
+VjoJh7U^C=3H=zYTAFI:j[3
+!s100 4mi5RFWAZ;o^ID@EI;^5I2
 R6
 32
-R37
-!i10b 1
-R38
-R39
 R40
+!i10b 1
+R41
+R42
+R43
 !i113 1
 R11
 R12
 Pdevices_pkg
-R30
-R31
+R33
+R34
 R1
 R2
 R13
@@ -312,15 +312,15 @@ R19
 R11
 R12
 Bbody
-DPx4 work 11 devices_pkg 0 22 5`FQ_SDP101UzMkS_jM392
-R30
-R31
+Z44 DPx4 work 11 devices_pkg 0 22 5`FQ_SDP101UzMkS_jM392
+R33
+R34
 R1
 R2
 l0
 L63
-VDEB>9[lFRUf_5DERLXf4J0
-!s100 cSfD4@;hI^5a;^DOEl13F3
+Z45 VDEB>9[lFRUf_5DERLXf4J0
+Z46 !s100 cSfD4@;hI^5a;^DOEl13F3
 R6
 32
 R16
@@ -355,11 +355,11 @@ R12
 Alatch
 R1
 R2
-Z44 DEx4 work 3 dff 0 22 k2XlOQPHTOKSS?UZRR3``0
+Z47 DEx4 work 3 dff 0 22 k2XlOQPHTOKSS?UZRR3``0
 l93
 L91
-V:=6J61bgY@_icIkO]nAk63
-!s100 @cUGLBaiOm@=6STXWLe1Z3
+Z48 V:=6J61bgY@_icIkO]nAk63
+Z49 !s100 @cUGLBaiOm@=6STXWLe1Z3
 R6
 32
 R16
@@ -373,11 +373,11 @@ R12
 Aflip_flop
 R1
 R2
-R44
+R47
 l80
 L78
-V5dYRe5WPc`HfSDaaIQaZi3
-!s100 9=6OS5d=f_E>XCY1TgO]`3
+Z50 V5dYRe5WPc`HfSDaaIQaZi3
+Z51 !s100 9=6OS5d=f_E>XCY1TgO]`3
 R6
 32
 R16
@@ -451,7 +451,7 @@ R12
 Adataflow
 R1
 R2
-R28
+R31
 l224
 L223
 VY?Yakl4<aEW1gQGSEM0Xa3
@@ -468,8 +468,8 @@ R11
 R12
 Elicznik_u
 R13
-R30
-R31
+R33
+R34
 R1
 R2
 R3
@@ -490,15 +490,15 @@ R19
 R11
 R12
 Abehav
-R30
-R31
+R33
+R34
 R1
 R2
-R32
+R35
 l206
 L203
-V1l;B1>Qd02<KV3UkR0fFA0
-!s100 Jn8o16]9[okWY5@SlJVFT0
+Z52 V1l;B1>Qd02<KV3UkR0fFA0
+Z53 !s100 Jn8o16]9[okWY5@SlJVFT0
 R6
 32
 R16
@@ -533,11 +533,11 @@ R12
 Awith_delay
 R1
 R2
-DEx4 work 6 mux4x1 0 22 Yc;Iz99HOBU<^B`Ue5IQm3
+Z54 DEx4 work 6 mux4x1 0 22 Yc;Iz99HOBU<^B`Ue5IQm3
 l239
 L237
-VPD]Tf@]Ehbag]:>R2EY7`3
-!s100 @1:Hn[AH`ALd<4RYdKEBO0
+Z55 VPD]Tf@]Ehbag]:>R2EY7`3
+Z56 !s100 @1:Hn[AH`ALd<4RYdKEBO0
 R6
 32
 R16
@@ -650,7 +650,7 @@ R12
 Adataflow
 R1
 R2
-R27
+R30
 l260
 L259
 V?_8UW37nfLc=JZUi]Jz_o1
@@ -1079,11 +1079,11 @@ R12
 Asynteza
 R1
 R2
-R29
+R32
 l170
 L168
-VEaNWbKbD[XOcNWeP2RHLL0
-!s100 6S_mKFQiVAC@jLRASdzBS2
+Z57 VEaNWbKbD[XOcNWeP2RHLL0
+Z58 !s100 6S_mKFQiVAC@jLRASdzBS2
 R6
 32
 R16
@@ -1097,11 +1097,11 @@ R12
 Asymulacja
 R1
 R2
-R29
+R32
 l141
 L137
-VA^kTb5_:jcYL7@i4JbDIg1
-!s100 HP:oH77mnemnbnFLVNe7@3
+Z59 VA^kTb5_:jcYL7@i4JbDIg1
+Z60 !s100 HP:oH77mnemnbnFLVNe7@3
 R6
 32
 R16
