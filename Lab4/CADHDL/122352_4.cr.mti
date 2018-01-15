@@ -1,4 +1,16 @@
-/home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/devices.vhd
+/home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Compiling entity ram20d_tb
+-- Compiling architecture testbench_arch of ram20d_tb
+-- Loading package NUMERIC_STD
+-- Loading entity ram20d
+
+} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/devices.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/devices.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -23,17 +35,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity mux4x1
 -- Compiling architecture with_delay of mux4x1
 
-} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/ram20d_tb.vhd
+} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
--- Loading package std_logic_textio
--- Compiling entity ram20d_tb
--- Compiling architecture testbench_arch of ram20d_tb
--- Loading package NUMERIC_STD
--- Loading entity ram20d
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity bin2onehot
+-- Compiling architecture Behavioral of bin2onehot
 
 } {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/gates.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/gates.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -83,16 +93,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling architecture dataflow of xor2
 -- Compiling entity xnor2
 -- Compiling architecture dataflow of xnor2
-
-} {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity bin2onehot
--- Compiling architecture Behavioral of bin2onehot
 
 } {} {}} /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL/bin2onehot_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

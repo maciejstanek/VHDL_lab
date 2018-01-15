@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/mstanek/Studia/NCAD/NCAD/Lab4/CADHDL
+Eaddern
+Z0 w1514716903
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 d/home/mstanek/Studia/NCAD/NCAD/Lab5/CADHDL
+Z6 8sum3.vhd
+Z7 Fsum3.vhd
+l0
+L46
+VIf2QGbinin<[05;kARPF;0
+!s100 R[[_TcGXZ:aYR3>O138kB2
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1516010516
+!i10b 1
+Z10 !s108 1516010516.000000
+Z11 !s90 -reportprogress|300|sum3.vhd|
+Z12 !s107 sum3.vhd|
+!i113 1
+Z13 tExplicit 1 CvgOpt 0
+Ageneracja
+Z14 DEx4 work 5 fulla 0 22 ana[<PQfL_EN?o[COQL`50
+R1
+R2
+R3
+R4
+Z15 DEx4 work 6 addern 0 22 If2QGbinin<[05;kARPF;0
+l57
+L55
+ViGz3<IAIc0H4M`o2[kj_M1
+!s100 a199i4GZ7[P@^]I?`4zWS0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Efulla
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L26
+Vana[<PQfL_EN?o[COQL`50
+!s100 Eg=?GOKlGb9R6;EV@KP091
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Amix
+Z16 DEx4 work 5 halfa 0 22 Vb1J>jgIhILGY6Albz[^W3
+R1
+R2
+R3
+R4
+R14
+l33
+L31
+VD9R5dVQlKJi;b3oK0MTWJ1
+!s100 HKR>B3:z<R`V?Hb1_ZEF53
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Ehalfa
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L10
+VVb1J>jgIhILGY6Albz[^W3
+!s100 @mfLdSCDh2e6=iLhNVC<S1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Adf
+R1
+R2
+R3
+R4
+R16
+l16
+L15
+Vihl>B[M0_O8VVU;EPM@k03
+!s100 OHMnJ5XMlnXR;>ljk8j1M0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Esum3_tb
+Z17 w1516010508
+Z18 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R3
+R4
+R5
+Z19 8sum3_tb.vhd
+Z20 Fsum3_tb.vhd
+l0
+L7
+VooCJfjbA<0klA`7:gzTV^2
+!s100 ?<g[f>o:3=Yl65]SAj3=41
+R8
+32
+R9
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|sum3_tb.vhd|
+Z22 !s107 sum3_tb.vhd|
+!i113 1
+R13
+Atestbench_arch
+R2
+R15
+R18
+R1
+R3
+R4
+Z23 DEx4 work 7 sum3_tb 0 22 ooCJfjbA<0klA`7:gzTV^2
+l23
+L13
+Z24 Vgn^9IM:0>Lo__R1YC7:0E3
+Z25 !s100 zU9[a>63jKakLjhP>Ce8S3
+R8
+32
+R9
+!i10b 1
+R10
+R21
+R22
+!i113 1
+R13
