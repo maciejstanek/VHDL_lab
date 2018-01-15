@@ -1,0 +1,20 @@
+Dzień dobry
+===========
+
+Nie było nas na ostatnich zajęciach. Dopytaliśmy się kolegów i wydaje nam się,
+że to co zrobiliśmy powinno być okej. Jesli nie prosze o kontakt.
+
+pliki sum3_tb.*
+===============
+
+Testują wyczerpująco wszystkie kombinacje. Skrypt wymaga podania N - liczby
+bitów.
+
+pliki sum3_file_tb.*
+===============
+
+Test pobiera pary liczb z zadanego pliku i wypisuje je do innego pliku. Skrypt
+wymaga podania trzech argumentów: FIN FOUT - anzwy pliku wejściowego i
+wyjściowego. Ilość bitów jest ustalona na 30. Przykładowe wejście zawiera plik
+in.txt.
+
