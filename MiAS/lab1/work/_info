@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/modeltech64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+VoUk1:H]cDmLcY`MT>cfm53
+Z1 04 3 7 work gen default 1
+=1-f46d04d4e9e4-5a981c17-11d-eb0
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.2c;57
+Z3 dC:/modeltech64_10.2c/examples
+!s110 1519918103
+T_opt1
+V=dEd0AHX`eJBI0oB[KZjY3
+R1
+=1-f46d04d4e9e4-5a981d71-11d-f6c
+Z4 o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+R3
+!s110 1519918449
+T_opt2
+VOkNF14T_[jO@3DkT4ginm1
+04 3 5 work gen empty 1
+=1-f46d04d4e9e4-5a981a71-2c8-550
+R4
+n@_opt2
+R2
+R3
+!s110 1519917681
+Egen
+Z5 w1519918250
+Z6 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z8 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z9 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z10 dC:/stanek/NCAD/MiAS/lab1
+Z11 8gen.vhd
+Z12 Fgen.vhd
+l0
+L6
+V[LZ_WeYO0e;J48Oj7AiA_2
+!s100 aAJPOz=Q36V4zg3OnP:8J2
+Z13 OL;C;10.2c;57
+32
+Z14 !s110 1519918550
+!i10b 1
+Z15 !s108 1519918550.977000
+Z16 !s90 -reportprogress|300|gen.vhd|
+Z17 !s107 gen.vhd|
+!i111 0
+Z18 tExplicit 1
+Aempty
+R6
+R7
+R8
+R9
+Z19 DEx4 work 3 gen 0 22 [LZ_WeYO0e;J48Oj7AiA_2
+l27
+L26
+VUGoVmz]PK=lVYj7dOZWzA1
+Z20 !s100 M1MS0JR6lHfLFVe;[gZUR3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i111 0
+R18
+Adefault
+R6
+R7
+R8
+R9
+R19
+l16
+L14
+VkTNPmlEaAK2B@^5zj`k=U3
+Z21 !s100 I1S@`j0P;zA6Mh2WH<zjD3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i111 0
+R18
