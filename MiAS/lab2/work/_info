@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/stanek/NCAD/MiAS/lab1
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Edecim
+Z0 w1520527665
+Z1 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z5 dC:/stanek/NCAD/MiAS/lab2
+Z6 8C:\stanek\NCAD\MiAS\lab2\decim.vhd
+Z7 FC:\stanek\NCAD\MiAS\lab2\decim.vhd
+l0
+L6
+V`<FWY=Yo1:j>=Pz;`Z4303
+!s100 e@<5TOV]d;^_GRE`o[Q6b1
+Z8 OL;C;10.2c;57
+32
+Z9 !s110 1520527672
+!i10b 1
+Z10 !s108 1520527672.845000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\stanek\NCAD\MiAS\lab2\decim.vhd|
+Z12 !s107 C:\stanek\NCAD\MiAS\lab2\decim.vhd|
+!i111 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Adefault
+R1
+R2
+R3
+R4
+DEx4 work 5 decim 0 22 `<FWY=Yo1:j>=Pz;`Z4303
+l14
+L13
+VgfROd;BLUU8TKzBUZAe;32
+!s100 D5iXnn>L0;jnZcFRFRVO@2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i111 0
+R13
+R14
