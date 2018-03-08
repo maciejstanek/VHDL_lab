@@ -9,89 +9,148 @@ Z0 dC:/modeltech64_10.2c/examples
 !i10e 25
 !i10f 100
 T_opt
-VoUk1:H]cDmLcY`MT>cfm53
-Z1 04 3 7 work gen default 1
-=1-f46d04d4e9e4-5a981c17-11d-eb0
-o-quiet -auto_acc_if_foreign -work work +acc
+V<?DWeA1l6h@N3lLbZC:7m0
+04 52 10 work uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe behavioral 1
+=1-f46d04d4e9e4-5aa14e91-ed-dc8
+Z1 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 Z2 OL;O;10.2c;57
 Z3 dC:/modeltech64_10.2c/examples
-!s110 1519918103
+!s110 1520520849
 T_opt1
 V=dEd0AHX`eJBI0oB[KZjY3
-R1
+04 3 7 work gen default 1
 =1-f46d04d4e9e4-5a981d71-11d-f6c
-Z4 o-quiet -auto_acc_if_foreign -work work
+R1
 n@_opt1
 R2
 R3
 !s110 1519918449
 T_opt2
-VOkNF14T_[jO@3DkT4ginm1
-04 3 5 work gen empty 1
-=1-f46d04d4e9e4-5a981a71-2c8-550
-R4
+!s110 1520522576
+VmmMhFGbQ5S>YnLY[gbG`g2
+04 52 10 work uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe structural 1
+=1-f46d04d4e9e4-5aa15550-70-c30
+R1
 n@_opt2
 R2
-R3
-!s110 1519917681
 Egen
-Z5 w1519918250
-Z6 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
-Z7 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
-Z8 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z9 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
-Z10 dC:/stanek/NCAD/MiAS/lab1
-Z11 8gen.vhd
-Z12 Fgen.vhd
+Z4 w1519918250
+Z5 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z7 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z9 dC:/stanek/NCAD/MiAS/lab1
+Z10 8gen.vhd
+Z11 Fgen.vhd
 l0
 L6
 V[LZ_WeYO0e;J48Oj7AiA_2
-!s100 aAJPOz=Q36V4zg3OnP:8J2
-Z13 OL;C;10.2c;57
+Z12 OL;C;10.2c;57
 32
-Z14 !s110 1519918550
+Z13 !s110 1520518821
+Z14 !s108 1520518821.647000
+Z15 !s90 -reportprogress|300|gen.vhd|
+Z16 !s107 gen.vhd|
+Z17 tExplicit 1
+!s100 aAJPOz=Q36V4zg3OnP:8J2
 !i10b 1
-Z15 !s108 1519918550.977000
-Z16 !s90 -reportprogress|300|gen.vhd|
-Z17 !s107 gen.vhd|
 !i111 0
-Z18 tExplicit 1
 Aempty
+R5
 R6
 R7
 R8
-R9
-Z19 DEx4 work 3 gen 0 22 [LZ_WeYO0e;J48Oj7AiA_2
+Z18 DEx4 work 3 gen 0 22 [LZ_WeYO0e;J48Oj7AiA_2
 l27
 L26
 VUGoVmz]PK=lVYj7dOZWzA1
-Z20 !s100 M1MS0JR6lHfLFVe;[gZUR3
-R13
+R12
 32
+R13
 R14
-!i10b 1
 R15
 R16
 R17
+!s100 M1MS0JR6lHfLFVe;[gZUR3
+!i10b 1
 !i111 0
-R18
 Adefault
+R5
+R6
+R7
+R8
+R18
+l16
+L14
+VkTNPmlEaAK2B@^5zj`k=U3
+R12
+32
+R13
+R14
+R15
+R16
+R17
+!s100 I1S@`j0P;zA6Mh2WH<zjD3
+!i10b 1
+!i111 0
+Euklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe
+Z19 w1520522568
+R5
 R6
 R7
 R8
 R9
-R19
-l16
-L14
-VkTNPmlEaAK2B@^5zj`k=U3
-Z21 !s100 I1S@`j0P;zA6Mh2WH<zjD3
-R13
+Z20 8uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd
+Z21 Fuklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd
+l0
+L6
+VN66_U4Bo`B68PcBn8UfR30
+R12
 32
-R14
-!i10b 1
-R15
-R16
+Z22 !s110 1520522574
+Z23 !s108 1520522574.369000
+Z24 !s90 -reportprogress|300|uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd|
+Z25 !s107 uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd|
 R17
+!s100 fLkXJG@]AD_S7WoEOF2T_2
+!i10b 1
 !i111 0
-R18
+Astructural
+R5
+R6
+R7
+R8
+Z26 DEx4 work 52 uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe 0 22 N66_U4Bo`B68PcBn8UfR30
+l33
+L30
+VeCLR_>hY3]9EBjAT0V`oS1
+R12
+32
+R22
+R23
+R24
+R25
+R17
+!s100 3i6OVZ^ZX<dT0A9XFm3RL1
+!i10b 1
+!i111 0
+Abehavioral
+R5
+R6
+R7
+R8
+R26
+l14
+L13
+V9FE^?fW`NYH7_dNd2I3Wi2
+R12
+32
+R22
+R23
+R24
+R25
+R17
+!s100 2E6>:TnUjnAz?MhX9LPIC3
+!i10b 1
+!i111 0
