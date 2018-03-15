@@ -16,19 +16,20 @@ begin
     variable progress: integer := 0;
     variable result: integer := osr;
   begin
-    if data_in = '1' then
-      result := result + 1;
-    end if;
-    if data_in = '0' then
-      result := result - 1;
-    end if;
-
-    if progress = osr then
-      progress := 0;
-      data_out <= result;
-      result := osr;
-    else
+    if rising_edge(clk) then
+      if data_in = '1' then
+        result := result + 1;
+      end if;
+      if data_in = '0' then
+        result := result - 1;
+      end if;
+      
       progress := progress + 1;
+      if progress = osr then
+        progress := 0;
+        data_out <= result;
+        result := osr;
+      end if;
     end if;
   end process;
 end architecture;

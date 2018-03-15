@@ -11,7 +11,7 @@ vcom ${d}.vhd
 vcom ${d}_tb.vhd
 
 vsim work.${d}_tb -Gdin=$din -Gdout=$dout
-foreach s {clk data_in data_out} {
+foreach s in {clk data_in data_out} {
     add wave -position insertpoint sim:/${d}_tb/${s}_i
 }
 run -all

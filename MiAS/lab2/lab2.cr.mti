@@ -1,13 +1,11 @@
-C:/stanek/NCAD/MiAS/lab2/decim_tb.vhd {0 {vcom -work work -2002 -explicit -vopt C:/stanek/NCAD/MiAS/lab2/decim_tb.vhd
+C:/stanek/NCAD/MiAS/lab2/decim.vhd {1 {vcom -work work -2002 -explicit -vopt {C:\stanek\NCAD\MiAS\lab2\decim.vhd}
 Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
 -- Loading package STANDARD
-** Error: C:/stanek/NCAD/MiAS/lab2/decim_tb.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity decim
+-- Compiling architecture default of decim
 
-
-} {4.0 5.0} {}} C:/stanek/NCAD/MiAS/lab2/decim_tb.do {0 {vcom -work work -2002 -explicit -vopt C:/stanek/NCAD/MiAS/lab2/decim_tb.do
-Model Technology ModelSim SE-64 vcom 10.2c Compiler 2013.07 Jul 19 2013
--- Loading package STANDARD
-** Error: C:/stanek/NCAD/MiAS/lab2/decim_tb.do(2): (vcom-1491) Empty source files.
-
-
-} {4.0 5.0} {}}
+} {} {}}

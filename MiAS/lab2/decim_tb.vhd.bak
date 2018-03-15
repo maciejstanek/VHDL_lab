@@ -1,57 +1,54 @@
 library ieee;
 use ieee.std_logic_1164.all;
+library std;
+use std.textio.all;
 
 entity decim_tb is
   generic(
-    din: string := "in.txt";
-    dout: string := "out.txt");
+    din: string := "0.in.txt";
+    dout: string := "0.out.txt");
 end entity decim_tb;
 
 architecture default of decim_tb is
   file infile: text open read_mode is din;
-  file outfile : text open write_mode is dout;
-  constant clk_period : time := 20 ns;
+  file outfile: text open write_mode is dout;
+  constant clk_period: time := 20 ns;
   signal clk_i, data_in_i: std_logic;
   signal data_out_i: integer;
 begin 
   uut: entity work.decim(default)
-    generic map(osr => 16);
+    generic map(osr => 32)
     port map(
       clk => clk_i,
       data_in => data_in_i,
       data_out => data_out_i);
   
   process
-		variable text_in, text_out : line;
-		variable bit_in, value_out : integer := 0;
+		variable text_in, text_out: line;
+		variable value_out: integer := 0;
 	begin
-    we_i <= '1';
-		oe_i <= '0';
-		clk_i <= '0';
-		wait for clk_period;
-	  while not endfile(infile) loop
-	  	readline(infile, text_in);
-	  	read(text_in, data_in);
-			data_i <= conv_std_logic_vector(data_in, 16);
-	  	clk_i <= '0', '1' after 25 ns, '0' after 50 ns; 
-			addr_i <= conv_std_logic_vector(address_in, 6);
-	  	wait for clk_period;
-			address_in := address_in + 1;
-    end loop;
-		
-		we_i <= '0';
-		oe_i <= '1';
-		clk_i <= '0';
-		data_i <= (others => 'Z');
-		wait for clk_period;
-	  for address_out in 0 to (address_in - 1) loop
-			addr_i <= conv_std_logic_vector(address_out, 6);
-	  	wait for clk_period;
-			data_out := conv_integer(unsigned(data_i));
-			write(text_out, data_out);
-			writeline(outfile, text_out);
-			wait for clk_period;
-    end loop;
+	  clk_i <= '0';
+	  wait for clk_period;
+	    while not endfile(infile) loop
+	  	   readline(infile, text_in);
+	  	   if text_in(1) = '#' then
+	  	     -- Do not analyze comments (lines starting with a pound)
+	  	   else
+	  	     for i in text_in'range loop
+	  	     if text_in(i) = '1' then
+            data_in_i <= '1';
+          elsif text_in(i) = '0' then
+            data_in_i <= '0';
+          end if;
+          clk_i <= '1';
+	  	     wait for clk_period;
+	  	     clk_i <= '0';
+	  	     wait for clk_period;
+        end loop;
+		    write(text_out, data_out_i);
+		    writeline(outfile, text_out);
+	  	 end if;
+    end loop;    
 	  assert false severity error;
 	end process;
 end architecture;
