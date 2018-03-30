@@ -1,0 +1,141 @@
+\documentclass[13pt, a4paper, twoside]{mwart}
+\usepackage[a4paper]{geometry}
+\geometry{left=3cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=1.5cm}
+\usepackage[pdftex]{graphicx}
+\graphicspath{{img/}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{tabularx}
+\usepackage{datetime}
+\usepackage{listings}
+\usepackage{courier}
+\lstset{basicstyle=\footnotesize}
+
+\newcommand{\coursename}{Modelowanie i Analiza Systemów}
+\newcommand{\labnumber}{2}
+\newcommand{\labname}{Testbench układu decymacyjnego}
+\newcommand{\studentname}{Maciej Stanek}
+\newcommand{\studentnumber}{122352}
+\newdate{labdate}{16}{3}{2018}
+\newdate{labreportdate}{30}{3}{2018}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\textbf{LAB\#\labnumber} \labname}
+\fancyhead[RE]{\coursename}
+\fancyfoot{}
+
+\usepackage{xcolor}
+\usepackage{framed}
+\colorlet{shadecolor}{gray!10}
+\newcounter{taskcounter}
+\newcommand{\task}[1]{
+  \stepcounter{taskcounter}
+  \vspace{0.2cm}
+  \begin{shaded}
+    \noindent\textbf{Zadanie \thetaskcounter:} \textit{#1}%
+  \end{shaded}
+  \vspace{0.2cm}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\LARGE{Sprawozdanie z laboratorium}}
+\end{center}
+
+\noindent
+\begin{tabularx}{\linewidth}{rX}
+  \textbf{Przedmiot} & \coursename \\
+  \textbf{Temat laboratorium} & \labname \\
+  \textbf{Numer laboratorium} & \labnumber \\
+  \textbf{Imię i nazwisko} & \studentname \\
+  \textbf{Numer indeksu} & \studentnumber \\
+  \textbf{Data wykonania} & \displaydate{labdate} \\
+  \textbf{Data sprawozdania} & \displaydate{labreportdate} \\
+\end{tabularx}
+
+\vspace{0.3cm}
+\noindent\hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\task{Opis koncepcji układu decymacyjnego i wyjaśnienie jego działania.}
+
+\task{Opis koncepcji działanie całego układu testbenchu – zależności czasowe taktowania.}
+
+\task{Wyjaśnienie znaczenia/funkcji wszystkich portów (we/wy) oraz parametrów (generic). W kodzie należy nadać wartości domyślne (default) wszystkim parametrom.}
+
+\task{Kody źródłowe VHDL – Testbenchu – bogato udokumentowany komentarzami.}
+
+\task{Kod źródłowy układu decymacyjnego - bogato udokumentowany komentarzami.}
+
+\task{Plik wejściowy (z opisem sposobu jego generacji i wyjaśnienie co jest w nim zakodowane i z jakimi parametrami OSR).}
+
+\task{Plik wyjściowy z wyjaśnieniem zawartości.}
+
+\task{Zrzut ekranu przedstawiający działania układu, który zawiera co najmniej następujące przebiegi (sygnały):
+  \begin{itemize}
+    \item Zegar bazowy (CLK),
+    \item Bitstream wejściowy (Data\_In) --- przed decymacją,
+    \item Ciąg wyjściowy liczb całkowitych reprezentujący sygnał wejściowy (Data\_Out).
+  \end{itemize}}
+
+%\lstinputlisting[
+%  language=VHDL,
+%  caption={Implementacja generatora z zadania pierwszego wraz z pustą architekturą}
+%  ]{../lab1/gen.vhd}
+%
+%\lstinputlisting[
+%  language=tcl,
+%  caption={Skrypt testujący generator z zadania drugiego}
+%  ]{../lab1/gen.do}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\linewidth]{1.png}
+%	\caption{Wyniki symulacji generatorów z zadania pierwszego i drugiego.}
+%\end{figure}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{karnaugh.png}
+%	\caption{Tablica Karnaugh dla wyjść EQ i GE}
+%\end{figure}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{geeq.png}
+%	\caption{Równania wyjść EQ i GE wyznaczone na podstawie tablicy Karnaugh}
+%\end{figure}
+%
+%\lstinputlisting[
+%  language=VHDL,
+%  caption={Implementacja sumatora w architekturach behawioralnej i strukturalnej}
+%  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd}
+%
+%\lstinputlisting[
+%  language=tcl,
+%  caption={Skrypt testujący sumator z zadania trzeciego}
+%  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.do}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\linewidth]{compare_structural.png}
+%  \caption{Wynik działania architektury strukturalnej}
+%\end{figure}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\linewidth]{compare_behavioral.png}
+%  \caption{Wynik działania architektury behawioralnej}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
