@@ -13,7 +13,6 @@
 \usepackage{tabularx}
 \usepackage{datetime}
 \usepackage{listings}
-\usepackage{courier}
 \lstset{basicstyle=\footnotesize}
 
 \newcommand{\coursename}{Modelowanie i Analiza Systemów}
@@ -43,6 +42,8 @@
   \end{shaded}
   \vspace{0.2cm}}
 
+\renewcommand{\labelitemi}{$\bullet$}
+
 \begin{document}
 
 \begin{center}
@@ -67,18 +68,59 @@
 
 \task{Opis koncepcji układu decymacyjnego i wyjaśnienie jego działania.}
 
-\task{Opis koncepcji działanie całego układu testbenchu – zależności czasowe taktowania.}
+Układ decymacyjny to urządzenie zliczające ilość zer i jedynek w kolejnych segmentach ciągu bitowego o stałej szerokości OSR. Licznik rozpoczyna zliczanie na wartości OSR i inkrementuje bądź dekrementuje jego wartość po otrzymaniu wartości odpowiednio 1 lub 0. Po analizie OSR bitów, układ wystawia na wyjściu wyznaczoną wartość końcową (w przedziale od 0 do 2OSR), resetuje się do wartości OSR i rozpoczyna kolejny cykl.
+
+\task{Opis koncepcji działania całego układu testbenchu --- zależności czasowe taktowania.}
+
+Testbench instancjonuje decymator, po czym ładuje z zewnętrznego pliku segmenty ciągu bitowego. Dla każdego takie segmentu wprowadza go on synchronicznie na wejście decymatora i wypisuje do pliku wyjściowego wartość wynikową.
 
 \task{Wyjaśnienie znaczenia/funkcji wszystkich portów (we/wy) oraz parametrów (generic). W kodzie należy nadać wartości domyślne (default) wszystkim parametrom.}
 
-\task{Kody źródłowe VHDL – Testbenchu – bogato udokumentowany komentarzami.}
+\begin{itemize}
+  \item Port \texttt{clk} --- pozwala na synchroniczne wprowadzanie ciągu bitowego.
+  \item Port \texttt{data\_in} --- wejście synchroniczne ciągu bitowego.
+  \item Port \texttt{data\_out} --- port wyjściowy decymatora.
+  \item Parametr \texttt{osr} --- ilość bitów w jednym segmencie.
+\end{itemize}
 
-\task{Kod źródłowy układu decymacyjnego - bogato udokumentowany komentarzami.}
+\task{Kody źródłowe VHDL --- testbenchu.}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Testbench układu decymacyjnego.}
+  ]{../lab2/decim_tb.vhd}
+
+\lstinputlisting[
+  language=tcl,
+  caption={Skrypt uruchamiający testbench.}
+  ]{../lab2/decim_tb.do}
+
+\task{Kod źródłowy układu decymacyjnego.}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Układ decymacyjny.}
+  ]{../lab2/decim.vhd}
 
 \task{Plik wejściowy (z opisem sposobu jego generacji i wyjaśnienie co jest w nim zakodowane i z jakimi parametrami OSR).}
 
+Składnia pliku wejściowego wymaga podania ciągu wejściowego w postaci słów złożonych z OCR zer i jedynek, zakończonych znakiem nowej linii. Testbench dopuszcza komentarze w pliku wejściowym (zgodnie z zaleceniami dra Śniatały). Komentarzem jest każda linijka rozpoczynająca się od symbolu kratki.
+
+\lstinputlisting[
+  language=sh,
+  caption={Plik wejściowy z komentarzami.}
+  ]{../lab2/0.in.txt}
+
 \task{Plik wyjściowy z wyjaśnieniem zawartości.}
 
+Plik wyjściowy zawiera liczby, będące wynikiem działania decymatora dla poszczególnych segmentów z pliku wejściowego. Testbench przepisuje komentarze z pliku wejściowego do pliku wyjściowego.
+
+\lstinputlisting[
+  language=sh,
+  caption={Plik wyjściowy z przepisanymi komentarzami.}
+  ]{../lab2/0.out.txt}
+
+\clearpage
 \task{Zrzut ekranu przedstawiający działania układu, który zawiera co najmniej następujące przebiegi (sygnały):
   \begin{itemize}
     \item Zegar bazowy (CLK),
@@ -86,55 +128,11 @@
     \item Ciąg wyjściowy liczb całkowitych reprezentujący sygnał wejściowy (Data\_Out).
   \end{itemize}}
 
-%\lstinputlisting[
-%  language=VHDL,
-%  caption={Implementacja generatora z zadania pierwszego wraz z pustą architekturą}
-%  ]{../lab1/gen.vhd}
-%
-%\lstinputlisting[
-%  language=tcl,
-%  caption={Skrypt testujący generator z zadania drugiego}
-%  ]{../lab1/gen.do}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=\linewidth]{1.png}
-%	\caption{Wyniki symulacji generatorów z zadania pierwszego i drugiego.}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.4\linewidth]{karnaugh.png}
-%	\caption{Tablica Karnaugh dla wyjść EQ i GE}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.4\linewidth]{geeq.png}
-%	\caption{Równania wyjść EQ i GE wyznaczone na podstawie tablicy Karnaugh}
-%\end{figure}
-%
-%\lstinputlisting[
-%  language=VHDL,
-%  caption={Implementacja sumatora w architekturach behawioralnej i strukturalnej}
-%  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd}
-%
-%\lstinputlisting[
-%  language=tcl,
-%  caption={Skrypt testujący sumator z zadania trzeciego}
-%  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.do}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=\linewidth]{compare_structural.png}
-%  \caption{Wynik działania architektury strukturalnej}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=\linewidth]{compare_behavioral.png}
-%  \caption{Wynik działania architektury behawioralnej}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{wave.png}
+	\caption{Przebiegi sygnałów wejściowych i wyjściowych.}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

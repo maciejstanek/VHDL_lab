@@ -1,9 +1,3 @@
-#if {$argc < 2} {
-#  puts "Podaj dwie nazwy plikow: pierwsza to plik wejsciowy a druga to wyjsciowy."
-#}
-#puts "Input file : \"$1\""
-#puts "Out file   : \"$2\""
-
 set din "0.in.txt"
 set dout "0.out.txt"
 set d decim

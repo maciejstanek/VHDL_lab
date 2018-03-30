@@ -1,5 +1,9 @@
+# Description: Example input
+# Creation time: 2018-03-16 18:00:00
+# OCR: 32
 0
 32
+# THIS IS A COMMENT
 64
 32
 16

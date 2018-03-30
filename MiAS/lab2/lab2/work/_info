@@ -10,91 +10,99 @@ Z0 dC:/stanek/NCAD/MiAS/lab1
 !i10f 100
 T_opt
 VCdARCW2@TTdO0=j^bDP`S0
-04 8 7 work decim_tb default 1
+Z1 04 8 7 work decim_tb default 1
 =1-f46d04d4e9e4-5aaa92a6-182-10d4
-o-quiet -auto_acc_if_foreign -work work -G dout=0.out.txt -G din=0.in.txt
+Z2 o-quiet -auto_acc_if_foreign -work work -G dout=0.out.txt -G din=0.in.txt
 n@_opt
 OL;O;10.2c;57
-Z1 dC:/stanek/NCAD/MiAS/lab1
+R0
 !s110 1521128102
+T_opt1
+Z3 !s110 1522436820
+VjX[T3a1bJnG=P1^[La_K30
+R1
+=1-34de1ade90d6-5abe8ad4-e38d4-120f
+R2
+n@_opt1
+OL;O;10.3g;59
 Edecim
-Z2 w1521126059
-Z3 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
-Z4 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
-Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z6 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
-Z7 dC:/stanek/NCAD/MiAS/lab2
-Z8 8decim.vhd
-Z9 Fdecim.vhd
+Z4 w1522434868
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 d/home/mstanek/Studia/MiAS/NCAD/MiAS/lab2/lab2
+Z10 8decim.vhd
+Z11 Fdecim.vhd
 l0
 L6
-Vd34M=Teh5mG0zUQc?7`V^3
-Z10 OL;C;10.2c;57
+VeL>T7zGLi?lJXiaZIK9g?0
+!s100 EoUL@61B[IORUPWb:W;V`3
+Z12 OL;C;10.3g;59
 32
-Z11 !s110 1521128168
-Z12 !s108 1521128167.989000
-Z13 !s90 -reportprogress|300|decim.vhd|
-Z14 !s107 decim.vhd|
-Z15 tExplicit 1
-!s100 MG0obKf<Xc5cBZcE1n8R80
-!i10b 1
-!i111 0
-Adefault
 R3
-R4
-R5
-R6
-Z16 DEx4 work 5 decim 0 22 d34M=Teh5mG0zUQc?7`V^3
-l14
-L13
-VhB<KXI;5[<8RK`:z0ffNU2
-!s100 [U8Q17FK0NNU:cMKUfREd1
-R10
-32
-R11
-R12
-R13
-R14
-R15
 !i10b 1
-!i111 0
-Edecim_tb
-Z17 w1521128158
+Z13 !s108 1522436820.600969
+Z14 !s90 -reportprogress|300|decim.vhd|
+Z15 !s107 decim.vhd|
+!i113 0
+Z16 tExplicit 1
+Adefault
 R5
 R6
 R7
-Z18 8decim_tb.vhd
-Z19 Fdecim_tb.vhd
+R8
+Z17 DEx4 work 5 decim 0 22 eL>T7zGLi?lJXiaZIK9g?0
+l14
+L13
+Vl54;<dO4_gPLaFN^n@W`J3
+!s100 JhbNN^N`SiEVJEUWX]gL61
+R12
+32
+R3
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+Edecim_tb
+Z18 w1522436813
+R7
+R8
+R9
+Z19 8decim_tb.vhd
+Z20 Fdecim_tb.vhd
 l0
 L6
-VMR=_Col5ejUFj6NF>zV<Z1
-!s100 P[BMiNPA10OBh?MnnA?Ig2
-R10
+VbhihEHf09eaJ_F6czV;`I0
+!s100 B`_S85M<OZ0kD[Ha8>RD`0
+R12
 32
-R11
-!i10b 1
-Z20 !s108 1521128168.052000
-Z21 !s90 -reportprogress|300|decim_tb.vhd|
-Z22 !s107 decim_tb.vhd|
-!i111 0
-R15
-Adefault
 R3
-R4
+!i10b 1
+Z21 !s108 1522436820.643757
+Z22 !s90 -reportprogress|300|decim_tb.vhd|
+Z23 !s107 decim_tb.vhd|
+!i113 0
 R16
+Adefault
 R5
 R6
-Z23 DEx4 work 8 decim_tb 0 22 MR=_Col5ejUFj6NF>zV<Z1
+R17
+R7
+R8
+DEx4 work 8 decim_tb 0 22 bhihEHf09eaJ_F6czV;`I0
 l18
 L12
-Z24 V43>8[zhDjWXk?mS[Wo4MF1
-Z25 !s100 0MKRQj6:fIdQ9jZGn_D@@3
-R10
+VCETTiNDn^DPM?L0R>AYKQ1
+!s100 S:N]^MFQW;4nZX6Re=ob_3
+R12
 32
-R11
+R3
 !i10b 1
-R20
 R21
 R22
-!i111 0
-R15
+R23
+!i113 0
+R16

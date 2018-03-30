@@ -15,40 +15,41 @@ architecture default of decim_tb is
   constant clk_period: time := 20 ns;
   signal clk_i, data_in_i: std_logic;
   signal data_out_i: integer;
-begin 
+begin
   uut: entity work.decim(default)
     generic map(osr => 32)
     port map(
       clk => clk_i,
       data_in => data_in_i,
       data_out => data_out_i);
-  
+
   process
-		variable text_in, text_out: line;
-		variable value_out: integer := 0;
-	begin
-	  clk_i <= '0';
-	  wait for clk_period;
-	    while not endfile(infile) loop
-	  	   readline(infile, text_in);
-	  	   if text_in(1) = '#' then
-	  	     -- Do not analyze comments (lines starting with a pound).
-	  	   else
-	  	     for i in text_in'range loop
-	  	     if text_in(i) = '1' then
+    variable text_in, text_out: line;
+    variable value_out: integer := 0;
+  begin
+    clk_i <= '0';
+    wait for clk_period;
+    while not endfile(infile) loop
+      readline(infile, text_in);
+      if text_in(1) = '#' then
+        -- Do not analyze comments, just pass them through.
+        writeline(outfile, text_in);
+      else
+        for i in text_in'range loop
+          if text_in(i) = '1' then
             data_in_i <= '1';
           elsif text_in(i) = '0' then
             data_in_i <= '0';
           end if;
           clk_i <= '1';
-	  	     wait for clk_period;
-	  	     clk_i <= '0';
-	  	     wait for clk_period;
+          wait for clk_period;
+          clk_i <= '0';
+          wait for clk_period;
         end loop;
-		    write(text_out, data_out_i);
-		    writeline(outfile, text_out);
-	  	 end if;
-    end loop;    
-	  assert false severity error;
-	end process;
+        write(text_out, data_out_i);
+        writeline(outfile, text_out);
+      end if;
+    end loop;
+    assert false severity error;
+  end process;
 end architecture;

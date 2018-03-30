@@ -23,7 +23,7 @@ begin
       if data_in = '0' then
         result := result - 1;
       end if;
-      
+
       progress := progress + 1;
       if progress = osr then
         progress := 0;
