@@ -5,12 +5,16 @@
 \geometry{top=2cm}
 \geometry{bottom=1.5cm}
 \usepackage[pdftex]{graphicx}
+\graphicspath{{img/}}
+
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
 \usepackage[polish]{babel}
 \usepackage{tabularx}
 \usepackage{datetime}
-\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{courier}
+\lstset{basicstyle=\footnotesize}
 
 \newcommand{\coursename}{Modelowanie i Analiza Systemów}
 \newcommand{\labnumber}{1}
@@ -43,11 +47,61 @@
   \textbf{Data wykonania} & \displaydate{labdate} \\
   \textbf{Data sprawozdania} & \displaydate{labreportdate} \\
 \end{tabularx}
-\vspace{1cm}
+
+\vspace{0.3cm}
+\noindent\hrulefill
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\blindtext[10]
+\lstinputlisting[
+  language=VHDL,
+  caption={Implementacja generatora z zadania pierwszego wraz z pustą architekturą}
+  ]{../lab1/gen.vhd}
+
+\lstinputlisting[
+  language=tcl,
+  caption={Skrypt testujący generator z zadania drugiego}
+  ]{../lab1/gen.do}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{1.png}
+	\caption{Wyniki symulacji generatorów z zadania pierwszego i drugiego.}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{karnaugh.png}
+	\caption{Tablica Karnaugh dla wyjść EQ i GE}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{geeq.png}
+	\caption{Równania wyjść EQ i GE wyznaczone na podstawie tablicy Karnaugh}
+\end{figure}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Implementacja sumatora w architekturach behawioralnej i strukturalnej}
+  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.vhd}
+
+\lstinputlisting[
+  language=tcl,
+  caption={Skrypt testujący sumator z zadania trzeciego}
+  ]{../lab1/uklad_kombinacyjny_porownujacy_dwie_liczby_dwubitowe.do}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{compare_structural.png}
+  \caption{Wynik działania architektury strukturalnej}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{compare_behavioral.png}
+  \caption{Wynik działania architektury behawioralnej}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
