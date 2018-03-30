@@ -1,0 +1,54 @@
+\documentclass[13pt, a4paper, twoside]{mwart}
+\usepackage[a4paper]{geometry}
+\geometry{left=3cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=1.5cm}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{tabularx}
+\usepackage{datetime}
+\usepackage{blindtext}
+
+\newcommand{\coursename}{Modelowanie i Analiza Systemów}
+\newcommand{\labnumber}{1}
+\newcommand{\labname}{Generator sygnałów testujących i prosty układ kombinacyjny}
+\newcommand{\studentname}{Maciej Stanek}
+\newcommand{\studentnumber}{122352}
+\newdate{labdate}{9}{3}{2018}
+\newdate{labreportdate}{30}{3}{2018}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\textbf{LAB\#\labnumber} \labname}
+\fancyhead[RE]{\coursename}
+\fancyfoot{}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\LARGE{Sprawozdanie z laboratorium}}
+\end{center}
+
+\noindent
+\begin{tabularx}{\linewidth}{rX}
+  \textbf{Przedmiot} & \coursename \\
+  \textbf{Temat laboratorium} & \labname \\
+  \textbf{Numer laboratorium} & \labnumber \\
+  \textbf{Imię i nazwisko} & \studentname \\
+  \textbf{Numer indeksu} & \studentnumber \\
+  \textbf{Data wykonania} & \displaydate{labdate} \\
+  \textbf{Data sprawozdania} & \displaydate{labreportdate} \\
+\end{tabularx}
+\vspace{1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\blindtext[10]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
