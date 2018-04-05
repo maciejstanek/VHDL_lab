@@ -1,0 +1,12 @@
+[VHDL-AMS Entity]
+NAME = sample_hold
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\sample_hold.vhd
+LINE = 6
+[Generics]
+(initial real        0.000000e+000)
+(clk_edge std_ulogic "'1'")
+[Ports]
+(PORT TERMINAL input NO-MODE electrical)
+(PORT SIGNAL clk IN std_ulogic)
+(PORT SIGNAL output OUT real)
+

@@ -1,0 +1,30 @@
+
+* Project TEST_SAMPLE_HOLD
+* Mentor Graphics Netlist Created with Version 5.10.3 Update-1
+* File created Thu Apr 05 17:03:54 2018
+* Inifile   : 
+*
+* Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
+*
+* Options   : -_ -h -kC:\MentorGraphics\SystemVision5.10\standard\svspice.cfg -gtest_sample_hold.tempfile 
+* 
+* Levels    : 
+* 
+.option noinclib
+* Models for Eldo<->VHDL-AMS data conversion
+.model a2d_eldo a2d mode=std_logic
+.model d2a_eldo d2a mode=std_logic
+.defhook a2d_eldo
+.defhook d2a_eldo
+YN1I1 SAMPLE_HOLD(DEFAULT) PORT: VIN CLK VOUT
+YV_SINE1 V_SINE GENERIC: AMPLITUDE="1.0" FREQ="10.0E3" PORT: VIN 0
+YCLOCK1 CLOCK GENERIC: PERIOD="1 US" PORT: CLK
+YR1 RESISTOR(IDEAL) PORT: 0 VOUT
+* DICTIONARY 1
+* GND = 0
+.GLOBAL ELECTRICAL_REF
+.model SAMPLE_HOLD(DEFAULT) macro lang=vhdlams LIB=WORK
+.model CLOCK macro lang=vhdlams LIB=EDULIB
+.model RESISTOR(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model V_SINE macro lang=vhdlams LIB=EDULIB
+.END

@@ -1,0 +1,29 @@
+
+* Project DAMN_RC_FILTER
+* Mentor Graphics Netlist Created with Version 5.10.3 Update-1
+* File created Thu Apr 05 15:43:38 2018
+* Inifile   : 
+*
+* Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
+*
+* Options   : -_ -h -kC:\MentorGraphics\SystemVision5.10\standard\svspice.cfg -gdamn_rc_filter.tempfile 
+* 
+* Levels    : 
+* 
+.option noinclib
+* Models for Eldo<->VHDL-AMS data conversion
+.model a2d_eldo a2d mode=std_logic
+.model d2a_eldo d2a mode=std_logic
+.defhook a2d_eldo
+.defhook d2a_eldo
+YV_PULSE1 V_PULSE(IDEAL) GENERIC: PERIOD="2 MS" PULSE="5.0" WIDTH="1 MS" PORT: 
++ VIN 0
+YR1 RESISTOR(IDEAL) GENERIC: RES="5.0E3" PORT: VIN VOUT
+YR2 RESISTOR(IDEAL) GENERIC: RES="50.0" PORT: 0 VOUT
+YC1 CAPACITOR(IDEAL) GENERIC: CAP="1.0E-6" PORT: 0 VOUT
+* DICTIONARY 1
+* GND = 0
+.model V_PULSE(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model RESISTOR(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model CAPACITOR(IDEAL) macro lang=vhdlams LIB=EDULIB
+.END

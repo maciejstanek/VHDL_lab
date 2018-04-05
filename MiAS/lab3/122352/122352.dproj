@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<projectfile version="1.0" name="122352">
+  <settings>
+    <tool name="Library Manager Central Library">
+      <section name="Properties">
+        <entry name="Path" value="C:\MentorGraphics\SystemVision5.10\standard\templates\pcb\Central Library\Central Library.lmc"/>
+      </section>
+    </tool>
+    <tool name="Flow Manager">
+      <section name="Flows">
+        <entry name="{7F752E6D-B6AE-4dfd-9506-F74496DB70EE}" value=""/>
+        <entry name="{96B494EB-6952-480d-A817-AC4FA899FEEE}" value=""/>
+        <entry name="{ABF09658-79CB-4540-A0EE-DFBDD2259BB6}" value=""/>
+      </section>
+    </tool>
+    <tool name="Expedition PCB">
+      <section name="Properties">
+        <entry name="Zoom Style" value="Enable"/>
+        <entry name="Keybindings" value="Enable"/>
+        <entry name="Layout Template" value="C:\MentorGraphics\SystemVision5.10\standard\templates\pcb\Central Library\LayoutTemplates\4 Layer Template\template.pcb"/>
+        <entry name="Configuration File" value="expedition.cfg"/>
+        <entry name="Allow Forward Annotation" value="Enable"/>
+        <entry name="Allow Back Annotation" value="Enable"/>
+        <entry name="Project File" value="C:\stanek\NCAD\MiAS\lab3\Project\pcb\Project.prj"/>
+        <entry name="Constrain in CES" value="Enable"/>
+        <entry name="Use CDB Flow" value="Enable"/>
+        <entry name="Automatic Update of Schematic Files" value="Enable"/>
+      </section>
+    </tool>
+    <tool name="DxBoardLink">
+      <section name="Properties">
+        <entry name="Unlimited Text Length" value="Enable"/>
+        <entry name="Mixed Case For FPGA Attributes" value="Enable"/>
+      </section>
+    </tool>
+    <tool name="ProjectFlows">
+      <section name="LastFlow">
+        <entry name="GUID" value="{96B494EB-6952-480d-A817-AC4FA899FEEE}"/>
+      </section>
+    </tool>
+  </settings>
+  <systemvision design="damn_rc_filter">
+    <nextid class="V_PULSE?">2</nextid>
+    <nextid class="R?">3</nextid>
+    <nextid class="C?">2</nextid>
+    <nextid class="I_VS_V_FROM_FILE?">2</nextid>
+  </systemvision>
+  <systemvision design="test_sample_hold">
+    <nextid class="V_SINE?">2</nextid>
+    <nextid class="CLOCK?">2</nextid>
+    <nextid class="R?">2</nextid>
+  </systemvision>
+</projectfile>

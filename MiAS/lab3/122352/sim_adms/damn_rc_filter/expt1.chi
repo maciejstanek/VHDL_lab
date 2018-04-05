@@ -1,0 +1,209 @@
+1*******05-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******15:53:05******
+
+0* Command file for design: damn_rc_filter
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  .OP
+    3  .TRAN 0 0.5 0
+    4  * .ac dec 100  
+    5  .PLOT TRAN I(C1.P1) I(C1.P2) I(R1.P1) I(R1.P2) I(R2.P1) I(R2.P2) I(V_PULSE1.NEG) I(V_PULSE1.POS) S(C1.I) S(C1.V'DOT) S(C1.V) S(R1.I) S(R1.V) S(R2.I) S(R2.V) S(V_PULSE1.AC_SPEC) S(V_PULSE1.I) S(V_PULSE1.PULSE_SIGNAL'RAMP) S(V_PULSE1.V) SG(V_PULSE1.PULSE_SIGNAL) V(C1.P1) V(C1.P2) V(R1.P1) V(R1.P2) V(R2.P1) V(R2.P2) V(V_PULSE1.NEG) V(V_PULSE1.POS) V(VIN) V(VOUT)
+    6  * .plot ac V(vin) V(vout)
+    7  .OPTION eps=1.0e-5
+    8  .OPTION hmin=0.9e-9
+    9  
+   10  .OPTION print_dc=2
+   11  * save tr allsignals
+   12  * save ac toplevel
+   13  * save ba
+   14  
+   15  .SAVE file=damn_rc_filter.iic end no_save_wdb
+   16  ** including C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/damn_rc_filter/localHeader.ckt
+    1  * Models for Eldo<->VHDL-AMS data conversion
+    2  .MODEL A2D_ELDO A2D MODE=STD_LOGIC
+    3  .MODEL D2A_ELDO D2A MODE=STD_LOGIC
+    4  .DEFHOOK a2d_eldo
+    5  .DEFHOOK d2a_eldo
+   16  
+   17  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 111277
+5 elements
+2 nodes 
+0 input signals
+
+ SystemVision Version 5.10 Thu Oct 10 05:53:28 GMT 2013
+
+
+*** DATE: 05-Apr-2018  15:53:05
+
+*** TITLE: * Command file for design: damn_rc_filter
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -1.000000E+013V and 
+                                  1.000000E+013V
+
+
+
+1***************05-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:53:05*****************
+
+0* Command file for design: damn_rc_filter
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-012 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMIN           = UNDEF    
+VMAX           = UNDEF    
+
+*** Accuracy Control Options : 
+
+ITOL           = 1.00e-006 EPS            = 1.00e-005 VNTOL          = 1.00e-006 
+RELTOL         = 2.50e-004 RELERR         = 5.00e-002 PIVREL         = 1.00e-003 
+PIVTOL         = 1.00e-013 ABSTOL         = 1.00e-012 FLXTOL         = 1.00e-011 
+MAXORD         = 2.00e+000 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+000 STEP           = 0.00e+000 STARTSMP       = 0.00e+000 
+FREQSMP        = 0.00e+000 COURESOL       = 0.00e+000 TRTOL          = 7.00e+000 
+HMIN           = 9.00e-010 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-001 DCLOG          = 1.00e+000 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-001 
+ABSVAR         = 2.00e-001 SAMPLE         = 0.00e+000 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+000 SCALM          = 1.00e+000 SCALEBSIM      = 1.00e+000 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-004 DEFL           = 1.00e-004 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-006 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+000 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 0        SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 500      MAXV           = 1.00e+013 
+LIMPROBE       = 1000     FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+001 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 0        
+NOAEX          = 0        AEX            = 0        AEX            = 0        
+ASCII          = 1        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+Number of iterations: 1
+
+
+
+
+1***************05-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:53:05*****************
+
+0* Command file for design: damn_rc_filter
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE    
+VIN          0.0         VOUT         0.0         
+
+
+
+
+1***************05-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:53:05*****************
+
+0* Command file for design: damn_rc_filte
+0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+1***************05-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:53:05*****************
+
+0* Command file for design: damn_rc_filter
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+    NUNODS NCNODS NUMNOD   NUMEL   DIODES    BJT  JFET  MOSFET
+
+         2      2      2       5        0      0     0       0
+
+
+    NSTOP    NTERM    PERSPA  
+
+        7       21 5.714e+001
+
+    NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
+
+     11508     499       0       0       0
+
+  DIGITAL  INWCALL    ITERNW   MEMSIZE
+
+        0    210111.750e+000    116298
+
+    NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
+
+           0            0         2   1.00e+000   0.000e+000%
+
+
+  TRANSIENT JOB TIME                 0
+
+
+
+CPU time 0.34 s
+
+Save file C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/damn_rc_filter/damn_rc_filter.iic created  at time 5.000000e-001
+

@@ -1,0 +1,49 @@
+                   *** Terminals ***
+c1.p1                                          0
+c1.p2                                          0
+r1.p1                                          0
+r1.p2                                          0
+r2.p1                                          0
+r2.p2                                          0
+v_pulse1.neg                                   0
+v_pulse1.pos                                   0
+vin                                            0
+vout                                           0
+
+
+                   *** Signals ***
+v_pulse1.pulse_signal                          0
+
+
+                   *** Quantities ***
+c1.i                                           0
+c1.v                                           0
+c1.v'dot                                       0
+r1.i                                           0
+r1.v                                           0
+r2.i                                           0
+r2.v                                           0
+v_pulse1.ac_spec                               0
+v_pulse1.i                                     0
+v_pulse1.pulse_signal'ramp[1e-009,1e-009]      0
+v_pulse1.v                                     0
+
+
+                   *** Constants ***
+c1.cap                                         1e-006
+c1.v_ic                                        -1e+308
+r1.res                                         5000
+r2.res                                         50
+v_pulse1.ac_mag                                0
+v_pulse1.ac_phase                              0
+v_pulse1.delay                                 0 s
+v_pulse1.initial                               0
+v_pulse1.period                                2 ms
+v_pulse1.pulse                                 5
+v_pulse1.ri2p                                  1e-009
+v_pulse1.rp2i                                  1e-009
+v_pulse1.ti2p                                  1 ns
+v_pulse1.tp2i                                  1 ns
+v_pulse1.width                                 1 ms
+
+

@@ -1,0 +1,5 @@
+* Models for Eldo<->VHDL-AMS data conversion
+.model a2d_eldo a2d mode=std_logic
+.model d2a_eldo d2a mode=std_logic
+.defhook a2d_eldo
+.defhook d2a_eldo

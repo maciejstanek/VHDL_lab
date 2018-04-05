@@ -1,0 +1,54 @@
+       *** Terminals ***
+$1i1.input             0
+v_sine1.neg            0
+v_sine1.pos            0
+vin                    0
+
+
+       *** Signals ***
+$1i1.clk               0
+$1i1.output            0
+$1i23.clk              0
+$1i23.holds            {0} {0}
+$1i23.input            0
+$1i23.output           0
+$1i36.clk              0
+$1i36.holds            {0}
+$1i36.input            0
+$1i36.output           0
+clk                    0
+clock1.clk_out         0
+z0                     0
+z1                     0
+z2                     0
+
+
+       *** Quantities ***
+$1i1.v_sampled         0
+v_sine1.ac_spec        0
+v_sine1.i              0
+v_sine1.phase_rad      0
+v_sine1.v              0
+
+
+       *** Constants ***
+$1i1.clk_edge          1
+$1i1.initial           0
+$1i23.clk_edge         1
+$1i23.count            2
+$1i23.initial          0
+$1i36.clk_edge         1
+$1i36.count            1
+$1i36.initial          0
+clock1.duty            0.5
+clock1.period          20 ms
+v_sine1.ac_mag         0
+v_sine1.ac_phase       0
+v_sine1.amplitude      1
+v_sine1.df             0
+v_sine1.freq           1
+v_sine1.offset         0
+v_sine1.phase          0
+v_sine1.v_limit        0.05
+
+

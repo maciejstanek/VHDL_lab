@@ -1,0 +1,69 @@
+| Wirelist created using version 5.4.
+V 5.4
+K 115782943600 damn_rc_filter
+DW damn_rc_filter
+Q Case
+|Q Electrical:v_pulse 1
+AS Electrical:v_pulse PINORDER=POS NEG
+AS Electrical:v_pulse SIMMODEL=VHDL
+AS Electrical:v_pulse VHDL_GENERIC_AC_PHASE=REAL:=0.0
+AS Electrical:v_pulse VHDL_GENERIC_AC_MAG=VOLTAGE:=0.0
+AS Electrical:v_pulse VHDL_GENERIC_PERIOD=TIME
+AS Electrical:v_pulse VHDL_GENERIC_WIDTH=TIME
+AS Electrical:v_pulse VHDL_GENERIC_DELAY=TIME:=0 MS
+AS Electrical:v_pulse VHDL_GENERIC_TP2I=TIME:=1 NS
+AS Electrical:v_pulse VHDL_GENERIC_TI2P=TIME:=1 NS
+AS Electrical:v_pulse VHDL_GENERIC_PULSE=VOLTAGE
+AS Electrical:v_pulse VHDL_GENERIC_INITIAL=VOLTAGE:=0.0
+AS Electrical:v_pulse VHDLFILE=V_PULSE.VHD
+AS Electrical:v_pulse DESCRIPTION=PULSE VOLTAGE SOURCE
+AS Electrical:v_pulse VHDL=EDULIB.V_PULSE
+AS Electrical:v_pulse REFDES=V_PULSE?
+AS Electrical:v_pulse INOV_VER_REC=14:46_4-22-03
+AP Electrical:v_pulse 1 PINTYPE=TERMINAL
+AP Electrical:v_pulse 1 VHDL_TYPE=ELECTRICAL
+AP Electrical:v_pulse 2 PINTYPE=TERMINAL
+AP Electrical:v_pulse 2 VHDL_TYPE=ELECTRICAL
+|Q Electrical:resistor 1
+AS Electrical:resistor REFDES=R?
+AS Electrical:resistor PINORDER=P1 P2
+AS Electrical:resistor SIMMODEL=VHDL
+AS Electrical:resistor VHDL_GENERIC_RES=RESISTANCE
+AS Electrical:resistor VHDLFILE=RESISTOR.VHD
+AS Electrical:resistor DESCRIPTION=RESISTOR
+AS Electrical:resistor VHDL=EDULIB.RESISTOR(IDEAL)
+AS Electrical:resistor INOV_VER_REC=18:42_4-18-03
+AP Electrical:resistor 1 PINTYPE=TERMINAL
+AP Electrical:resistor 1 VHDL_TYPE=ELECTRICAL
+AP Electrical:resistor 2 PINTYPE=TERMINAL
+AP Electrical:resistor 2 VHDL_TYPE=ELECTRICAL
+|Q Electrical:capacitor 1
+AS Electrical:capacitor PINORDER=P1 P2
+AS Electrical:capacitor SIMMODEL=VHDL
+AS Electrical:capacitor REFDES=C?
+AS Electrical:capacitor VHDL_GENERIC_V_IC=REAL:=REAL'LOW
+AS Electrical:capacitor VHDL_GENERIC_CAP=CAPACITANCE
+AS Electrical:capacitor VHDLFILE=CAPACITOR.VHD
+AS Electrical:capacitor VHDL=EDULIB.CAPACITOR(IDEAL)
+AS Electrical:capacitor DESCRIPTION=CAPACITOR
+AS Electrical:capacitor INOV_VER_REC=11:22_5-15-03
+AP Electrical:capacitor 1 PINTYPE=TERMINAL
+AP Electrical:capacitor 1 VHDL_TYPE=ELECTRICAL
+AP Electrical:capacitor 2 PINTYPE=TERMINAL
+AP Electrical:capacitor 2 VHDL_TYPE=ELECTRICAL
+AN ELECTRICAL_REF NET_ALIAS=GND
+G ELECTRICAL_REF
+M Electrical:v_pulse $1I1
+I $1I1 Electrical:v_pulse VIN GND VHDL_GENERIC_PERIOD=TIME:=2 MS`VHDL_GENERIC_PULSE=VOLTAGE:=5.0`VHDL_GENERIC_WIDTH=TIME:=1 MS`VHDL=EDULIB.V_PULSE(IDEAL)`LABEL=V_PULSE1`REFDES=V_PULSE?`
+|R 14:46_4-22-03
+M Electrical:resistor $1I2
+I $1I2 Electrical:resistor VIN VOUT VHDL_GENERIC_RES=RESISTANCE:=5.0E3`LABEL=R1`REFDES=R?`
+|R 18:42_4-18-03
+M Electrical:resistor $1I3
+I $1I3 Electrical:resistor GND VOUT VHDL_GENERIC_RES=RESISTANCE:=50.0`LABEL=R2`REFDES=R?`
+|R 18:42_4-18-03
+M Electrical:capacitor $1I4
+I $1I4 Electrical:capacitor GND VOUT VHDL_GENERIC_CAP=CAPACITANCE:=1.0E-6`LABEL=C1`REFDES=C?`
+|R 11:22_5-15-03
+EW
+| Sch_Info - Net ELECTRICAL_REF has alias of GND.

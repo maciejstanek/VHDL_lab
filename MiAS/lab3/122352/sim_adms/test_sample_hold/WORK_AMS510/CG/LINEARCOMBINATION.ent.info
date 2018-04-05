@@ -1,0 +1,14 @@
+[VHDL-AMS Entity]
+NAME = linearcombination
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\linearcombination.vhd
+LINE = 6
+[Generics]
+(initial real        0.000000e+000)
+(clk_edge std_ulogic "'1'")
+(coeffa real        1.000000e+000)
+(coeffb real        1.000000e+000)
+[Ports]
+(PORT SIGNAL inputa IN real)
+(PORT SIGNAL inputb IN real)
+(PORT SIGNAL output OUT real)
+

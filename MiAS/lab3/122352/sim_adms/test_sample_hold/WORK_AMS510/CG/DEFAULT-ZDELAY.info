@@ -1,0 +1,19 @@
+[VHDL-AMS Entity]
+NAME = zdelay
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\zdelay.vhd
+LINE = 6
+[Generics]
+(count integer "1")
+(initial real        0.000000e+000)
+(clk_edge std_ulogic "'1'")
+[Ports]
+(PORT SIGNAL input IN real)
+(PORT SIGNAL clk IN std_ulogic)
+(PORT SIGNAL output OUT real)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\zdelay.vhd
+LINE = 17
+[Declarations]
+(SIGNAL holds (holds_array ARRAY real 1 (1 ({count} ? count))))
+

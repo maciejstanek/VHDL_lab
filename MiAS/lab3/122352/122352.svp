@@ -1,0 +1,48 @@
+LIST TESTBENCHES
+damn_rc_filter
+test_sample_hold
+ENDLIST
+ACTIVE_TESTBENCH test_sample_hold
+SECTION damn_rc_filter
+TYPE SCH
+NL_OPTION VHDL ENTINST USELIBS PAREXT
+SIM_SPICE 0
+DESIGN_ROOT genhdl\damn_rc_filter\damn_rc_filter.vhd;arch_damn_rc_filter/damn_rc_filter
+LIST VHDL
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_pulse.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\resistor.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\capacitor.vhd
+genhdl\damn_rc_filter\damn_rc_filter.vhd
+ENDLIST
+LIST SPICE
+genhdl\damn_rc_filter\damn_rc_filter.cir
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
+ENDLIST
+ENDSECTION
+SECTION test_sample_hold
+TYPE SCH
+NL_OPTION VHDL ENTINST USELIBS PAREXT
+SIM_SPICE 0
+DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.vhd;arch_test_sample_hold/test_sample_hold
+LIST VHDL
+hdl\sample_hold.vhd
+hdl\zdelay.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Digital\clock.vhd
+genhdl\test_sample_hold\test_sample_hold.vhd
+ENDLIST
+LIST SPICE
+genhdl\test_sample_hold\test_sample_hold.cir
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
+expt1.cmd
+ENDLIST
+ENDSECTION
+LIST ADDITIONAL ADMS LIBRARIES
+ENDLIST
+LIST SPICE LIBRARIES
+%SV_ROOT%\win32\Libraries\SVLib\SVLib_Spice.lib
+ENDLIST
