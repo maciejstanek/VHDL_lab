@@ -1,15 +1,15 @@
-1*******12-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******15:30:47******
+1*******12-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******16:21:02******
 
-0* Command file for design: test_sample_hold
+0* Command file for design: integrators_tb
 
 0****     INPUT LISTING                                               
 
 0***********************************************************************
     2  .OP
-    3  .TRAN 0 1 0
+    3  .TRAN 0 500NS 0
     4  * .ac dec 100  
-    5  .PLOT TRAN SG(CLK) SG(INTINTX) SG(INTX) SG(LINC) SG(SQ) SG(X) SG(Z0) SG(Z1) SG(Z2) V(\$1N48\) V(\$1N66\) V(VIN)
-    6  * .plot ac V(\$1N48\) V(\$1N66\) V(vin)
+    5  .PLOT TRAN SG(CLK) SG(OUT_BACKINT_1) SG(OUT_BACKINT_PULSE) SG(OUT_BACKINT_SIN) SG(OUT_BILININT_1) SG(OUT_BILININT_PULSE) SG(OUT_BILININT_SIN) SG(OUT_FORWARDINT_1) SG(OUT_FORWARDINT_PULSE) SG(OUT_FORWARDINT_SIN) SG(SIGDISCR_1) SG(SIGDISCR_PULSE) SG(SIGDISCR_SIN) V(SIGCONT_1) V(SIGCONT_PULSE) V(SIGCONT_SIN)
+    6  * .plot ac V(sigcont_1) V(sigcont_pulse) V(sigcont_sin)
     7  .OPTION eps=1.0e-5
     8  .OPTION hmin=0.9e-9
     9  
@@ -18,8 +18,8 @@
    12  * save ac toplevel
    13  * save ba
    14  
-   15  .SAVE file=test_sample_hold.iic end no_save_wdb
-   16  ** including C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/test_sample_hold/localHeader.ckt
+   15  .SAVE file=integrators_tb.iic end no_save_wdb
+   16  ** including C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/integrators_tb/localHeader.ckt
     1  * Models for Eldo<->VHDL-AMS data conversion
     2  .MODEL A2D_ELDO A2D MODE=STD_LOGIC
     3  .MODEL D2A_ELDO D2A MODE=STD_LOGIC
@@ -46,17 +46,17 @@ End of file
 INFORMATION ABOUT COMPILATION 
 
 
-Memory space allocated (bytes): 105088
-13 elements
+Memory space allocated (bytes): 107200
+16 elements
 3 nodes 
 0 input signals
 
  SystemVision Version 5.10 Thu Oct 10 05:53:28 GMT 2013
 
 
-*** DATE: 12-Apr-2018  15:30:48
+*** DATE: 12-Apr-2018  16:21:02
 
-*** TITLE: * Command file for design: test_sample_hold
+*** TITLE: * Command file for design: integrators_tb
 
 TEMPERATURE : 27.000000 degrees C
 
@@ -65,9 +65,9 @@ Searching Operating Point between -1.000000E+013V and
 
 
 
-1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:30:48*****************
+1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:21:02*****************
 
-0* Command file for design: test_sample_hold
+0* Command file for design: integrators_tb
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -136,49 +136,31 @@ USERSWITCH     = 0        TIMING         = 0        MODWL          = 1
 ULOGIC         = 0        
 
 
-Number of iterations: 2
-
-
-
-
-1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:30:48*****************
-
-0* Command file for design: test_sample_hold
-0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
-
-0*************************************************************************************************************************
-
-
-  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
-VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000  
-
-
-
-
-SystemVision requires another DC analysis
 Number of iterations: 1
 
 
 
 
-1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:30:48*****************
+1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:21:02*****************
 
-0* Command file for design: test_sample_hold
+0* Command file for design: integrators_tb
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
 
 
-  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
-VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000  
+  NODE         VOLTAGE    
+ SIGCONT_1       0.0       
+ SIGCONT_PULSE       0.0       
+ SIGCONT_SIN       0.0       
 
 
 
 
 
-1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:30:48*****************
+1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:21:02*****************
 
-0* Command file for design: test_sample_h
+0* Command file for design: integrators_t
 0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -187,9 +169,9 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 
 
-1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************15:30:48*****************
+1***************12-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:21:02*****************
 
-0* Command file for design: test_sample_hold
+0* Command file for design: integrators_tb
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -200,7 +182,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
     NUNODS NCNODS NUMNOD   NUMEL   DIODES    BJT  JFET  MOSFET
 
-         3      3      3      13        0      0     0       0
+         3      3      3      16        0      0     0       0
 
 
     NSTOP    NTERM    PERSPA  
@@ -209,11 +191,11 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
     NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
 
-       319       9       0       0       0
+        34       2       1       1       0
 
   DIGITAL  INWCALL    ITERNW   MEMSIZE
 
-        0      5751.742e+000    106966
+        0       972.622e+000    111778
 
     NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
 
@@ -224,7 +206,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 
 
-CPU time 31 ms
+CPU time 0 ms
 
-Save file C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/test_sample_hold/test_sample_hold.iic created  at time 1.000000e+000
+Save file C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/integrators_tb/integrators_tb.iic created  at time 5.000000e-007
 

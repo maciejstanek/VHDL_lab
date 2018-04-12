@@ -1,0 +1,16 @@
+[VHDL-AMS Entity]
+NAME = forwardint
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\forwardint.vhd
+LINE = 6
+[Generics]
+(initial real        0.000000e+000)
+(clk_edge std_ulogic "'1'")
+[Ports]
+(PORT SIGNAL input IN real)
+(PORT SIGNAL clk IN std_ulogic)
+(PORT SIGNAL output OUT real)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\forwardint.vhd
+LINE = 16
+

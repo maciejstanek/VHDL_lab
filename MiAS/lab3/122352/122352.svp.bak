@@ -1,6 +1,7 @@
 LIST TESTBENCHES
 damn_rc_filter
 test_sample_hold
+integrators_tb
 ENDLIST
 ACTIVE_TESTBENCH test_sample_hold
 SECTION damn_rc_filter
@@ -23,9 +24,9 @@ ENDLIST
 ENDSECTION
 SECTION test_sample_hold
 TYPE SCH
-NL_OPTION SPICE ENTINST USELIBS PAREXT
-SIM_SPICE 1
-DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.cir
+NL_OPTION BOTH ENTINST USELIBS PAREXT
+SIM_SPICE 0
+DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.vhd;arch_test_sample_hold/test_sample_hold
 LIST VHDL
 hdl\sample_hold.vhd
 hdl\zdelay.vhd
@@ -39,6 +40,17 @@ genhdl\test_sample_hold\test_sample_hold.vhd
 ENDLIST
 LIST SPICE
 genhdl\test_sample_hold\test_sample_hold.cir
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
+ENDLIST
+ENDSECTION
+SECTION integrators_tb
+TYPE VHDL
+SIM_SPICE 0
+DESIGN_ROOT hdl\integrators_tb.vhd;bench/integrators_tb
+LIST VHDL
+hdl\integrators_tb.vhd
 ENDLIST
 ENDSECTION
 LIST ADDITIONAL ADMS LIBRARIES

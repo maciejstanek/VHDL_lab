@@ -1,0 +1,160 @@
+                *** Terminals ***
+sh_1.input                               0
+sh_pulse.input                           0
+sh_sin.input                             0
+sigcont_1                                0
+sigcont_pulse                            0
+sigcont_sin                              0
+source_1.neg                             0
+source_1.pos                             0
+source_pulse.neg                         0
+source_pulse.pos                         0
+source_sin.neg                           0
+source_sin.pos                           0
+
+
+                *** Signals ***
+backint_1.clk                            0
+backint_1.input                          0
+backint_1.output                         0
+backint_pulse.clk                        0
+backint_pulse.input                      0
+backint_pulse.output                     0
+backint_sin.clk                          0
+backint_sin.input                        0
+backint_sin.output                       0
+bilinint_1.clk                           0
+bilinint_1.input                         0
+bilinint_1.output                        0
+bilinint_pulse.clk                       0
+bilinint_pulse.input                     0
+bilinint_pulse.output                    0
+bilinint_sin.clk                         0
+bilinint_sin.input                       0
+bilinint_sin.output                      0
+clk                                      0
+forwardint_1.clk                         0
+forwardint_1.input                       0
+forwardint_1.output                      0
+forwardint_pulse.clk                     0
+forwardint_pulse.input                   0
+forwardint_pulse.output                  0
+forwardint_sin.clk                       0
+forwardint_sin.input                     0
+forwardint_sin.output                    0
+out_backint_1                            0
+out_backint_pulse                        0
+out_backint_sin                          0
+out_bilinint_1                           0
+out_bilinint_pulse                       0
+out_bilinint_sin                         0
+out_forwardint_1                         0
+out_forwardint_pulse                     0
+out_forwardint_sin                       0
+sh_1.clk                                 0
+sh_1.output                              0
+sh_pulse.clk                             0
+sh_pulse.output                          0
+sh_sin.clk                               0
+sh_sin.output                            0
+sigdiscr_1                               0
+sigdiscr_pulse                           0
+sigdiscr_sin                             0
+source_1.pulse_signal                    0
+source_pulse.pulse_signal                0
+
+
+                *** Quantities ***
+sh_1.v_sampled                           0
+sh_pulse.v_sampled                       0
+sh_sin.v_sampled                         0
+source_1.ac_spec                         0
+source_1.i                               0
+source_1.pulse_signal'ramp[0,0]          0
+source_1.v                               0
+source_pulse.ac_spec                     0
+source_pulse.i                           0
+source_pulse.pulse_signal'ramp[0,0]      0
+source_pulse.v                           0
+source_sin.ac_spec                       0
+source_sin.i                             0
+source_sin.phase_rad                     0
+source_sin.v                             0
+
+
+                *** Variables ***
+backint_1._p1.integral                   0
+backint_pulse._p1.integral               0
+backint_sin._p1.integral                 0
+bilinint_1._p1.integral                  0
+bilinint_1._p1.last_input                0
+bilinint_pulse._p1.integral              0
+bilinint_pulse._p1.last_input            0
+bilinint_sin._p1.integral                0
+bilinint_sin._p1.last_input              0
+forwardint_1._p1.integral                0
+forwardint_1._p1.last_input              0
+forwardint_pulse._p1.integral            0
+forwardint_pulse._p1.last_input          0
+forwardint_sin._p1.integral              0
+forwardint_sin._p1.last_input            0
+
+
+                *** Constants ***
+backint_1.clk_edge                       1
+backint_1.initial                        0
+backint_pulse.clk_edge                   1
+backint_pulse.initial                    0
+backint_sin.clk_edge                     1
+backint_sin.initial                      0
+bilinint_1.clk_edge                      1
+bilinint_1.initial                       0
+bilinint_pulse.clk_edge                  1
+bilinint_pulse.initial                   0
+bilinint_sin.clk_edge                    1
+bilinint_sin.initial                     0
+clk_hp                                   10 ns
+forwardint_1.clk_edge                    1
+forwardint_1.initial                     0
+forwardint_pulse.clk_edge                1
+forwardint_pulse.initial                 0
+forwardint_sin.clk_edge                  1
+forwardint_sin.initial                   0
+sh_1.clk_edge                            1
+sh_1.initial                             0
+sh_pulse.clk_edge                        1
+sh_pulse.initial                         0
+sh_sin.clk_edge                          1
+sh_sin.initial                           0
+source_1.ac_mag                          0
+source_1.ac_phase                        0
+source_1.delay                           0 s
+source_1.initial                         0
+source_1.period                          1 sec
+source_1.pulse                           1
+source_1.ri2p                            0
+source_1.rp2i                            0
+source_1.ti2p                            0 s
+source_1.tp2i                            0 s
+source_1.width                           1 sec
+source_pulse.ac_mag                      0
+source_pulse.ac_phase                    0
+source_pulse.delay                       0 s
+source_pulse.initial                     0
+source_pulse.period                      1 sec
+source_pulse.pulse                       1
+source_pulse.ri2p                        0
+source_pulse.rp2i                        0
+source_pulse.ti2p                        0 s
+source_pulse.tp2i                        0 s
+source_pulse.width                       11 ns
+source_sin.ac_mag                        1
+source_sin.ac_phase                      0
+source_sin.amplitude                     12
+source_sin.df                            0
+source_sin.freq                          1e+006
+source_sin.offset                        0
+source_sin.phase                         0
+source_sin.v_limit                       5e-008
+
+

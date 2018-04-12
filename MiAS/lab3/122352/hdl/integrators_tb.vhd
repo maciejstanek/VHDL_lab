@@ -7,6 +7,7 @@ use work.all;
 
 entity integrators_tb is
 end entity integrators_tb;
+
 architecture bench of integrators_tb is
 terminal sigCont_sin : electrical;
 terminal sigCont_1 : electrical;

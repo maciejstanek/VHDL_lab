@@ -1,0 +1,27 @@
+[VHDL-AMS Entity]
+NAME = integrators_tb
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\integrators_tb.vhd
+LINE = 8
+[Generics]
+[VHDL-AMS Architecture]
+NAME = bench
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\integrators_tb.vhd
+LINE = 11
+[Declarations]
+(TERMINAL sigcont_sin)
+(TERMINAL sigcont_1)
+(TERMINAL sigcont_pulse)
+(SIGNAL sigdiscr_sin real)
+(SIGNAL sigdiscr_1 real)
+(SIGNAL sigdiscr_pulse real)
+(SIGNAL out_backint_sin real)
+(SIGNAL out_backint_1 real)
+(SIGNAL out_backint_pulse real)
+(SIGNAL out_forwardint_sin real)
+(SIGNAL out_forwardint_1 real)
+(SIGNAL out_forwardint_pulse real)
+(SIGNAL out_bilinint_sin real)
+(SIGNAL out_bilinint_1 real)
+(SIGNAL out_bilinint_pulse real)
+(SIGNAL clk std_ulogic)
+

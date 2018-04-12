@@ -17,9 +17,11 @@ architecture default of bilinint is
 begin
 	process(clk)
 		variable integral : real := initial;
+		variable last_input : real := initial;
 	begin
 		if clk'event and clk = clk_edge then
-			integral := integral + input;
+			integral := integral + input + last_input;
+			last_input := input;
 			output <= integral;
 		end if;
 	end process;

@@ -1,8 +1,9 @@
 LIST TESTBENCHES
 damn_rc_filter
 test_sample_hold
+integrators_tb
 ENDLIST
-ACTIVE_TESTBENCH test_sample_hold
+ACTIVE_TESTBENCH integrators_tb
 SECTION damn_rc_filter
 TYPE SCH
 NL_OPTION VHDL ENTINST USELIBS PAREXT
@@ -27,7 +28,6 @@ NL_OPTION BOTH ENTINST USELIBS PAREXT
 SIM_SPICE 0
 DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.vhd;arch_test_sample_hold/test_sample_hold
 LIST VHDL
-genhdl\test_sample_hold\test_sample_hold.vhd
 hdl\sample_hold.vhd
 hdl\zdelay.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
@@ -36,12 +36,32 @@ hdl\linearcombination.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_pulse.vhd
 hdl\myint.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_constant.vhd
+genhdl\test_sample_hold\test_sample_hold.vhd
 ENDLIST
 LIST SPICE
 genhdl\test_sample_hold\test_sample_hold.cir
 ENDLIST
 LIST EXPERIMENT
 expt1.cmd
+ENDLIST
+ENDSECTION
+SECTION integrators_tb
+TYPE VHDL
+SIM_SPICE 0
+DESIGN_ROOT hdl\integrators_tb.vhd;bench/integrators_tb
+LIST VHDL
+hdl\backint.vhd
+hdl\bilinint.vhd
+hdl\forwardint.vhd
+hdl\integrators_tb.vhd
+hdl\sample_hold.vhd
+ENDLIST
+LIST PRECOMPILE VHDL
+hdl\backint.vhd
+hdl\bilinint.vhd
+hdl\forwardint.vhd
+hdl\sample_hold.vhd
+hdl\integrators_tb.vhd
 ENDLIST
 ENDSECTION
 LIST ADDITIONAL ADMS LIBRARIES

@@ -1,5 +1,0 @@
-vdraw: Warning 5246: test_sample_hold.1 com $1I38: Component $1I38, Symbol=linearcombination at (710, 350), is not connected.
-vdraw: Warning 5270: test_sample_hold.1 com $1I38: Symbol linearcombination has changed since component $1I38 was instantiated.
-vdraw: Warning 5246: test_sample_hold.1 com $1I38: Component $1I38, Symbol=linearcombination at (780, 320), is not connected.
-vdraw: Note 1138: Pin already connected to net
-vdraw: Note 1138: Pin already connected to net
