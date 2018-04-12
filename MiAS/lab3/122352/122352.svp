@@ -2,8 +2,9 @@ LIST TESTBENCHES
 damn_rc_filter
 test_sample_hold
 integrators_tb
+testing_sigma_delta
 ENDLIST
-ACTIVE_TESTBENCH integrators_tb
+ACTIVE_TESTBENCH testing_sigma_delta
 SECTION damn_rc_filter
 TYPE SCH
 NL_OPTION VHDL ENTINST USELIBS PAREXT
@@ -62,6 +63,25 @@ hdl\bilinint.vhd
 hdl\forwardint.vhd
 hdl\sample_hold.vhd
 hdl\integrators_tb.vhd
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
+ENDLIST
+ENDSECTION
+SECTION testing_sigma_delta
+TYPE SCH
+NL_OPTION SPICE ENTINST USELIBS PAREXT
+SIM_SPICE 1
+DESIGN_ROOT genhdl\testing_sigma_delta\testing_sigma_delta.cir
+LIST VHDL
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
+hdl\analog_int.vhd
+ENDLIST
+LIST SPICE
+genhdl\testing_sigma_delta\testing_sigma_delta.cir
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
 ENDLIST
 ENDSECTION
 LIST ADDITIONAL ADMS LIBRARIES

@@ -1,0 +1,27 @@
+
+* Project TESTING_SIGMA_DELTA
+* Mentor Graphics Netlist Created with Version 5.10.3 Update-1
+* File created Thu Apr 12 18:01:49 2018
+* Inifile   : 
+*
+* Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
+*
+* Options   : -_ -h -kC:\MentorGraphics\SystemVision5.10\standard\svspice.cfg -gtesting_sigma_delta.tempfile 
+* 
+* Levels    : 
+* 
+.option noinclib
+* Models for Eldo<->VHDL-AMS data conversion
+.model a2d_eldo a2d mode=std_logic
+.model d2a_eldo d2a mode=std_logic
+.defhook a2d_eldo
+.defhook d2a_eldo
+YV_SINE1 V_SINE GENERIC: AMPLITUDE="1.0" FREQ="10.0E3" PORT: X 0
+YINT ANALOG_INT(B) PORT: X INTX
+* DICTIONARY 1
+* GND = 0
+*Note: Floating node INTX.
+.GLOBAL ELECTRICAL_REF
+.model ANALOG_INT(B) macro lang=vhdlams LIB=WORK
+.model V_SINE macro lang=vhdlams LIB=EDULIB
+.END

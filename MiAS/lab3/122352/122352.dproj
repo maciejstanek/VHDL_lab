@@ -52,4 +52,8 @@
     <nextid class="V?">3</nextid>
     <nextid class="V_PULSE?">2</nextid>
   </systemvision>
+  <systemvision design="testing_sigma_delta">
+    <nextid class="V_SINE?">2</nextid>
+    <nextid class="CLOCK?">2</nextid>
+  </systemvision>
 </projectfile>

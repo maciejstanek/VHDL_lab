@@ -1,0 +1,17 @@
+[VHDL-AMS Entity]
+NAME = analog_int
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+LINE = 6
+[Generics]
+[Ports]
+(PORT SIGNAL clk IN std_ulogic)
+(PORT TERMINAL input NO-MODE electrical)
+(PORT TERMINAL output NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+LINE = 13
+[Declarations]
+(QUANTITY v)
+(QUANTITY i)
+

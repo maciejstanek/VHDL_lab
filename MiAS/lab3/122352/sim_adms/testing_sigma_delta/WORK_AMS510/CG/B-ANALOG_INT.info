@@ -1,0 +1,18 @@
+[VHDL-AMS Entity]
+NAME = analog_int
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+LINE = 6
+[Generics]
+[Ports]
+(PORT TERMINAL i NO-MODE electrical)
+(PORT TERMINAL o NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = b
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+LINE = 12
+[Declarations]
+(QUANTITY ii)
+(QUANTITY iii)
+(QUANTITY oo)
+(QUANTITY ooo)
+

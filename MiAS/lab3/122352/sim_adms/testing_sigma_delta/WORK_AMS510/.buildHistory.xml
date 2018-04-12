@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Build-History xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BuildHistory.xsd">
+  <Compilation>
+    <ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT time="Thu Apr 12 17:27:31 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT>
+    <ENTITY-ANALOG_INT__ARCHITECTURE-B_ANALOG_INT time="Thu Apr 12 18:01:49 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-ANALOG_INT__ARCHITECTURE-B_ANALOG_INT>
+  </Compilation>
+</Build-History>

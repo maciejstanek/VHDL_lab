@@ -4,7 +4,7 @@ use ieee.electrical_systems.all;
 use ieee.math_real.all;
 
 entity bilinint is
-	generic (
+	generic(
 		initial : real := 0.0;
 		clk_edge : std_logic := '1');
 	port(

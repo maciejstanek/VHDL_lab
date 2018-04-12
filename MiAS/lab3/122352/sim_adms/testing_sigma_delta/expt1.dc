@@ -1,0 +1,33 @@
+       *** Terminals ***
+0                       0
+intx                    0
+x                       0
+yint.i                  0
+yint.o                  0
+yv_sine1.neg            0
+yv_sine1.pos            0
+
+
+       *** Quantities ***
+yint.ii                 0
+yint.iii                0
+yint.oo                 0
+yint.oo'integ           0
+yint.ooo                0
+yv_sine1.ac_spec        0
+yv_sine1.i              0
+yv_sine1.phase_rad      0
+yv_sine1.v              0
+
+
+       *** Constants ***
+yv_sine1.ac_mag         0
+yv_sine1.ac_phase       0
+yv_sine1.amplitude      1
+yv_sine1.df             0
+yv_sine1.freq           10000
+yv_sine1.offset         0
+yv_sine1.phase          0
+yv_sine1.v_limit        5e-006
+
+

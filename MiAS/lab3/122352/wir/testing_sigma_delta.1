@@ -1,0 +1,42 @@
+| Wirelist created using version 5.4.
+V 5.4
+K 424506973600 testing_sigma_delta
+DW testing_sigma_delta
+Q Case
+|Q analog_int 1
+AS analog_int PINORDER=I O
+AS analog_int SIMMODEL=VHDL
+AS analog_int VHDL=ANALOG_INT(B)
+AS analog_int VHDLFILE=ANALOG_INT.VHD
+AS analog_int INOV_VER_REC=16:01_4-12-18
+AP analog_int 1 VHDL_TYPE=ELECTRICAL
+AP analog_int 1 PINTYPE=IN
+AP analog_int 2 VHDL_TYPE=ELECTRICAL
+AP analog_int 2 PINTYPE=OUT
+|Q Electrical:v_sine 1
+AS Electrical:v_sine PINORDER=POS NEG
+AS Electrical:v_sine SIMMODEL=VHDL
+AS Electrical:v_sine REFDES=V_SINE?
+AS Electrical:v_sine VHDL_GENERIC_AC_PHASE=REAL:=0.0
+AS Electrical:v_sine VHDL_GENERIC_AC_MAG=VOLTAGE:=0.0
+AS Electrical:v_sine VHDL_GENERIC_DF=REAL:=0.0
+AS Electrical:v_sine VHDL_GENERIC_OFFSET=VOLTAGE:=0.0
+AS Electrical:v_sine VHDL_GENERIC_PHASE=REAL:=0.0
+AS Electrical:v_sine VHDL_GENERIC_AMPLITUDE=VOLTAGE
+AS Electrical:v_sine VHDL_GENERIC_FREQ=REAL
+AS Electrical:v_sine VHDLFILE=V_SINE.VHD
+AS Electrical:v_sine DESCRIPTION=SINE VOLTAGE SOURCE
+AS Electrical:v_sine VHDL=EDULIB.V_SINE
+AS Electrical:v_sine INOV_VER_REC=14:46_4-22-03
+AP Electrical:v_sine 1 PINTYPE=TERMINAL
+AP Electrical:v_sine 1 VHDL_TYPE=ELECTRICAL
+AP Electrical:v_sine 2 PINTYPE=TERMINAL
+AP Electrical:v_sine 2 VHDL_TYPE=ELECTRICAL
+G ELECTRICAL_REF
+M analog_int $1I14
+I $1I14 analog_int X INTX VHDL=WORK.ANALOG_INT(B)`LABEL=INT`REFDES=INT`
+|R 15:52_4-12-18
+M Electrical:v_sine $1I1
+I $1I1 Electrical:v_sine X ELECTRICAL_REF VHDL_GENERIC_AMPLITUDE=VOLTAGE:=1.0`VHDL_GENERIC_FREQ=REAL:=10.0E3`LABEL=V_SINE1`REFDES=V_SINE?`
+|R 14:46_4-22-03
+EW
