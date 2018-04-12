@@ -8,9 +8,16 @@ NAME = arch_test_sample_hold
 SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\genhdl\test_sample_hold\test_sample_hold.vhd
 LINE = 19
 [Declarations]
+(TERMINAL \$1N48\)
+(SIGNAL x real)
+(SIGNAL linc real)
 (TERMINAL vin)
 (SIGNAL z0 real)
+(SIGNAL intx real)
 (SIGNAL z1 real)
 (SIGNAL z2 real)
+(TERMINAL \$1N66\)
+(SIGNAL sq real)
+(SIGNAL intintx real)
 (SIGNAL clk std_ulogic)
 

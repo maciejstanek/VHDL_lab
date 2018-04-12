@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.electrical_systems.all;
-use IEEE.MATH_REAL.all;
+use ieee.math_real.all;
 
 entity sample_hold is
 	generic(

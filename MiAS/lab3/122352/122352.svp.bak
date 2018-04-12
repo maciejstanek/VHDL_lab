@@ -23,22 +23,22 @@ ENDLIST
 ENDSECTION
 SECTION test_sample_hold
 TYPE SCH
-NL_OPTION VHDL ENTINST USELIBS PAREXT
-SIM_SPICE 0
-DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.vhd;arch_test_sample_hold/test_sample_hold
+NL_OPTION SPICE ENTINST USELIBS PAREXT
+SIM_SPICE 1
+DESIGN_ROOT genhdl\test_sample_hold\test_sample_hold.cir
 LIST VHDL
 hdl\sample_hold.vhd
 hdl\zdelay.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Digital\clock.vhd
+hdl\linearcombination.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_pulse.vhd
+hdl\myint.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_constant.vhd
 genhdl\test_sample_hold\test_sample_hold.vhd
 ENDLIST
 LIST SPICE
 genhdl\test_sample_hold\test_sample_hold.cir
-ENDLIST
-LIST EXPERIMENT
-expt1.cmd
-expt1.cmd
 ENDLIST
 ENDSECTION
 LIST ADDITIONAL ADMS LIBRARIES

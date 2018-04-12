@@ -1,0 +1,4 @@
+wspice: warning 813: TEST_SAMPLE_HOLD net Z1: Floating node Z1.
+wspice: warning 813: TEST_SAMPLE_HOLD net Z2: Floating node Z2.
+wspice: warning 813: TEST_SAMPLE_HOLD net LINC: Floating node LINC.
+wspice: warning 813: TEST_SAMPLE_HOLD net INTINTX: Floating node INTINTX.

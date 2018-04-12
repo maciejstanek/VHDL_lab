@@ -3,9 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.electrical_systems.all;
 use ieee.math_real.all;
 
-entity zdelay is
-	generic(
-		count : integer := 1;
+entity myint is
+	generic (
 		initial : real := 0.0;
 		clk_edge : std_logic := '1');
 	port(
@@ -14,19 +13,14 @@ entity zdelay is
 		output: out real := initial);
 end entity;
 
-architecture default of zdelay is
-	type holds_array is array (1 to count) of real;
-	signal holds: holds_array := (others => initial);
+architecture default of myint is
 begin
 	process(clk)
+		variable integral : real := initial;
 	begin
 		if clk'event and clk = clk_edge then
-			if count > 1 then
-				holds(2 to count) <= holds(1 to count-1);
-			end if;
-			holds(1) <= input;	
+			integral := integral + input;
+			output <= integral;
 		end if;
 	end process;
-
-	output <= holds(count);		
 end architecture;

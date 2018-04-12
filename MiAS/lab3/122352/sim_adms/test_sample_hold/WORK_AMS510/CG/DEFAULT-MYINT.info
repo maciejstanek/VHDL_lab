@@ -1,6 +1,6 @@
 [VHDL-AMS Entity]
-NAME = singlezdelay
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\singlezdelay.vhd
+NAME = myint
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\myint.vhd
 LINE = 6
 [Generics]
 (initial real        0.000000e+000)
@@ -11,8 +11,6 @@ LINE = 6
 (PORT SIGNAL output OUT real)
 [VHDL-AMS Architecture]
 NAME = default
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\singlezdelay.vhd
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\myint.vhd
 LINE = 16
-[Declarations]
-(SIGNAL hold real)
 

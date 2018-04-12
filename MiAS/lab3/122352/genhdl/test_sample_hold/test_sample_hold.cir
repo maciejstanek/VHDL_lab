@@ -1,7 +1,7 @@
 
 * Project TEST_SAMPLE_HOLD
 * Mentor Graphics Netlist Created with Version 5.10.3 Update-1
-* File created Thu Apr 05 17:03:54 2018
+* File created Tue Apr 10 11:13:39 2018
 * Inifile   : 
 *
 * Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
@@ -16,15 +16,32 @@
 .model d2a_eldo d2a mode=std_logic
 .defhook a2d_eldo
 .defhook d2a_eldo
-YN1I1 SAMPLE_HOLD(DEFAULT) PORT: VIN CLK VOUT
-YV_SINE1 V_SINE GENERIC: AMPLITUDE="1.0" FREQ="10.0E3" PORT: VIN 0
-YCLOCK1 CLOCK GENERIC: PERIOD="1 US" PORT: CLK
-YR1 RESISTOR(IDEAL) PORT: 0 VOUT
+YSH0 SAMPLE_HOLD(DEFAULT) PORT: VIN CLK Z0
+YZ1 ZDELAY(DEFAULT) GENERIC: COUNT="2" PORT: Z0 CLK Z2
+YVSINE V_SINE(IDEAL) GENERIC: AMPLITUDE="1.0" FREQ="1.0" PORT: VIN 0
+YZ0 ZDELAY(DEFAULT) GENERIC: COUNT="1" PORT: Z0 CLK Z1
+YSH1 SAMPLE_HOLD(DEFAULT) PORT: N1N48 CLK SQ
+YCLK CLOCK(IDEAL) GENERIC: PERIOD="20 MS" PORT: CLK
+YLINC LINEARCOMBINATION(DEFAULT) GENERIC: INITIAL="0.0" PORT: SQ Z0 LINC
+YVCLK V_PULSE(IDEAL) GENERIC: AC_MAG="0.0" PERIOD="200 MS" PULSE="1.0" 
++ WIDTH="100 MS" PORT: N1N48 0
+YINT0 MYINT(DEFAULT) PORT: X CLK INTX
+YINT1 MYINT(DEFAULT) PORT: INTX CLK INTINTX
+YVDC V_CONSTANT GENERIC: LEVEL="1.0" PORT: N1N66 0
+YSH2 SAMPLE_HOLD(DEFAULT) PORT: N1N66 CLK X
 * DICTIONARY 1
 * GND = 0
+*Note: Floating node Z1.
+*Note: Floating node Z2.
+*Note: Floating node LINC.
+*Note: Floating node INTINTX.
 .GLOBAL ELECTRICAL_REF
 .model SAMPLE_HOLD(DEFAULT) macro lang=vhdlams LIB=WORK
-.model CLOCK macro lang=vhdlams LIB=EDULIB
-.model RESISTOR(IDEAL) macro lang=vhdlams LIB=EDULIB
-.model V_SINE macro lang=vhdlams LIB=EDULIB
+.model V_CONSTANT macro lang=vhdlams LIB=EDULIB
+.model V_PULSE(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model V_SINE(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model ZDELAY(DEFAULT) macro lang=vhdlams LIB=WORK
+.model CLOCK(IDEAL) macro lang=vhdlams LIB=EDULIB
+.model MYINT(DEFAULT) macro lang=vhdlams LIB=WORK
+.model LINEARCOMBINATION(DEFAULT) macro lang=vhdlams LIB=WORK
 .END

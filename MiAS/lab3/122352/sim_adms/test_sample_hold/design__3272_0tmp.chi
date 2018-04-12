@@ -1,31 +1,13 @@
 1*******10-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******11:14:27******
 
-0* Command file for design: test_sample_hold
+0* empty file
 
 0****     INPUT LISTING                                               
 
 0***********************************************************************
-    2  .OP
-    3  * .tran 0  0
-    4  * .ac dec 100  
-    5  * .plot tran SG(clk) SG(intintx) SG(intx) SG(linc) SG(sq) SG(x) SG(z0) SG(z1) SG(z2) V(\$1N48\) V(\$1N66\) V(vin)
-    6  * .plot ac V(\$1N48\) V(\$1N66\) V(vin)
-    7  .OPTION eps=1.0e-5
-    8  .OPTION hmin=0.9e-9
-    9  
-   10  .OPTION print_dc=2
-   11  * save tr toplevel
-   12  * save ac toplevel
-   13  * save ba
-   14  
-   15  ** including C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/test_sample_hold/localHeader.ckt
-    1  * Models for Eldo<->VHDL-AMS data conversion
-    2  .MODEL A2D_ELDO A2D MODE=STD_LOGIC
-    3  .MODEL D2A_ELDO D2A MODE=STD_LOGIC
-    4  .DEFHOOK a2d_eldo
-    5  .DEFHOOK d2a_eldo
-   15  
-   16  .END
+    2  .OPTION eldo_debug
+    3  .OP
+    4  .END
 
 End of file 
 
@@ -45,7 +27,7 @@ End of file
 INFORMATION ABOUT COMPILATION 
 
 
-Memory space allocated (bytes): 100289
+Memory space allocated (bytes): 99125
 13 elements
 3 nodes 
 0 input signals
@@ -55,7 +37,7 @@ Memory space allocated (bytes): 100289
 
 *** DATE: 10-Apr-2018  11:14:27
 
-*** TITLE: * Command file for design: test_sample_hold
+*** TITLE: * empty file
 
 TEMPERATURE : 27.000000 degrees C
 
@@ -66,7 +48,7 @@ Searching Operating Point between -1.000000E+013V and
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_hold
+0* empty file
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -83,8 +65,8 @@ VMAX           = UNDEF
 
 *** Accuracy Control Options : 
 
-ITOL           = 1.00e-006 EPS            = 1.00e-005 VNTOL          = 1.00e-006 
-RELTOL         = 2.50e-004 RELERR         = 5.00e-002 PIVREL         = 1.00e-003 
+ITOL           = 1.00e-006 EPS            = 5.00e-003 VNTOL          = 1.00e-006 
+RELTOL         = 1.00e-003 RELERR         = 5.00e-002 PIVREL         = 1.00e-003 
 PIVTOL         = 1.00e-013 ABSTOL         = 1.00e-012 FLXTOL         = 1.00e-011 
 MAXORD         = 2.00e+000 
 
@@ -92,7 +74,7 @@ MAXORD         = 2.00e+000
 
 ZOOMTIME       = 1.00e+000 STEP           = 0.00e+000 STARTSMP       = 0.00e+000 
 FREQSMP        = 0.00e+000 COURESOL       = 0.00e+000 TRTOL          = 7.00e+000 
-HMIN           = 9.00e-010 ITL3           = 3        ITL4           = 13       
+HMIN           = 1.00e-012 ITL3           = 3        ITL4           = 13       
 FT             = 1.25e-001 DCLOG          = 1.00e+000 LVLTIM         = 2        
 LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-001 
 ABSVAR         = 2.00e-001 SAMPLE         = 0.00e+000 HMAX           = UNDEF    
@@ -142,7 +124,7 @@ Number of iterations: 2
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_hold
+0* empty file
 0****                 DC OPERATING POINT                                   TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -157,7 +139,8 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_h
+0* empty file
+
 0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -168,7 +151,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_hold
+0* empty file
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -192,7 +175,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
   DIGITAL  INWCALL    ITERNW   MEMSIZE
 
-        0        22.000e+000    105216
+        0        22.000e+000    105952
 
     NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
 
@@ -212,7 +195,7 @@ Number of iterations: 1
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_hold
+0* empty file
 0****                 DC OPERATING POINT                                   TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -227,7 +210,8 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_h
+0* empty file
+
 0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -238,7 +222,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
 
-0* Command file for design: test_sample_hold
+0* empty file
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
 
 0*************************************************************************************************************************
@@ -262,7 +246,7 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
   DIGITAL  INWCALL    ITERNW   MEMSIZE
 
-        0        15.000e-001    102167
+        0        15.000e-001    102903
 
     NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
 
@@ -273,54 +257,4 @@ VIN          0.0         \$1N48\      0.0         \$1N66\      1.0000E+000
 
 
 CPU time 0 ms
-
-
-1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
-
-0* Command file for design: test_sample_h
-0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
-
-0*************************************************************************************************************************
-
-
-
-
-
-1***************10-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************11:14:27*****************
-
-0* Command file for design: test_sample_hold
-0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
-
-0*************************************************************************************************************************
-
-
-
-
-
-    NUNODS NCNODS NUMNOD   NUMEL   DIODES    BJT  JFET  MOSFET
-
-         3      3      3      13        0      0     0       0
-
-
-    NSTOP    NTERM    PERSPA  
-
-       10       34 6.600e+001
-
-    NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
-
-         0       0       0       0       0
-
-  DIGITAL  INWCALL    ITERNW   MEMSIZE
-
-        0        15.000e-001    102167
-
-    NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
-
-           0            0         2   0.00e+000   0.000e+000%
-
-
-
-
-
-CPU time 16 ms
 

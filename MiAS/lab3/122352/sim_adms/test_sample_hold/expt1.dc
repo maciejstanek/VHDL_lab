@@ -1,54 +1,120 @@
-       *** Terminals ***
-$1i1.input             0
-v_sine1.neg            0
-v_sine1.pos            0
-vin                    0
+                 *** Terminals ***
+$1n48                                      0
+$1n66                                      1
+sh0.input                                  0
+sh1.input                                  0
+sh2.input                                  1
+vclk.neg                                   0
+vclk.pos                                   0
+vdc.neg                                    0
+vdc.pos                                    1
+vin                                        0
+vsine.neg                                  0
+vsine.pos                                  0
 
 
-       *** Signals ***
-$1i1.clk               0
-$1i1.output            0
-$1i23.clk              0
-$1i23.holds            {0} {0}
-$1i23.input            0
-$1i23.output           0
-$1i36.clk              0
-$1i36.holds            {0}
-$1i36.input            0
-$1i36.output           0
-clk                    0
-clock1.clk_out         0
-z0                     0
-z1                     0
-z2                     0
+                 *** Signals ***
+clk                                        0
+clk_1.clk_out                              0
+int0.clk                                   0
+int0.input                                 0
+int0.output                                0
+int1.clk                                   0
+int1.input                                 0
+int1.output                                0
+intintx                                    0
+intx                                       0
+linc                                       0
+linc_1.inputa                              0
+linc_1.inputb                              0
+linc_1.output                              0
+sh0.clk                                    0
+sh0.output                                 0
+sh1.clk                                    0
+sh1.output                                 0
+sh2.clk                                    0
+sh2.output                                 0
+sq                                         0
+vclk.pulse_signal                          0
+x                                          0
+z0                                         0
+z0_1.clk                                   0
+z0_1.holds                                 {0}
+z0_1.input                                 0
+z0_1.output                                0
+z1                                         0
+z1_1.clk                                   0
+z1_1.holds                                 {0} {0}
+z1_1.input                                 0
+z1_1.output                                0
+z2                                         0
 
 
-       *** Quantities ***
-$1i1.v_sampled         0
-v_sine1.ac_spec        0
-v_sine1.i              0
-v_sine1.phase_rad      0
-v_sine1.v              0
+                 *** Quantities ***
+sh0.v_sampled                              0
+sh1.v_sampled                              0
+sh2.v_sampled                              1
+vclk.ac_spec                               0
+vclk.i                                     0
+vclk.pulse_signal'ramp[1e-009,1e-009]      0
+vclk.v                                     0
+vdc.ac_spec                                0
+vdc.i                                      0
+vdc.v                                      1
+vsine.ac_spec                              0
+vsine.i                                    0
+vsine.phase_rad                            0
+vsine.v                                    0
 
 
-       *** Constants ***
-$1i1.clk_edge          1
-$1i1.initial           0
-$1i23.clk_edge         1
-$1i23.count            2
-$1i23.initial          0
-$1i36.clk_edge         1
-$1i36.count            1
-$1i36.initial          0
-clock1.duty            0.5
-clock1.period          20 ms
-v_sine1.ac_mag         0
-v_sine1.ac_phase       0
-v_sine1.amplitude      1
-v_sine1.df             0
-v_sine1.freq           1
-v_sine1.offset         0
-v_sine1.phase          0
-v_sine1.v_limit        0.05
+                 *** Variables ***
+int0._p1.integral                          0
+int1._p1.integral                          0
+
+
+                 *** Constants ***
+clk_1.duty                                 0.5
+clk_1.period                               20 ms
+int0.clk_edge                              1
+int0.initial                               0
+int1.clk_edge                              1
+int1.initial                               0
+linc_1.coeffa                              1
+linc_1.coeffb                              1
+linc_1.initial                             0
+sh0.clk_edge                               1
+sh0.initial                                0
+sh1.clk_edge                               1
+sh1.initial                                0
+sh2.clk_edge                               1
+sh2.initial                                0
+vclk.ac_mag                                0
+vclk.ac_phase                              0
+vclk.delay                                 0 s
+vclk.initial                               0
+vclk.period                                200 ms
+vclk.pulse                                 1
+vclk.ri2p                                  1e-009
+vclk.rp2i                                  1e-009
+vclk.ti2p                                  1 ns
+vclk.tp2i                                  1 ns
+vclk.width                                 100 ms
+vdc.ac_mag                                 0
+vdc.ac_phase                               0
+vdc.level                                  1
+vsine.ac_mag                               0
+vsine.ac_phase                             0
+vsine.amplitude                            1
+vsine.df                                   0
+vsine.freq                                 1
+vsine.offset                               0
+vsine.phase                                0
+vsine.v_limit                              0.05
+z0_1.clk_edge                              1
+z0_1.count                                 1
+z0_1.initial                               0
+z1_1.clk_edge                              1
+z1_1.count                                 2
+z1_1.initial                               0
 
 

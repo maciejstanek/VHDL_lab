@@ -1,12 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.electrical_systems.all;
-use IEEE.MATH_REAL.all;
+use ieee.math_real.all;
 
 entity linearcombination is
 	generic(
 		initial : real := 0.0;
-		clk_edge : std_logic := '1';
 		coeffa : real := 1.0;
 		coeffb : real := 1.0);
 	port(
