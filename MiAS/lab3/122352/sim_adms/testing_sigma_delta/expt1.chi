@@ -1,4 +1,4 @@
-1*******19-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******17:51:44******
+1*******19-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******18:05:58******
 
 0* Command file for design: testing_sigma_delta
 
@@ -9,8 +9,8 @@
     3  .OP
     4  .TRAN 0 2 0
     5  * .ac dec 100  
-    6  .PLOT TRAN SG(CLK_D) SG(OUT_D) V(IN_A) V(OUT_A) V(SUM_A) V(SUM_D)
-    7  * .plot ac V(in_a) V(out_a) V(sum_a) V(sum_d)
+    6  .PLOT TRAN SG(CLK_D) SG(OUT_D) V(IN_A) V(INT_SUM) V(OUT_A) V(SUM_A)
+    7  * .plot ac V(in_a) V(int_sum) V(out_a) V(sum_a)
     8  .OPTION eps=1.0e-5
     9  .OPTION hmin=0.9e-9
    10  
@@ -25,7 +25,7 @@
     1  
     2  * Project TESTING_SIGMA_DELTA
     3  * Mentor Graphics Netlist Created with Version 5.10.3 Update-1
-    4  * File created Thu Apr 19 17:51:42 2018
+    4  * File created Thu Apr 19 18:05:56 2018
     5  * Inifile   : 
     6  *
     7  * Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
@@ -41,10 +41,10 @@
    17  .DEFHOOK a2d_eldo
    18  .DEFHOOK d2a_eldo
    19  YSUMMINGAMP4 SUMMINGAMP PORT: IN_A OUT_A SUM_A
-   20  YN1I72 ANALOG_INT(DEFAULT) PORT: SUM_A SUM_D
-   21  YN1I75 ADC_1B(DEFAULT) PORT: CLK_D SUM_D OUT_D
-   22  YN1I76 DAC_1B(DEFAULT) PORT: OUT_D OUT_A
-   23  YCLOCK3 CLOCK(IDEAL) GENERIC: PERIOD="50 MS" PORT: CLK_D
+   20  YN1I72 ANALOG_INT(DEFAULT) PORT: SUM_A INT_SUM
+   21  YN1I75 ADC_1B(DEFAULT) PORT: CLK_D INT_SUM OUT_D
+   22  YN1I76 DAC_1B(DEFAULT) GENERIC: VMAX="-1.0" VMIN="1.0" PORT: OUT_D OUT_A
+   23  YCLOCK3 CLOCK(IDEAL) GENERIC: PERIOD="1 MS" PORT: CLK_D
    24  YV_SINE3 V_SINE(IDEAL) GENERIC: AMPLITUDE="1.0" FREQ="2.0" PORT: IN_A 0
    25  * DICTIONARY 1
    26  * GND = 0
@@ -77,7 +77,7 @@ End of file
 INFORMATION ABOUT COMPILATION 
 
 
-Memory space allocated (bytes): 107413
+Memory space allocated (bytes): 106635
 6 elements
 4 nodes 
 0 input signals
@@ -85,7 +85,7 @@ Memory space allocated (bytes): 107413
  SystemVision Version 5.10 Thu Oct 10 05:53:28 GMT 2013
 
 
-*** DATE: 19-Apr-2018  17:51:44
+*** DATE: 19-Apr-2018  18:05:58
 
 *** TITLE: * Command file for design: testing_sigma_delta
 
@@ -96,7 +96,7 @@ Searching Operating Point between -1.000000E+013V and
 
 
 
-1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************17:51:44*****************
+1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************18:05:58*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -172,7 +172,7 @@ Number of iterations: 2
 
 
 
-1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************17:51:44*****************
+1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************18:05:58*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -181,8 +181,8 @@ Number of iterations: 2
 
 
   NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
-IN_A         0.0         OUT_A       -1.0000E+000  SUM_A       -1.0000E+000  
-SUM_D        0.0         
+INT_SUM      0.0         IN_A         0.0         OUT_A        1.0000E+000  
+SUM_A        1.0000E+000  
 
 
 
@@ -192,7 +192,7 @@ Number of iterations: 1
 
 
 
-1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************17:51:44*****************
+1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************18:05:58*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -201,13 +201,13 @@ Number of iterations: 1
 
 
   NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
-IN_A         0.0         OUT_A       -1.0000E+000  SUM_A       -1.0000E+000  
-SUM_D        0.0         
+INT_SUM      0.0         IN_A         0.0         OUT_A        1.0000E+000  
+SUM_A        1.0000E+000  
 
 
 
 
-1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************17:51:44*****************
+1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************18:05:58*****************
 
 0* Command file for design: testing_sigma
 0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
@@ -218,7 +218,7 @@ SUM_D        0.0
 
 
 
-1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************17:51:44*****************
+1***************19-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************18:05:58*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -240,11 +240,11 @@ SUM_D        0.0
 
     NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
 
-       111       0       0       0       0
+     12593    4979    4979    4979       0
 
   DIGITAL  INWCALL    ITERNW   MEMSIZE
 
-        0      3042.690e+000    110202
+        0    281421.601e+000    109424
 
     NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
 
@@ -255,7 +255,7 @@ SUM_D        0.0
 
 
 
-CPU time 0 ms
+CPU time 0.40 s
 
 Save file C:/stanek/NCAD/MiAS/lab3/122352/sim_adms/testing_sigma_delta/testing_sigma_delta.iic created  at time 2.000000e+000
 
