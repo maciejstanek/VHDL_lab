@@ -1,0 +1,11 @@
+[VHDL-AMS Entity]
+NAME = dac_1b
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\dac_1b.vhd
+LINE = 6
+[Generics]
+(vmax real        1.000000e+000)
+(vmin real       -1.000000e+000)
+[Ports]
+(PORT SIGNAL input IN std_ulogic)
+(PORT TERMINAL output NO-MODE electrical)
+

@@ -1,2 +1,4 @@
-vdraw: Warning 2206: Pin/Net disassociation at location (690,990).
-vdraw: Note 2207: Reconnect these net(s) to pin(s) if appropriate.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.

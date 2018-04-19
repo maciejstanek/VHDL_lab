@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Build-History xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BuildHistory.xsd">
   <Compilation>
-    <ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT time="Thu Apr 12 17:27:31 2018">
+    <ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT time="Thu Apr 19 17:48:12 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT>
-    <ENTITY-ANALOG_INT__ARCHITECTURE-B_ANALOG_INT time="Thu Apr 12 18:01:49 2018">
+    <ENTITY-ANALOG_INT__ARCHITECTURE-B_ANALOG_INT time="Thu Apr 19 16:33:25 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ANALOG_INT__ARCHITECTURE-B_ANALOG_INT>
+    <ENTITY-OPAMP__ARCHITECTURE-SIMPLE_OPAMP time="Thu Apr 19 15:53:08 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-OPAMP__ARCHITECTURE-SIMPLE_OPAMP>
+    <ENTITY-OPAMP__ARCHITECTURE-DEFAULT_OPAMP time="Thu Apr 19 16:33:20 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-OPAMP__ARCHITECTURE-DEFAULT_OPAMP>
+    <ENTITY-R__ARCHITECTURE-DEFAULT_R time="Thu Apr 19 16:11:51 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-R__ARCHITECTURE-DEFAULT_R>
+    <ENTITY-C__ARCHITECTURE-DEFAULT_C time="Thu Apr 19 16:11:49 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-C__ARCHITECTURE-DEFAULT_C>
+    <ENTITY-CAPACITOR__ARCHITECTURE-DEFAULT_CAPACITOR time="Thu Apr 19 16:33:18 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-CAPACITOR__ARCHITECTURE-DEFAULT_CAPACITOR>
+    <ENTITY-RESISTOR__ARCHITECTURE-DEFAULT_RESISTOR time="Thu Apr 19 16:33:14 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-RESISTOR__ARCHITECTURE-DEFAULT_RESISTOR>
+    <ENTITY-ANALOG_INT__ARCHITECTURE-BEHAVIORAL_ANALOG_INT__ARCHITECTURE-STRUCTURAL_ANALOG_INT time="Thu Apr 19 16:50:49 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-ANALOG_INT__ARCHITECTURE-BEHAVIORAL_ANALOG_INT__ARCHITECTURE-STRUCTURAL_ANALOG_INT>
+    <ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B time="Thu Apr 19 17:48:07 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B>
+    <ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B time="Thu Apr 19 17:48:04 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B>
   </Compilation>
 </Build-History>

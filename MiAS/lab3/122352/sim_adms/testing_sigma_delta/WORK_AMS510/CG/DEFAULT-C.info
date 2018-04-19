@@ -1,0 +1,18 @@
+[VHDL-AMS Entity]
+NAME = c
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\c.vhd
+LINE = 5
+[Generics]
+(capacity real        1.000000e+000)
+(ic real       -1.000000e+308)
+[Ports]
+(PORT TERMINAL p NO-MODE electrical)
+(PORT TERMINAL m NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\c.vhd
+LINE = 10
+[Declarations]
+(QUANTITY v)
+(QUANTITY i)
+

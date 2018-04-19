@@ -5,14 +5,13 @@ use ieee.math_real.all;
 
 entity analog_int is
   port(
-    terminal i : in electrical;
-    terminal o : out electrical);
+    terminal input : in electrical;
+    terminal output : out electrical);
 end entity;
 
-architecture b of analog_int is
-  quantity ii across iii through i;
-  quantity oo across ooo through o to electrical_ref;
+architecture default of analog_int is
+  quantity v1 across input;
+  quantity v2 across i2 through output; 
 begin
-  oo == oo'integ;
-  ii == oo;
+  v2 == v1'integ;
 end architecture;

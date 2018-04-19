@@ -11,8 +11,5 @@ NAME = b
 SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
 LINE = 12
 [Declarations]
-(QUANTITY ii)
-(QUANTITY iii)
-(QUANTITY oo)
-(QUANTITY ooo)
+(TERMINAL h)
 

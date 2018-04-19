@@ -1,33 +1,61 @@
-       *** Terminals ***
-0                       0
-intx                    0
-x                       0
-yint.i                  0
-yint.o                  0
-yv_sine1.neg            0
-yv_sine1.pos            0
+        *** Terminals ***
+0                        0
+in_a                     0
+out_a                    -1
+sum_a                    -1
+sum_d                    0
+yn1i72.input             -1
+yn1i72.output            0
+yn1i75.input             0
+yn1i76.output            -1
+ysummingamp4.input1      0
+ysummingamp4.input2      -1
+ysummingamp4.output      -1
+yv_sine3.neg             0
+yv_sine3.pos             0
 
 
-       *** Quantities ***
-yint.ii                 0
-yint.iii                0
-yint.oo                 0
-yint.oo'integ           0
-yint.ooo                0
-yv_sine1.ac_spec        0
-yv_sine1.i              0
-yv_sine1.phase_rad      0
-yv_sine1.v              0
+        *** Signals ***
+clk_d                    0
+out_d                    U
+yclock3.clk_out          0
+yn1i75.clk               0
+yn1i75.output            U
+yn1i76.input             U
 
 
-       *** Constants ***
-yv_sine1.ac_mag         0
-yv_sine1.ac_phase       0
-yv_sine1.amplitude      1
-yv_sine1.df             0
-yv_sine1.freq           10000
-yv_sine1.offset         0
-yv_sine1.phase          0
-yv_sine1.v_limit        5e-006
+        *** Quantities ***
+yn1i72.i2                0
+yn1i72.v1                -1
+yn1i72.v1'integ          0
+yn1i72.v2                0
+yn1i75.v                 0
+yn1i76.i                 0
+yn1i76.v                 -1
+ysummingamp4.iout        0
+ysummingamp4.vin1        0
+ysummingamp4.vin2        -1
+ysummingamp4.vout        -1
+yv_sine3.ac_spec         0
+yv_sine3.i               0
+yv_sine3.phase_rad       0
+yv_sine3.v               0
+
+
+        *** Constants ***
+yclock3.duty             0.5
+yclock3.period           50 ms
+yn1i75.vthr              0
+yn1i76.vmax              1
+yn1i76.vmin              -1
+ysummingamp4.k           1
+yv_sine3.ac_mag          0
+yv_sine3.ac_phase        0
+yv_sine3.amplitude       1
+yv_sine3.df              0
+yv_sine3.freq            2
+yv_sine3.offset          0
+yv_sine3.phase           0
+yv_sine3.v_limit         0.025
 
 

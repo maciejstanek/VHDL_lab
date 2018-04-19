@@ -1,10 +1,10 @@
 * Command file for design: testing_sigma_delta
 * Top Spice file: ..\..\genhdl\testing_sigma_delta\testing_sigma_delta.cir
 .op
-.tran 0 200us 0
+.tran 0 2 0
 * .ac dec 100  
-.plot tran V(intx) V(x)
-* .plot ac V(intx) V(x)
+.plot tran SG(clk_d) SG(out_d) V(in_a) V(out_a) V(sum_a) V(sum_d)
+* .plot ac V(in_a) V(out_a) V(sum_a) V(sum_d)
 .option eps=1.0e-5
 .option hmin=0.9e-9
 

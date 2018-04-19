@@ -1,0 +1,10 @@
+[VHDL-AMS Entity]
+NAME = r
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\r.vhd
+LINE = 5
+[Generics]
+(res real        1.000000e+000)
+[Ports]
+(PORT TERMINAL p1 NO-MODE electrical)
+(PORT TERMINAL p2 NO-MODE electrical)
+

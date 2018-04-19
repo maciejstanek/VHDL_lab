@@ -1,0 +1,10 @@
+[VHDL-AMS Entity]
+NAME = resistor
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\resistor.vhd
+LINE = 5
+[Generics]
+(r real        1.000000e+000)
+[Ports]
+(PORT TERMINAL a NO-MODE electrical)
+(PORT TERMINAL b NO-MODE electrical)
+

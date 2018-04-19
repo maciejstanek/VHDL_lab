@@ -1,0 +1,21 @@
+[VHDL-AMS Entity]
+NAME = opamp
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\opamp.vhd
+LINE = 5
+[Generics]
+(vdd real        1.500000e+001)
+(vss real       -1.500000e+001)
+(gain real        1.000000e+308)
+[Ports]
+(PORT TERMINAL in_p NO-MODE electrical)
+(PORT TERMINAL in_n NO-MODE electrical)
+(PORT TERMINAL output NO-MODE electrical)
+[VHDL-AMS Architecture]
+NAME = default
+SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\opamp.vhd
+LINE = 15
+[Declarations]
+(QUANTITY vin)
+(QUANTITY vout)
+(QUANTITY iout)
+
