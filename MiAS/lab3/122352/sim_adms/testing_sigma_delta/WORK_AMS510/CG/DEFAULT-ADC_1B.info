@@ -1,6 +1,6 @@
 [VHDL-AMS Entity]
 NAME = adc_1b
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\adc_1b.vhd
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\adc_1b.vhd
 LINE = 6
 [Generics]
 (vthr real        0.000000e+000)
@@ -10,7 +10,7 @@ LINE = 6
 (PORT SIGNAL output OUT std_ulogic)
 [VHDL-AMS Architecture]
 NAME = default
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\adc_1b.vhd
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\adc_1b.vhd
 LINE = 15
 [Declarations]
 (QUANTITY v)

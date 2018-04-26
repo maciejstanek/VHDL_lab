@@ -1,0 +1,11 @@
+[VHDL-AMS Entity]
+NAME = decim
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\decim.vhd
+LINE = 8
+[Generics]
+(osr integer "32")
+[Ports]
+(PORT SIGNAL clk IN std_ulogic)
+(PORT SIGNAL input IN std_ulogic)
+(PORT TERMINAL output NO-MODE electrical)
+

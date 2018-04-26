@@ -53,10 +53,10 @@
     <nextid class="V_PULSE?">2</nextid>
   </systemvision>
   <systemvision design="testing_sigma_delta">
-    <nextid class="V_SINE?">4</nextid>
-    <nextid class="CLOCK?">4</nextid>
+    <nextid class="V_SINE?">5</nextid>
+    <nextid class="CLOCK?">5</nextid>
     <nextid class="GAINAMP?">4</nextid>
-    <nextid class="SUMMINGAMP?">5</nextid>
+    <nextid class="SUMMINGAMP?">6</nextid>
     <nextid class="V?">3</nextid>
   </systemvision>
 </projectfile>

@@ -1,2 +1,2 @@
-wspice: warning 813: TESTING_SIGMA_DELTA net INTX: Floating node INTX.
-wspice: warning 813: TESTING_SIGMA_DELTA net C_ANALOG: Floating node C_ANALOG.
+wspice: warning 813: TESTING_SIGMA_DELTA net DECIM2_A: Floating node DECIM2_A.
+wspice: warning 813: TESTING_SIGMA_DELTA net DECIM_A: Floating node DECIM_A.

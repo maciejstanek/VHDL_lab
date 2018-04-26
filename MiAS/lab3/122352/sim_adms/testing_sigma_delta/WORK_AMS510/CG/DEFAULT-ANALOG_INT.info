@@ -1,6 +1,6 @@
 [VHDL-AMS Entity]
 NAME = analog_int
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
 LINE = 6
 [Generics]
 [Ports]
@@ -8,7 +8,7 @@ LINE = 6
 (PORT TERMINAL output NO-MODE electrical)
 [VHDL-AMS Architecture]
 NAME = default
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
 LINE = 12
 [Declarations]
 (QUANTITY v1)

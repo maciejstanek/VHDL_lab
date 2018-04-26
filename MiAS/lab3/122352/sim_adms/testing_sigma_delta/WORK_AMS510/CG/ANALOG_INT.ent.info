@@ -1,6 +1,6 @@
 [VHDL-AMS Entity]
 NAME = analog_int
-SOURCE = C:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
+SOURCE = D:\stanek\NCAD\MiAS\lab3\122352\hdl\analog_int.vhd
 LINE = 6
 [Ports]
 (PORT TERMINAL input NO-MODE electrical)

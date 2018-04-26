@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Build-History xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BuildHistory.xsd">
   <Compilation>
-    <ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT time="Thu Apr 19 17:48:12 2018">
+    <ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT time="Thu Apr 26 15:55:31 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ANALOG_INT__ARCHITECTURE-DEFAULT_ANALOG_INT>
@@ -37,13 +37,17 @@
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ANALOG_INT__ARCHITECTURE-BEHAVIORAL_ANALOG_INT__ARCHITECTURE-STRUCTURAL_ANALOG_INT>
-    <ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B time="Thu Apr 19 17:48:07 2018">
+    <ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B time="Thu Apr 26 15:55:32 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B>
-    <ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B time="Thu Apr 19 17:48:04 2018">
+    <ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B time="Thu Apr 26 15:55:31 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B>
+    <ENTITY-DECIM__ARCHITECTURE-DEFAULT_DECIM time="Thu Apr 26 16:12:54 2018">
+      <tool name="vacom" version="v1.3_1.0"/>
+      <options ordinal="-prod pr" extra=""/>
+    </ENTITY-DECIM__ARCHITECTURE-DEFAULT_DECIM>
   </Compilation>
 </Build-History>

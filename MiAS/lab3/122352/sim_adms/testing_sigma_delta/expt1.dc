@@ -1,61 +1,113 @@
         *** Terminals ***
-0                        0
-in_a                     0
-int_sum                  0
-out_a                    1
-sum_a                    1
-yn1i72.input             1
-yn1i72.output            0
-yn1i75.input             0
-yn1i76.output            1
-ysummingamp4.input1      0
-ysummingamp4.input2      1
-ysummingamp4.output      1
-yv_sine3.neg             0
-yv_sine3.pos             0
+0                         0
+decim2_a                  0
+decim_a                   0
+in_a                      0
+int_sum                   0
+int_sum2_a                0
+out2_a                    1
+out_a                     1
+sum2_a                    1
+sum_a                     1
+yn1i72.input              1
+yn1i72.output             0
+yn1i75.input              0
+yn1i76.output             1
+yn1i92.output             0
+yn1i107.input             1
+yn1i107.output            0
+yn1i112.output            1
+yn1i113.output            0
+yn1i114.input             0
+ysummingamp4.input1       0
+ysummingamp4.input2       1
+ysummingamp4.output       1
+ysummingamp5.input1       0
+ysummingamp5.input2       1
+ysummingamp5.output       1
+yv_sine3.neg              0
+yv_sine3.pos              0
 
 
         *** Signals ***
-clk_d                    0
-out_d                    U
-yclock3.clk_out          0
-yn1i75.clk               0
-yn1i75.output            U
-yn1i76.input             U
+clk_d                     0
+out2_d                    U
+out_d                     U
+yclock3.clk_out           0
+yn1i75.clk                0
+yn1i75.output             U
+yn1i76.input              U
+yn1i92.clk                0
+yn1i92.decimated          0
+yn1i92.input              U
+yn1i112.input             U
+yn1i113.clk               0
+yn1i113.decimated         0
+yn1i113.input             U
+yn1i114.clk               0
+yn1i114.output            U
 
 
         *** Quantities ***
-yn1i72.i2                0
-yn1i72.v1                1
-yn1i72.v1'integ          0
-yn1i72.v2                0
-yn1i75.v                 0
-yn1i76.i                 0
-yn1i76.v                 1
-ysummingamp4.iout        0
-ysummingamp4.vin1        0
-ysummingamp4.vin2        1
-ysummingamp4.vout        1
-yv_sine3.ac_spec         0
-yv_sine3.i               0
-yv_sine3.phase_rad       0
-yv_sine3.v               0
+yn1i72.i2                 0
+yn1i72.v1                 1
+yn1i72.v1'integ           0
+yn1i72.v2                 0
+yn1i75.v                  0
+yn1i76.i                  0
+yn1i76.v                  1
+yn1i92.i                  0
+yn1i92.v                  0
+yn1i107.i2                0
+yn1i107.v1                1
+yn1i107.v1'integ          0
+yn1i107.v2                0
+yn1i112.i                 0
+yn1i112.v                 1
+yn1i113.i                 0
+yn1i113.v                 0
+yn1i114.v                 0
+ysummingamp4.iout         0
+ysummingamp4.vin1         0
+ysummingamp4.vin2         1
+ysummingamp4.vout         1
+ysummingamp5.iout         0
+ysummingamp5.vin1         0
+ysummingamp5.vin2         1
+ysummingamp5.vout         1
+yv_sine3.ac_spec          0
+yv_sine3.i                0
+yv_sine3.phase_rad        0
+yv_sine3.v                0
+
+
+        *** Variables ***
+yn1i92._p1.progress       0
+yn1i92._p1.result         32
+yn1i113._p1.progress      0
+yn1i113._p1.result        32
 
 
         *** Constants ***
-yclock3.duty             0.5
-yclock3.period           1 ms
-yn1i75.vthr              0
-yn1i76.vmax              -1
-yn1i76.vmin              1
-ysummingamp4.k           1
-yv_sine3.ac_mag          0
-yv_sine3.ac_phase        0
-yv_sine3.amplitude       1
-yv_sine3.df              0
-yv_sine3.freq            2
-yv_sine3.offset          0
-yv_sine3.phase           0
-yv_sine3.v_limit         0.025
+yclock3.duty              0.5
+yclock3.period            1 ms
+yn1i75.vthr               0
+yn1i76.vmax               -1
+yn1i76.vmin               1
+yn1i92.osr                32
+yn1i112.vmax              -1
+yn1i112.vmin              1
+yn1i113.osr               32
+yn1i114.vthr              0
+ysummingamp4.k            1
+ysummingamp5.k            1
+yv_sine3.ac_mag           0
+yv_sine3.ac_phase         0
+yv_sine3.amplitude        1
+yv_sine3.df               0
+yv_sine3.freq             2
+yv_sine3.offset           0
+yv_sine3.phase            0
+yv_sine3.v_limit          0.025
 
 

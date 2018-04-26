@@ -1,8 +1,7 @@
-vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
-vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
-vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
-vdraw: Warning 5270: testing_sigma_delta.1 com $1I17: Symbol analog_int has changed since component $1I17 was instantiated.
 vdraw: Warning 5270: testing_sigma_delta.1 com $1I75: Symbol adc_1b has changed since component $1I75 was instantiated.
 vdraw: Warning 5270: testing_sigma_delta.1 com $1I76: Symbol dac_1b has changed since component $1I76 was instantiated.
 vdraw: Warning 5270: testing_sigma_delta.1 com $1I75: Symbol adc_1b has changed since component $1I75 was instantiated.
 vdraw: Warning 5270: testing_sigma_delta.1 com $1I76: Symbol dac_1b has changed since component $1I76 was instantiated.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I76: Symbol dac_1b has changed since component $1I76 was instantiated.
+vdraw: Warning 5270: testing_sigma_delta.1 com $1I75: Symbol adc_1b has changed since component $1I75 was instantiated.
+vdraw: Note 1138: Pin already connected to net
