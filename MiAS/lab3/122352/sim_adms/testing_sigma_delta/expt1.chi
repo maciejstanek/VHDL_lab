@@ -1,4 +1,4 @@
-1*******26-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******16:20:53******
+1*******26-Apr-18 *******  SystemVision Version 5.10  (Version 5.10)  *******16:31:39******
 
 0* Command file for design: testing_sigma_delta
 
@@ -9,8 +9,8 @@
     3  .OP
     4  .TRAN 0 2 0
     5  * .ac dec 100  
-    6  .PLOT TRAN SG(CLK_D) SG(OUT2_D) SG(OUT_D) V(DECIM2_A) V(DECIM_A) V(IN_A) V(INT_SUM) V(INT_SUM2_A) V(OUT2_A) V(OUT_A) V(SUM2_A) V(SUM_A)
-    7  * .plot ac V(decim2_a) V(decim_a) V(in_a) V(int_sum) V(int_sum2_a) V(out2_a) V(out_a) V(sum2_a) V(sum_a)
+    6  .PLOT TRAN SG(CLK) SG(OUT2_D) SG(OUT_D) V(DECIM2_A) V(DECIM_A) V(IN_A) V(INT_SUM) V(N1N135) V(N1N142) V(N1N145) V(OUT2_A) V(OUT_A) V(SUM2_A) V(SUM_A)
+    7  * .plot ac V(decim2_a) V(decim_a) V(in_a) V(int_sum) V(n1n135) V(n1n142) V(n1n145) V(out2_a) V(out_a) V(sum2_a) V(sum_a)
     8  .OPTION eps=1.0e-5
     9  .OPTION hmin=0.9e-9
    10  
@@ -25,7 +25,7 @@
     1  
     2  * Project TESTING_SIGMA_DELTA
     3  * Mentor Graphics Netlist Created with Version 5.10.3 Update-1
-    4  * File created Thu Apr 26 16:20:50 2018
+    4  * File created Thu Apr 26 16:31:36 2018
     5  * Inifile   : 
     6  *
     7  * Config file: C:\MentorGraphics\SystemVision5.10\standard\svspice.cfg
@@ -41,30 +41,32 @@
    17  .DEFHOOK a2d_eldo
    18  .DEFHOOK d2a_eldo
    19  YSUMMINGAMP5 SUMMINGAMP PORT: IN_A OUT2_A SUM2_A
-   20  YN1I107 ANALOG_INT(DEFAULT) PORT: SUM2_A INT_SUM2_A
+   20  YN1I107 ANALOG_INT(DEFAULT) PORT: SUM2_A N1N142
    21  YN1I112 DAC_1B(DEFAULT) GENERIC: VMAX="-1.0" VMIN="1.0" PORT: OUT2_D OUT2_A
-   22  YN1I113 DECIM(DEFAULT) GENERIC: OSR="32" PORT: CLK_D OUT2_D DECIM2_A
-   23  YN1I114 ADC_1B(DEFAULT) PORT: CLK_D INT_SUM2_A OUT2_D
-   24  YSUMMINGAMP4 SUMMINGAMP PORT: IN_A OUT_A SUM_A
-   25  YN1I72 ANALOG_INT(DEFAULT) PORT: SUM_A INT_SUM
-   26  YN1I75 ADC_1B(DEFAULT) PORT: CLK_D INT_SUM OUT_D
-   27  YN1I76 DAC_1B(DEFAULT) GENERIC: VMAX="-1.0" VMIN="1.0" PORT: OUT_D OUT_A
-   28  YCLOCK3 CLOCK(IDEAL) GENERIC: PERIOD="1 MS" PORT: CLK_D
-   29  YV_SINE3 V_SINE(IDEAL) GENERIC: AMPLITUDE="1.0" FREQ="2.0" PORT: IN_A 0
-   30  YN1I92 DECIM(DEFAULT) GENERIC: OSR="32" PORT: CLK_D OUT_D DECIM_A
-   31  * DICTIONARY 1
-   32  * GND = 0
-   33  *Note: Floating node DECIM2_A.
-   34  *Note: Floating node DECIM_A.
-   35  .GLOBAL ELECTRICAL_REF
-   36  .MODEL DECIM(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
-   37  .MODEL SUMMINGAMP MACRO LANG=VHDLAMS LIB=EDULIB
-   38  .MODEL ANALOG_INT(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
-   39  .MODEL DAC_1B(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
-   40  .MODEL ADC_1B(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
-   41  .MODEL V_SINE(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
-   42  .MODEL CLOCK(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
-   43  *END
+   22  YN1I113 DECIM(DEFAULT) GENERIC: OSR="32" PORT: CLK OUT2_D DECIM2_A
+   23  YSUMMINGAMP6 SUMMINGAMP PORT: N1N142 OUT2_A N1N145
+   24  YN1I132 ANALOG_INT(DEFAULT) PORT: N1N145 N1N135
+   25  YN1I133 ADC_1B(DEFAULT) PORT: CLK N1N135 OUT2_D
+   26  YSUMMINGAMP4 SUMMINGAMP PORT: IN_A OUT_A SUM_A
+   27  YN1I72 ANALOG_INT(DEFAULT) PORT: SUM_A INT_SUM
+   28  YN1I75 ADC_1B(DEFAULT) PORT: CLK INT_SUM OUT_D
+   29  YN1I76 DAC_1B(DEFAULT) GENERIC: VMAX="-1.0" VMIN="1.0" PORT: OUT_D OUT_A
+   30  YCLOCK3 CLOCK(IDEAL) GENERIC: PERIOD="1 MS" PORT: CLK
+   31  YV_SINE3 V_SINE(IDEAL) GENERIC: AMPLITUDE="1.0" FREQ="2.0" PORT: IN_A 0
+   32  YN1I92 DECIM(DEFAULT) GENERIC: OSR="32" PORT: CLK OUT_D DECIM_A
+   33  * DICTIONARY 1
+   34  * GND = 0
+   35  *Note: Floating node DECIM2_A.
+   36  *Note: Floating node DECIM_A.
+   37  .GLOBAL ELECTRICAL_REF
+   38  .MODEL DECIM(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
+   39  .MODEL SUMMINGAMP MACRO LANG=VHDLAMS LIB=EDULIB
+   40  .MODEL ANALOG_INT(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
+   41  .MODEL DAC_1B(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
+   42  .MODEL ADC_1B(DEFAULT) MACRO LANG=VHDLAMS LIB=WORK
+   43  .MODEL V_SINE(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   44  .MODEL CLOCK(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   45  *END
    18  
    19  .END
 
@@ -88,15 +90,15 @@ Warning 107: NODE "DECIM_A": Less than two connections.
 INFORMATION ABOUT COMPILATION 
 
 
-Memory space allocated (bytes): 116158
-12 elements
-9 nodes 
+Memory space allocated (bytes): 119680
+14 elements
+11 nodes 
 0 input signals
 
  SystemVision Version 5.10 Thu Oct 10 05:53:28 GMT 2013
 
 
-*** DATE: 26-Apr-2018  16:20:53
+*** DATE: 26-Apr-2018  16:31:39
 
 *** TITLE: * Command file for design: testing_sigma_delta
 
@@ -107,7 +109,7 @@ Searching Operating Point between -1.000000E+013V and
 
 
 
-1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:20:53*****************
+1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:31:39*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -183,7 +185,7 @@ Number of iterations: 2
 
 
 
-1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:20:53*****************
+1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:31:39*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -193,9 +195,9 @@ Number of iterations: 2
 
   NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
 DECIM2_A     0.0         DECIM_A      0.0         INT_SUM      0.0         
-INT_SUM2_A   0.0         IN_A         0.0         OUT2_A       1.0000E+000  
-OUT_A        1.0000E+000  SUM2_A       1.0000E+000  SUM_A        1.0000E+000  
-
+IN_A         0.0         N1N135       0.0         N1N142       0.0         
+N1N145       1.0000E+000  OUT2_A       1.0000E+000  OUT_A        1.0000E+000  
+SUM2_A       1.0000E+000  SUM_A        1.0000E+000  
 
 
 
@@ -205,7 +207,7 @@ Number of iterations: 1
 
 
 
-1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:20:53*****************
+1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:31:39*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -215,14 +217,14 @@ Number of iterations: 1
 
   NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
 DECIM2_A     0.0         DECIM_A      0.0         INT_SUM      0.0         
-INT_SUM2_A   0.0         IN_A         0.0         OUT2_A       1.0000E+000  
-OUT_A        1.0000E+000  SUM2_A       1.0000E+000  SUM_A        1.0000E+000  
+IN_A         0.0         N1N135       0.0         N1N142       0.0         
+N1N145       1.0000E+000  OUT2_A       1.0000E+000  OUT_A        1.0000E+000  
+SUM2_A       1.0000E+000  SUM_A        1.0000E+000  
 
 
 
 
-
-1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:20:53*****************
+1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:31:39*****************
 
 0* Command file for design: testing_sigma
 0****                 OPERATING POINT INFORMATION                          TEMPERATURE =   27.000 DEG C
@@ -233,7 +235,7 @@ OUT_A        1.0000E+000  SUM2_A       1.0000E+000  SUM_A        1.0000E+000
 
 
 
-1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:20:53*****************
+1***************26-Apr-2018 ***********************  SystemVision Version 5.10  (Build Date Thu Oct 10 05:53:28 GMT 2013)  ***********************16:31:39*****************
 
 0* Command file for design: testing_sigma_delta
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -246,31 +248,31 @@ OUT_A        1.0000E+000  SUM2_A       1.0000E+000  SUM_A        1.0000E+000
 
     NUNODS NCNODS NUMNOD   NUMEL   DIODES    BJT  JFET  MOSFET
 
-         9      9      9      12        0      0     0       0
+        11     11     11      14        0      0     0       0
 
 
     NSTOP    NTERM    PERSPA  
 
-       22       52 8.926e+001
+       27       61 9.163e+001
 
     NUMTTP  NUMRTP  LTERTP  LTERTPNW NWNOCON
 
-     12286    4891    4891    4891       0
+     33617   13371   13371   13371       0
 
   DIGITAL  INWCALL    ITERNW   MEMSIZE
 
-        0    276001.607e+000    121187
+        0    745881.587e+000    125621
 
     NDEVCALL       NKIRCH  NMAXCALL      ITERM     LATENCY
 
            0            0         3   1.00e+000   0.000e+000%
 
 
-  TRANSIENT JOB TIME                 0
+  TRANSIENT JOB TIME                 1
 
 
 
-CPU time 0.59 s
+CPU time 0.84 s
 
 Save file D:/stanek/NCAD/MiAS/lab3/122352/sim_adms/testing_sigma_delta/testing_sigma_delta.iic created  at time 2.000000e+000
 

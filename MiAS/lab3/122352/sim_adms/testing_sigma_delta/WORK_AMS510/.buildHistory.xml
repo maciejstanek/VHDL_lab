@@ -41,7 +41,7 @@
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-DAC_1B__ARCHITECTURE-DEFAULT_DAC_1B>
-    <ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B time="Thu Apr 26 15:55:31 2018">
+    <ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B time="Thu Apr 26 16:31:37 2018">
       <tool name="vacom" version="v1.3_1.0"/>
       <options ordinal="-prod pr" extra=""/>
     </ENTITY-ADC_1B__ARCHITECTURE-DEFAULT_ADC_1B>

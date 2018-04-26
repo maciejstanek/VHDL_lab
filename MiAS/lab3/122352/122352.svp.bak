@@ -76,11 +76,11 @@ DESIGN_ROOT genhdl\testing_sigma_delta\testing_sigma_delta.cir
 LIST VHDL
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\SummingAmp.vhd
 hdl\analog_int.vhd
-hdl\adc_1b.vhd
 hdl\dac_1b.vhd
+hdl\decim.vhd
+hdl\adc_1b.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Digital\clock.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
-hdl\decim.vhd
 ENDLIST
 LIST SPICE
 genhdl\testing_sigma_delta\testing_sigma_delta.cir
