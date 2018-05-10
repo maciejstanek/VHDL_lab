@@ -55,7 +55,7 @@
   <systemvision design="testing_sigma_delta">
     <nextid class="V_SINE?">5</nextid>
     <nextid class="CLOCK?">5</nextid>
-    <nextid class="GAINAMP?">4</nextid>
+    <nextid class="GAINAMP?">5</nextid>
     <nextid class="SUMMINGAMP?">7</nextid>
     <nextid class="V?">3</nextid>
   </systemvision>

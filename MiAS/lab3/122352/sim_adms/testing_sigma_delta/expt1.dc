@@ -4,13 +4,16 @@ decim2_a                  0
 decim_a                   0
 in_a                      0
 int_sum                   0
-n1n135                    0
-n1n142                    0
-n1n145                    1
+int_sum2_a                0
+int_sum3_a                0
 out2_a                    1
 out_a                     1
+scaled_int_sum2_a         0
 sum2_a                    1
+sum3_a                    1
 sum_a                     1
+ygainamp4.input           0
+ygainamp4.output          0
 yn1i72.input              1
 yn1i72.output             0
 yn1i75.input              0
@@ -56,6 +59,9 @@ yn1i133.output            U
 
 
         *** Quantities ***
+ygainamp4.iout            0
+ygainamp4.vin             0
+ygainamp4.vout            0
 yn1i72.i2                 0
 yn1i72.v1                 1
 yn1i72.v1'integ           0
@@ -100,19 +106,20 @@ yv_sine3.v                0
 yn1i92._p1.progress       0
 yn1i92._p1.result         32
 yn1i113._p1.progress      0
-yn1i113._p1.result        32
+yn1i113._p1.result        16
 
 
         *** Constants ***
 yclock3.duty              0.5
 yclock3.period            1 ms
+ygainamp4.k               12.5
 yn1i75.vthr               0
 yn1i76.vmax               -1
 yn1i76.vmin               1
 yn1i92.osr                32
 yn1i112.vmax              -1
 yn1i112.vmin              1
-yn1i113.osr               32
+yn1i113.osr               16
 yn1i133.vthr              0
 ysummingamp4.k            1
 ysummingamp5.k            1

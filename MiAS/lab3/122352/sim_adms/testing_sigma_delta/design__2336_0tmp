@@ -1,4 +1,6 @@
-* Command file for design: testing_sigma_delta
+*title
+.option eldo_debug
+.op
 * Top Spice file: ..\..\genhdl\testing_sigma_delta\testing_sigma_delta.cir
 .op
 .tran 0 2 0

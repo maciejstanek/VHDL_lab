@@ -79,6 +79,7 @@ hdl\analog_int.vhd
 hdl\dac_1b.vhd
 hdl\decim.vhd
 hdl\adc_1b.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\GainAmp.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Digital\clock.vhd
 %SV_ROOT%\win32\edulib\%admsver%\Electrical\v_sine.vhd
 ENDLIST
@@ -86,6 +87,7 @@ LIST SPICE
 genhdl\testing_sigma_delta\testing_sigma_delta.cir
 ENDLIST
 LIST EXPERIMENT
+expt1.cmd
 expt1.cmd
 ENDLIST
 ENDSECTION
