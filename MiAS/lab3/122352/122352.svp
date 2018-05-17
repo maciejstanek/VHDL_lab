@@ -66,6 +66,7 @@ hdl\integrators_tb.vhd
 ENDLIST
 LIST EXPERIMENT
 expt1.cmd
+expt1.cmd
 ENDLIST
 ENDSECTION
 SECTION testing_sigma_delta
@@ -87,6 +88,7 @@ LIST SPICE
 genhdl\testing_sigma_delta\testing_sigma_delta.cir
 ENDLIST
 LIST EXPERIMENT
+expt1.cmd
 expt1.cmd
 ENDLIST
 ENDSECTION
