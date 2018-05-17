@@ -88,7 +88,6 @@ genhdl\testing_sigma_delta\testing_sigma_delta.cir
 ENDLIST
 LIST EXPERIMENT
 expt1.cmd
-expt1.cmd
 ENDLIST
 ENDSECTION
 LIST ADDITIONAL ADMS LIBRARIES
