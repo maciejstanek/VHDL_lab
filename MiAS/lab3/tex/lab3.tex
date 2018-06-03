@@ -1,0 +1,218 @@
+\documentclass[13pt, a4paper, twoside]{mwart}
+\usepackage[a4paper]{geometry}
+\geometry{left=3cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=1.5cm}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\graphicspath{{img/}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{tabularx}
+\usepackage{datetime}
+\usepackage{listings}
+\lstset{basicstyle=\footnotesize}
+
+\newcommand{\coursename}{Modelowanie i Analiza Systemów}
+\newcommand{\labnumber}{3}
+\newcommand{\labname}{Dyskretna transformata Z w VHDL AMS}
+\newcommand{\studentname}{Maciej Stanek}
+\newcommand{\studentnumber}{122352}
+\newdate{labdate}{10}{5}{2018}
+\newdate{labreportdate}{17}{5}{2018}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\textbf{LAB\#\labnumber} \labname}
+\fancyhead[RE]{\coursename}
+\fancyfoot{}
+
+\usepackage{xcolor}
+\usepackage{framed}
+\colorlet{shadecolor}{gray!10}
+\newcounter{taskcounter}
+\newcommand{\task}[1]{
+  \stepcounter{taskcounter}
+  \vspace{0.2cm}
+  \begin{shaded}
+    \noindent\textbf{Zadanie \thetaskcounter:} \textit{#1}%
+  \end{shaded}
+  \vspace{0.2cm}}
+
+\renewcommand{\labelitemi}{$\bullet$}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\LARGE{Sprawozdanie z laboratorium}}
+\end{center}
+
+\noindent
+\begin{tabularx}{\linewidth}{rX}
+  \textbf{Przedmiot} & \coursename \\
+  \textbf{Temat laboratorium} & \labname \\
+  \textbf{Numer laboratorium} & \labnumber \\
+  \textbf{Imię i nazwisko} & \studentname \\
+  \textbf{Numer indeksu} & \studentnumber \\
+  \textbf{Data wykonania} & \displaydate{labdate} \\
+  \textbf{Data sprawozdania} & \displaydate{labreportdate} \\
+\end{tabularx}
+
+\vspace{0.3cm}
+\noindent\hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\task{Układ sample\&hold ma próbkować napięciowy sygnał wejściowy podawany na terminal input. Próbkowanie ma następować przy narastającym zboczu zegara \texttt{clk}.}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Sample\&hold.}
+  ]{../122352/hdl/sample_hold.vhd}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{inv/sample_and_hold.png}
+  \caption{Działanie układu sample\&hold.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{inv/test_linearcombination.png}
+  \caption{Układ testujący blok kombinacji liniowej, układ sample\&hold oraz układy opóźniające.}
+\end{figure}
+
+\task{Układ opóźniający ma dwa porty wejściowe: sygnał zegarowy (std\_logic) oraz sygnał wejściowy (real). Na wyjściu sygnał ma pojawić się z n-krotnym opóźnieniem. Opóźnienie zdefiniowane jest w formie parametru generic.}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Układ opóźniający $Z^{-n}$.}
+  ]{../122352/hdl/zdelay.vhd}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{inv/zdelay.png}
+  \caption{Działanie układu opóźniającego.}
+\end{figure}
+
+\task{Układ kombinacji liniowej na wejściu ma dwa sygnały typu real i sumuje je z odpowiednimi wagami (kombinacja liniowa). Współczynniki określone w postaci parametrów generic. Układ nie wymaga sygnału synchronizującego zegara. Zaprojektuj architekturę układu w sposób asynchroniczny.}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Układ kombinacji liniowej.}
+  ]{../122352/hdl/linearcombination.vhd}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{inv/linearcombination.png}
+  \caption{Działanie układu kombinacji liniowej.}
+\end{figure}
+
+\task{Zaimplementuj układy integratorów według wyznaczonych na laboratorium schematów blokowych. Do ich implementacji należy wykorzystać wyłącznie układy kombinacji liniowej i opóźniające. Porty wejściowe integratora to sygnał typu real oraz sygnał zegarowy typu std\_logic.}
+
+Implementacji integratorów dokonano behawioralnie, bez wykorzystania gotowych bloków opóźnień.
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Backward Euler Integrator.}
+  ]{../122352/hdl/backint.vhd}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Forward Euler Integrator.}
+  ]{../122352/hdl/forwardint.vhd}
+
+\lstinputlisting[
+  language=VHDL,
+  caption={Bilinear Integrator.}
+  ]{../122352/hdl/bilinint.vhd}
+
+\task{Korzystając z układów integratorów z poprzedniego zadania przetestuj i porównaj działanie każdego z układów całkujących. Porównaj odpowiedzi układów na wymuszenia impulsem Kroneckera i skokiem jednostkowym z obliczeniami z laboratorium. Wykorzystaj dany układ test--bench do przetestowania układu.}
+
+Zaprojektowane układy zachowują się tak samo, jak układy wzorcowe zaprezentowane na przykładowych wykresach odpowiedzi skokowych i impulsowych.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{inv/three_int_pulse.png}
+  \caption{Odpowiedź trzech zaprojektowanych układów całkujących na impuls jednostkowy.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{inv/three_int_step.png}
+  \caption{Odpowiedź trzech zaprojektowanych układów całkujących na skok jednostkowy.}
+\end{figure}
+
+%Układ decymacyjny to urządzenie zliczające ilość zer i jedynek w kolejnych segmentach ciągu bitowego o stałej szerokości OSR. Licznik rozpoczyna zliczanie na wartości OSR i inkrementuje bądź dekrementuje jego wartość po otrzymaniu wartości odpowiednio 1 lub 0. Po analizie OSR bitów, układ wystawia na wyjściu wyznaczoną wartość końcową (w przedziale od 0 do 2OSR), resetuje się do wartości OSR i rozpoczyna kolejny cykl.
+%
+%\task{Opis koncepcji działania całego układu testbenchu --- zależności czasowe taktowania.}
+%
+%Testbench instancjonuje decymator, po czym ładuje z zewnętrznego pliku segmenty ciągu bitowego. Dla każdego takie segmentu wprowadza go on synchronicznie na wejście decymatora i wypisuje do pliku wyjściowego wartość wynikową.
+%
+%\task{Wyjaśnienie znaczenia/funkcji wszystkich portów (we/wy) oraz parametrów (generic). W kodzie należy nadać wartości domyślne (default) wszystkim parametrom.}
+%
+%\begin{itemize}
+%  \item Port \texttt{clk} --- pozwala na synchroniczne wprowadzanie ciągu bitowego.
+%  \item Port \texttt{data\_in} --- wejście synchroniczne ciągu bitowego.
+%  \item Port \texttt{data\_out} --- port wyjściowy decymatora.
+%  \item Parametr \texttt{osr} --- ilość bitów w jednym segmencie.
+%\end{itemize}
+%
+%\task{Kody źródłowe VHDL --- testbenchu.}
+%
+%\lstinputlisting[
+%  language=VHDL,
+%  caption={Testbench układu decymacyjnego.}
+%  ]{../lab2/decim_tb.vhd}
+%
+%\lstinputlisting[
+%  language=tcl,
+%  caption={Skrypt uruchamiający testbench.}
+%  ]{../lab2/decim_tb.do}
+%
+%\task{Kod źródłowy układu decymacyjnego.}
+%
+%\lstinputlisting[
+%  language=VHDL,
+%  caption={Układ decymacyjny.}
+%  ]{../lab2/decim.vhd}
+%
+%\task{Plik wejściowy (z opisem sposobu jego generacji i wyjaśnienie co jest w nim zakodowane i z jakimi parametrami OSR).}
+%
+%Składnia pliku wejściowego wymaga podania ciągu wejściowego w postaci słów złożonych z OCR zer i jedynek, zakończonych znakiem nowej linii. Testbench dopuszcza komentarze w pliku wejściowym (zgodnie z zaleceniami dra Śniatały). Komentarzem jest każda linijka rozpoczynająca się od symbolu kratki.
+%
+%\lstinputlisting[
+%  language=sh,
+%  caption={Plik wejściowy z komentarzami.}
+%  ]{../lab2/0.in.txt}
+%
+%\task{Plik wyjściowy z wyjaśnieniem zawartości.}
+%
+%Plik wyjściowy zawiera liczby, będące wynikiem działania decymatora dla poszczególnych segmentów z pliku wejściowego. Testbench przepisuje komentarze z pliku wejściowego do pliku wyjściowego.
+%
+%\lstinputlisting[
+%  language=sh,
+%  caption={Plik wyjściowy z przepisanymi komentarzami.}
+%  ]{../lab2/0.out.txt}
+%
+%\clearpage
+%\task{Zrzut ekranu przedstawiający działania układu, który zawiera co najmniej następujące przebiegi (sygnały):
+%  \begin{itemize}
+%    \item Zegar bazowy (CLK),
+%    \item Bitstream wejściowy (Data\_In) --- przed decymacją,
+%    \item Ciąg wyjściowy liczb całkowitych reprezentujący sygnał wejściowy (Data\_Out).
+%  \end{itemize}}
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\linewidth]{wave.png}
+%	\caption{Przebiegi sygnałów wejściowych i wyjściowych.}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

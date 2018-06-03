@@ -17,12 +17,12 @@ architecture default of adc_1b is
 begin
   process(clk)
   begin
-  	if clk'event and clk = '1' then
-  	  if v > vthr then
-  	    output <= '1';
-  	  else
-  	    output <= '0';
-  	  end if;
-  	end if;
+    if clk'event and clk = '1' then
+      if v > vthr then
+        output <= '1';
+      else
+        output <= '0';
+      end if;
+    end if;
   end process;
 end architecture;

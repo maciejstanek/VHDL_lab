@@ -35,6 +35,6 @@ begin
       end if;
     end if;
   end process;
-  
+
   decimated == v;
 end architecture;
