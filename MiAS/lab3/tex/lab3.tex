@@ -67,6 +67,38 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\task{Wyznacz wzór na odpowiedź y[n] integratora o podanych transmitancjach:
+\begin{itemize}
+  \item Backward Euler Integrator $H\left(Z\right) = \frac{z}{z-1}$,
+  \item Forward Euler Integrator $H\left(Z\right) = \frac{1}{z-1}$,
+  \item Bilinear Integrator $H\left(Z\right) = \frac{z+1}{z-1}$.
+\end{itemize}
+Na podstawie wyznaczonych wzorów narysuj schemat blokowy każdego z układów. Wyznacz odpowiedzi układów na impuls Kroneckera i skok jednostkowy.}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.2\linewidth]{calc/zal_fixed.jpg}
+  \caption{Transmitancje podstawowych funkcji w dziedzinie Z.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.7\linewidth]{calc/a_fixed.jpg}
+  \caption{Obliczenia dla układu całkującego wprzód.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.7\linewidth]{calc/b_fixed.jpg}
+  \caption{Obliczenia dla układu całkującego wstecz.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.7\linewidth]{calc/c_fixed.jpg}
+  \caption{Obliczenia dla układu całkującego biliniowo.}
+\end{figure}
+
 \task{Układ sample\&hold ma próbkować napięciowy sygnał wejściowy podawany na terminal input. Próbkowanie ma następować przy narastającym zboczu zegara \texttt{clk}.}
 
 \lstinputlisting[
